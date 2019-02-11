@@ -1,28 +1,24 @@
-from urllib.request import Request, urlopen
-from datetime import datetime
-from base64 import b64encode
-
+from requests.auth import HTTPBasicAuth
+import requests
 import json
 
 def create(endpoint, content):
     
     #        'date_gmt': datetime.now().replace(microsecond=0).isoformat() + 'Z',
+    url = endpoint['url']
+    username = endpoint['username']
+    password = endpoint['password']
     params = {
-        'status': 'publish',
         'title': 'The Title',
-        'content': content
+        'content': content,
+        'exerpt': 'blah'
     }
-    postparam = json.dumps(params).encode('utf-8')
-    req = Request(endpoint['url'] + '/wp-json/wp/v2/posts', method='POST', data=postparam)
-    req.add_header('Content-Type', 'application/json')
-    
-    creds = endpoint['username'] + ':' + endpoint['password']
-    auth  = 'Basic ' + str(b64encode(creds.encode('utf-8')), 'utf-8')
-    req.add_header('Authorization', auth)
-    
-    r = urlopen(req)
-    
-    if(r.getcode() != 200):
-        raise Exception('failed with rc=' + r.getcode())
+    r = requests.post(url + '/wp-json/wp/v2/posts', 
+                      auth=HTTPBasicAuth(username, password), 
+                      data=json.dumps(params), 
+                      headers={'content-type': 'application/json'})
+
+    if(not(r.ok)):
+        raise Exception('failed with rc=' + r.status_code)
         
-    return json.loads(r.read())
+    return json.loads(r.text)
