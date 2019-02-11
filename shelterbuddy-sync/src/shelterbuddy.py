@@ -34,3 +34,16 @@ def sbload(shelterbuddyUrl, token, target, cutoff):
             yield animal
         
         target = data['Paging']['Next']
+
+def sbget(shelterbuddyUrl, token, target):
+        req = Request(shelterbuddyUrl + target)
+        
+        req.add_header("sb-auth-token", token)
+        req.add_header("content-type", "application/json")
+        
+        r = urlopen(req)
+        
+        if(r.getcode() != 200):
+            raise Exception("failed with rc=" + r.getcode())
+        
+        return json.loads(r.read())
