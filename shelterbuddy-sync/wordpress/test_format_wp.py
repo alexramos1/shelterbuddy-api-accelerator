@@ -1,4 +1,4 @@
-import article_format
+import wp_article_format
 import json
 from wordpress import create
 from os import getenv
@@ -15,7 +15,7 @@ data = json.loads(f.read())
 
 for animal in data[0:9]:
 
-    article = article_format.animal(animal, lambda x: "")
+    article = wp_article_format.animal(animal, lambda x: "")
 
     title = animal['Name']
     title += " - " + animal['Sex']['Name']

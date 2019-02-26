@@ -1,5 +1,8 @@
+from config import filter
 from urllib.request import Request, urlopen
 import json
+
+uriCache = {}
 
 def sbauth(shelterbuddyUrl, username, password):
     query = "/api/v2/authenticate?username=" + username + "&password=" + password
@@ -17,6 +20,8 @@ def sbload(shelterbuddyUrl, token, target, cutoff):
     postparm = ("{ 'UpdatedSinceUTC':'" + cutoff + "'}").encode('utf-8')
 
     while target != None:
+        
+        print(target)
         
         req = Request(shelterbuddyUrl + target, method='POST', data=postparm)
         
@@ -47,3 +52,18 @@ def sbget(shelterbuddyUrl, token, target):
             raise Exception("failed with rc=" + r.getcode())
         
         return json.loads(r.read())
+
+def resolve(shelterbuddyUrl, token, uri):
+    if not(uri in uriCache):
+        uriCache[uri] = sbget(shelterbuddyUrl, token, uri)
+    return uriCache[uri]
+
+def process(shelterbuddyUrl, token, animals):
+    for animal in animals:
+        animal['Status']['UriValue'] = resolve(shelterbuddyUrl, token, animal['Status']['Uri'])
+        if 'Name' in animal['Status']['UriValue']:
+            del animal['Status']['UriValue']['Name']
+        if 'Id' in animal['Status']['UriValue']:
+            del animal['Status']['UriValue']['Id'] 
+        if(filter(animal)):
+            yield animal
