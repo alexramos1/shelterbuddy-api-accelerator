@@ -4,7 +4,7 @@ import json
 from decimal import Decimal
 
 class ShelterBuddyConnection:
-    "A basic functional proof-of-concept for ShelterBuddy API connectivity."
+    "Connects to ShelterBuddy API"
     
     uriCache = {}
     
@@ -18,6 +18,42 @@ class ShelterBuddyConnection:
         req.add_header('Content-Type', 'application/json')
         r = urlopen(req)
         return json.loads(r.read())
+        
+    def loadAnimals(self, target, cutoff):
+        self._loadAnimals(target, cutoff, lambda x: [(yield a) for a in x], lambda x:x)
+        
+    def _loadAnimals(self, target, cutoff, actionFunction, checkpointFunction):
+        
+        postparm = ("{ 'UpdatedSinceUTC':'" + cutoff + "'}").encode('utf-8')
+    
+        while target != None:
+            
+            print(target)
+            
+            req = Request(self.shelterbuddyUrl + target, method='POST', data=postparm)
+            
+            req.add_header("sb-auth-token", self.token)
+            req.add_header("content-type", "application/json")
+            r = urlopen(req)
+            
+            data = json.loads(r.read(), parse_float=Decimal)
+            
+            actionFunction(data['Data'])
+            
+            target = data['Paging']['Next']            
+            checkpointFunction(target)
+    
+    def fetchUri(self, uri):
+        if not(uri in self.uriCache):
+            req = Request(self.shelterbuddyUrl + uri)
+            
+            req.add_header("sb-auth-token", self.token)
+            req.add_header("content-type", "application/json")
+            
+            r = urlopen(req)
+            self.uriCache[uri] = json.loads(r.read())
+
+        return self.uriCache[uri]
     
     def fetchPhotos(self, animalId):
         
@@ -37,38 +73,3 @@ class ShelterBuddyConnection:
             return obj['Data']
         else:
             return None
-    
-    def loadAnimals(self, target, cutoff):
-        
-        postparm = ("{ 'UpdatedSinceUTC':'" + cutoff + "'}").encode('utf-8')
-    
-        while target != None:
-            
-            print(target)
-            
-            req = Request(self.shelterbuddyUrl + target, method='POST', data=postparm)
-            
-            req.add_header("sb-auth-token", self.token)
-            req.add_header("content-type", "application/json")
-            
-            r = urlopen(req)
-            
-            data = json.loads(r.read(), parse_float=Decimal)
-            
-            for animal in data['Data']:
-                yield animal
-            
-            target = data['Paging']['Next']
-    
-    def fetchUri(self, uri):
-        if not(uri in self.uriCache):
-            req = Request(self.shelterbuddyUrl + uri)
-            
-            req.add_header("sb-auth-token", self.token)
-            req.add_header("content-type", "application/json")
-            
-            r = urlopen(req)
-            self.uriCache[uri] = json.loads(r.read())
-
-        return self.uriCache[uri]
-    
