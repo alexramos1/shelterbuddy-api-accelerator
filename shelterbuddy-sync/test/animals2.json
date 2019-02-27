@@ -210,7 +210,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 570901,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Cremini",
@@ -423,7 +423,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 570899,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Garlic",
@@ -636,7 +636,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 570900,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Lucus",
@@ -860,10 +860,6 @@
         "Id": 566778,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/566778",
-                    "Id": 566778
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/05bf4d883f8a45e694b5be1132fcd0d0-1547147144-1547147164-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/05bf4d883f8a45e694b5be1132fcd0d0-1547147144-1547147164-jpeg/<size>-0-",
@@ -1099,20 +1095,12 @@
         "Id": 549709,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/549709",
-                    "Id": 549709
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/21304d31b89b4852986351bae97e2add-1547929860-1547929882-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/21304d31b89b4852986351bae97e2add-1547929860-1547929882-jpg/<size>-0-",
                 "Id": 752197
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/549709",
-                    "Id": 549709
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/f6e158c1fc104d6aadfead7ff5624f40-1539731194-1539731203-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f6e158c1fc104d6aadfead7ff5624f40-1539731194-1539731203-jpg/<size>-0-",
@@ -1357,10 +1345,6 @@
         "Id": 256718,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/256718",
-                    "Id": 256718
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a7bcd47b79a04af29dc5bcc05eb9588a-1547156384-1547156410-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a7bcd47b79a04af29dc5bcc05eb9588a-1547156384-1547156410-jpeg/<size>-0-",
@@ -1586,10 +1570,6 @@
         "Id": 552307,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/552307",
-                    "Id": 552307
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/14ebe667c82e4209972adcbad2a9fa42-1540836191-1540845446-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/14ebe667c82e4209972adcbad2a9fa42-1540836191-1540845446-jpg/<size>-0-",
@@ -1815,7 +1795,7 @@
             }
         ],
         "Id": 564594,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Brian",
@@ -2068,140 +2048,84 @@
         "Id": 284224,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/3bafa91365a7477e82590233c7325a83-1533675249-1546462756-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3bafa91365a7477e82590233c7325a83-1533675249-1546462756-jpg/<size>-0-",
                 "Id": 623243
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/9aad687c40b74c0a95441709f5768449-1546638948-1546638956-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9aad687c40b74c0a95441709f5768449-1546638948-1546638956-jpg/<size>-0-",
                 "Id": 739685
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/2f6ad09625ab44cf8acae2d5940b1aec-1546638524-1546638634-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2f6ad09625ab44cf8acae2d5940b1aec-1546638524-1546638634-jpg/<size>-0-",
                 "Id": 739678
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/4d9df3a7d47140658090056dc79150c3-1546638337-1546638344-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/4d9df3a7d47140658090056dc79150c3-1546638337-1546638344-jpg/<size>-0-",
                 "Id": 739673
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/00e5ee570abe4a19ab1d1d6df35f279d-1544987448-1544987605-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/00e5ee570abe4a19ab1d1d6df35f279d-1544987448-1544987605-jpg/<size>-0-",
                 "Id": 725737
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/f754beef67574cda95533cd53e12f089-1544987441-1544987599-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f754beef67574cda95533cd53e12f089-1544987441-1544987599-jpg/<size>-0-",
                 "Id": 725736
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/943a5d58ce1c4cff879767604f481954-1544987433-1544987592-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/943a5d58ce1c4cff879767604f481954-1544987433-1544987592-jpg/<size>-0-",
                 "Id": 725735
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/4288d794374c443296e2199b27871fb3-1533856647-1543969776-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/4288d794374c443296e2199b27871fb3-1533856647-1543969776-jpg/<size>-0-",
                 "Id": 624697
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/8ce9a15255be4e1f9b5f19ac7b11544a-1533675248-1533675300-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8ce9a15255be4e1f9b5f19ac7b11544a-1533675248-1533675300-jpg/<size>-0-",
                 "Id": 623242
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/2376306a78a845b78b55818d65abae69-1533675249-1533675293-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2376306a78a845b78b55818d65abae69-1533675249-1533675293-jpg/<size>-0-",
                 "Id": 623244
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/2323f0b2616341998249f491b7e3c42d-1533675249-1533675290-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2323f0b2616341998249f491b7e3c42d-1533675249-1533675290-jpg/<size>-0-",
                 "Id": 623245
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/f739c2c0cbd3407cac596eb7bdabce4b-1533675249-1533675287-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f739c2c0cbd3407cac596eb7bdabce4b-1533675249-1533675287-jpg/<size>-0-",
                 "Id": 623246
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/da7ea0ae07df4545ab0f595329a301ec-1532457761-1533423187-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/da7ea0ae07df4545ab0f595329a301ec-1532457761-1533423187-jpg/<size>-0-",
                 "Id": 612339
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/284224",
-                    "Id": 284224
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/5b8291a8660d4bdfbb04b6708f6444fd-1532457765-1532457775-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/5b8291a8660d4bdfbb04b6708f6444fd-1532457765-1532457775-jpg/<size>-0-",
@@ -2419,7 +2343,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573624,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Aiko",
@@ -2629,10 +2553,6 @@
         "Id": 453996,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/453996",
-                    "Id": 453996
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/96534ea10931449d8db621b16cc11a67-1535836315-1535836324-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/96534ea10931449d8db621b16cc11a67-1535836315-1535836324-jpg/<size>-0-",
@@ -2860,20 +2780,12 @@
         "Id": 543184,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/543184",
-                    "Id": 543184
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/90ca86ffdccb4ee88af4c8a2045629df-1543878809-1543878816-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/90ca86ffdccb4ee88af4c8a2045629df-1543878809-1543878816-jpeg/<size>-0-",
                 "Id": 715027
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/543184",
-                    "Id": 543184
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/dab2dbd6364845d599815a211cf64195-1536883920-1536883930-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/dab2dbd6364845d599815a211cf64195-1536883920-1536883930-jpg/<size>-0-",
@@ -3108,10 +3020,6 @@
         "Id": 566566,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/566566",
-                    "Id": 566566
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/76555a52821d4bbe954d37387c1d17ec-1547065587-1547065601-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/76555a52821d4bbe954d37387c1d17ec-1547065587-1547065601-jpg/<size>-0-",
@@ -3327,7 +3235,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 572539,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Harita",
@@ -3560,7 +3468,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 349600,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Ollie",
@@ -3769,7 +3677,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569666,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Owen",
@@ -3978,7 +3886,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569667,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Oaklee",
@@ -4187,7 +4095,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569669,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Myla",
@@ -4405,7 +4313,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 558590,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Integrity",
@@ -4632,7 +4540,7 @@
             }
         ],
         "Id": 566820,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Jane",
@@ -4857,10 +4765,6 @@
         "Id": 559618,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/559618",
-                    "Id": 559618
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/288b0a938aba4bd0bb7de0eaf205a72d-1543972954-1543972967-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/288b0a938aba4bd0bb7de0eaf205a72d-1543972954-1543972967-jpg/<size>-0-",
@@ -5059,7 +4963,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569732,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -5252,7 +5156,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569733,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -5445,7 +5349,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569734,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -5638,7 +5542,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569735,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Woody",
@@ -5874,10 +5778,6 @@
         "Id": 548374,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/548374",
-                    "Id": 548374
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/af87e2c757a64f07aae6e09d82b402cf-1539132019-1539132030-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/af87e2c757a64f07aae6e09d82b402cf-1539132019-1539132030-jpg/<size>-0-",
@@ -6102,7 +6002,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 571927,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Marilyn",
@@ -6321,7 +6221,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 571928,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Lily",
@@ -6535,20 +6435,12 @@
         "Id": 567077,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567077",
-                    "Id": 567077
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/599dc8ef57544164a98ba9f03f9f3dfd-1549136621-1549136648-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/599dc8ef57544164a98ba9f03f9f3dfd-1549136621-1549136648-jpg/<size>-0-",
                 "Id": 763809
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567077",
-                    "Id": 567077
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/39a5c2e1b6b44adeabbb7421130ffd94-1547584940-1549136653-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/39a5c2e1b6b44adeabbb7421130ffd94-1547584940-1549136653-jpg/<size>-0-",
@@ -6768,20 +6660,12 @@
         "Id": 567078,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567078",
-                    "Id": 567078
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/b3acd2234c094b148a2599be038b995e-1549136688-1549136703-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/b3acd2234c094b148a2599be038b995e-1549136688-1549136703-jpg/<size>-0-",
                 "Id": 763810
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567078",
-                    "Id": 567078
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/3b1c0dfbdef448249f7afb632ce5cf8e-1547585806-1549136706-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3b1c0dfbdef448249f7afb632ce5cf8e-1547585806-1549136706-jpg/<size>-0-",
@@ -7001,10 +6885,6 @@
         "Id": 567080,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567080",
-                    "Id": 567080
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/782ebfa9e292437eb62d3ee1692f357d-1549136822-1549136835-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/782ebfa9e292437eb62d3ee1692f357d-1549136822-1549136835-jpg/<size>-0-",
@@ -7224,20 +7104,12 @@
         "Id": 567079,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567079",
-                    "Id": 567079
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/0cd99491b8be4eea9ccab0130e33ff57-1549136735-1549136761-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/0cd99491b8be4eea9ccab0130e33ff57-1549136735-1549136761-jpg/<size>-0-",
                 "Id": 763811
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567079",
-                    "Id": 567079
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/b875fb3a306440d08931bfa5a0fa5219-1547586032-1549136750-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/b875fb3a306440d08931bfa5a0fa5219-1547586032-1549136750-jpg/<size>-0-",
@@ -7457,10 +7329,6 @@
         "Id": 567081,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567081",
-                    "Id": 567081
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/927afb6b4a4141e1a5edaa412c842325-1549136869-1549136884-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/927afb6b4a4141e1a5edaa412c842325-1549136869-1549136884-jpg/<size>-0-",
@@ -7659,7 +7527,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569736,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Jax",
@@ -7873,10 +7741,6 @@
         "Id": 567082,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567082",
-                    "Id": 567082
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/3494d5593f194debac365c9cbbdb0d78-1549136938-1549136951-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3494d5593f194debac365c9cbbdb0d78-1549136938-1549136951-jpg/<size>-0-",
@@ -8075,7 +7939,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569743,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -8268,7 +8132,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569744,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -8461,7 +8325,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569745,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -8654,7 +8518,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569746,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -8847,7 +8711,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569747,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -9040,7 +8904,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569748,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -9233,7 +9097,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569759,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -9426,7 +9290,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569760,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -9619,7 +9483,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569761,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -9812,7 +9676,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569765,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -10005,7 +9869,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569766,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -10198,7 +10062,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569767,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -10391,7 +10255,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569768,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -10584,7 +10448,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569769,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -10777,7 +10641,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569770,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -10970,7 +10834,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569771,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -11163,7 +11027,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569772,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -11356,7 +11220,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569773,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -11549,7 +11413,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569774,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -11742,7 +11606,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569775,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -11935,7 +11799,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569777,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -12128,7 +11992,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569779,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -12321,7 +12185,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569780,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -12514,7 +12378,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569781,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -12707,7 +12571,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569939,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -12900,7 +12764,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569940,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -13093,7 +12957,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569941,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -13286,7 +13150,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569942,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -13479,7 +13343,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569944,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -13672,7 +13536,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569945,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -13865,7 +13729,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569946,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -14058,7 +13922,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569949,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -14251,7 +14115,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569950,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -14444,7 +14308,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569951,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -14637,7 +14501,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569953,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -14830,7 +14694,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569954,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -15023,7 +14887,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569955,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -15216,7 +15080,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569956,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -15409,7 +15273,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569957,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -15602,7 +15466,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569958,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -15795,7 +15659,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569959,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -15988,7 +15852,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569960,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -16181,7 +16045,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569961,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -16374,7 +16238,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569947,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Crash",
@@ -16590,10 +16454,6 @@
         "Id": 560454,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/560454",
-                    "Id": 560454
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/5573f6a5d43d4e29a16ae415fe7b8854-1544640342-1544640370-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/5573f6a5d43d4e29a16ae415fe7b8854-1544640342-1544640370-jpeg/<size>-0-",
@@ -16813,10 +16673,6 @@
         "Id": 563572,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/563572",
-                    "Id": 563572
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/cd2ff52ee2bc43eb92b49e98fc1bfdb5-1545848615-1545848716-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/cd2ff52ee2bc43eb92b49e98fc1bfdb5-1545848615-1545848716-jpg/<size>-0-",
@@ -17056,50 +16912,30 @@
         "Id": 549942,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/549942",
-                    "Id": 549942
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/69f56f530aee486d94be800b93750308-1541454184-1548351969-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/69f56f530aee486d94be800b93750308-1541454184-1548351969-jpg/<size>-0-",
                 "Id": 692392
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/549942",
-                    "Id": 549942
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/95e14b6b3efa448db9912d669843219d-1541454183-1541454202-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/95e14b6b3efa448db9912d669843219d-1541454183-1541454202-jpg/<size>-0-",
                 "Id": 692391
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/549942",
-                    "Id": 549942
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/b5c4bc0b51694c958e346d08b8912735-1541454183-1541454198-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/b5c4bc0b51694c958e346d08b8912735-1541454183-1541454198-jpg/<size>-0-",
                 "Id": 692390
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/549942",
-                    "Id": 549942
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/44b6e1a1ae784a379facf9fc35a96729-1541454182-1541454193-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/44b6e1a1ae784a379facf9fc35a96729-1541454182-1541454193-jpg/<size>-0-",
                 "Id": 692389
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/549942",
-                    "Id": 549942
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/359cce9c97ab4173becdc041fbbd4e85-1539906348-1541356203-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/359cce9c97ab4173becdc041fbbd4e85-1539906348-1541356203-jpg/<size>-0-",
@@ -17343,130 +17179,78 @@
         "Id": 462296,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a71d476338be48d5b728c05834025620-1548981246-1548981428-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a71d476338be48d5b728c05834025620-1548981246-1548981428-jpg/<size>-0-",
                 "Id": 762485
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/304cc409d83047f28271c0ea9a6c927b-1548981247-1549493675-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/304cc409d83047f28271c0ea9a6c927b-1548981247-1549493675-jpg/<size>-0-",
                 "Id": 762495
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/7c2f985d0bb04b929fa93e110f131a0b-1548981247-1549493671-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7c2f985d0bb04b929fa93e110f131a0b-1548981247-1549493671-jpg/<size>-0-",
                 "Id": 762493
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/cf04bc68e89d49f9807be11109a009ff-1548981245-1549493645-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/cf04bc68e89d49f9807be11109a009ff-1548981245-1549493645-jpg/<size>-0-",
                 "Id": 762482
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/c0e0591cf6bb434883f9aa9ac4710fcb-1541201810-1549493637-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c0e0591cf6bb434883f9aa9ac4710fcb-1541201810-1549493637-jpg/<size>-0-",
                 "Id": 690103
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/cec3c28e74704aa0a6684ae62cee11fa-1541201810-1548981508-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/cec3c28e74704aa0a6684ae62cee11fa-1541201810-1548981508-jpg/<size>-0-",
                 "Id": 690102
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/6b020c3bcb2c4c06812fe3127c548b45-1548981245-1548981441-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6b020c3bcb2c4c06812fe3127c548b45-1548981245-1548981441-jpg/<size>-0-",
                 "Id": 762483
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/94406eee7e914535898c3da9a3d55544-1548981245-1548981435-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/94406eee7e914535898c3da9a3d55544-1548981245-1548981435-jpg/<size>-0-",
                 "Id": 762484
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/9b0dc1e37840425cb20d11b054c9c32e-1548981246-1548981418-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9b0dc1e37840425cb20d11b054c9c32e-1548981246-1548981418-jpg/<size>-0-",
                 "Id": 762486
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/4400cb6d700d447999c958f92056f0ef-1548981246-1548981405-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/4400cb6d700d447999c958f92056f0ef-1548981246-1548981405-jpg/<size>-0-",
                 "Id": 762489
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/3b95c38365dd4acf9b04e6b22d275ac7-1548981246-1548981399-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3b95c38365dd4acf9b04e6b22d275ac7-1548981246-1548981399-jpg/<size>-0-",
                 "Id": 762491
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/ecc9d05308db490d9d02d0a3f4d9c146-1548981247-1548981387-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/ecc9d05308db490d9d02d0a3f4d9c146-1548981247-1548981387-jpg/<size>-0-",
                 "Id": 762492
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/462296",
-                    "Id": 462296
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/42a37de0daf343e7988134f17397268e-1548981247-1548981365-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/42a37de0daf343e7988134f17397268e-1548981247-1548981365-jpg/<size>-0-",
@@ -17693,7 +17477,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573307,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Sergio",
@@ -17919,7 +17703,7 @@
             }
         ],
         "Id": 566322,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Clifford",
@@ -18144,20 +17928,12 @@
         "Id": 281482,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/281482",
-                    "Id": 281482
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/26492b2a3fc340f8957498e10e38a2f4-1545431680-1545433904-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/26492b2a3fc340f8957498e10e38a2f4-1545431680-1545433904-jpg/<size>-0-",
                 "Id": 729979
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/281482",
-                    "Id": 281482
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a0f8cf57345f4ccbb768948b6cb235cd-1544488971-1545433912-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a0f8cf57345f4ccbb768948b6cb235cd-1544488971-1545433912-jpg/<size>-0-",
@@ -18386,10 +18162,6 @@
         "Id": 573558,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573558",
-                    "Id": 573558
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7fd675b10710419e8d6dc5d92eaef445-1549763313-1549763336-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7fd675b10710419e8d6dc5d92eaef445-1549763313-1549763336-jpeg/<size>-0-",
@@ -18625,20 +18397,12 @@
         "Id": 447083,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/447083",
-                    "Id": 447083
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2b4dbf39f98644bc855b951078fe7fcf-1550528706-1550528726-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2b4dbf39f98644bc855b951078fe7fcf-1550528706-1550528726-jpg/<size>-0-",
                 "Id": 779178
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/447083",
-                    "Id": 447083
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/713fd88e0e554083bef135bed0c15321-1533596235-1533596241-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/713fd88e0e554083bef135bed0c15321-1533596235-1533596241-jpg/<size>-0-",
@@ -18862,10 +18626,6 @@
         "Id": 574062,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574062",
-                    "Id": 574062
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2bed83aa82de4484a20ed1c5a95bbdae-1549999065-1549999080-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2bed83aa82de4484a20ed1c5a95bbdae-1549999065-1549999080-jpg/<size>-0-",
@@ -19089,10 +18849,6 @@
         "Id": 574063,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574063",
-                    "Id": 574063
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c5c7571736d54faa9f579ef019ceac1f-1549999117-1549999134-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c5c7571736d54faa9f579ef019ceac1f-1549999117-1549999134-jpg/<size>-0-",
@@ -19320,7 +19076,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 574353,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Jimmy Chew ",
@@ -19542,7 +19298,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 574354,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Mary Puppins",
@@ -19764,7 +19520,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 574355,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Phantom",
@@ -19976,7 +19732,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569900,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Spencer",
@@ -20195,7 +19951,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 571929,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Humphrey",
@@ -20414,7 +20170,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 571930,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Lilac",
@@ -20631,10 +20387,6 @@
         "Id": 572479,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572479",
-                    "Id": 572479
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/8417b46203a04f3895accb0354998c53-1549319315-1549319327-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8417b46203a04f3895accb0354998c53-1549319315-1549319327-jpg/<size>-0-",
@@ -20857,10 +20609,6 @@
         "Id": 572480,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572480",
-                    "Id": 572480
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/b3916fa9d1e246d9a0f77ce8e17b6a2c-1549319703-1549319734-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/b3916fa9d1e246d9a0f77ce8e17b6a2c-1549319703-1549319734-jpg/<size>-0-",
@@ -21083,10 +20831,6 @@
         "Id": 572481,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572481",
-                    "Id": 572481
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7af623a3c69d43e68f39942f57a45b04-1549320112-1549320123-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7af623a3c69d43e68f39942f57a45b04-1549320112-1549320123-jpg/<size>-0-",
@@ -21312,10 +21056,6 @@
         "Id": 562606,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/562606",
-                    "Id": 562606
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a334eff35563498db7c19dadc7cb0a4b-1545251172-1545251394-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a334eff35563498db7c19dadc7cb0a4b-1545251172-1545251394-jpeg/<size>-0-",
@@ -21534,10 +21274,6 @@
         "Id": 565928,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565928",
-                    "Id": 565928
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/be7944ada932404f99a23b8503033353-1546727356-1546727369-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/be7944ada932404f99a23b8503033353-1546727356-1546727369-jpg/<size>-0-",
@@ -21772,10 +21508,6 @@
         "Id": 561750,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/561750",
-                    "Id": 561750
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/0937f0a18c1346369b6c1c2b10c430b4-1544916190-1544916211-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/0937f0a18c1346369b6c1c2b10c430b4-1544916190-1544916211-jpg/<size>-0-",
@@ -22018,10 +21750,6 @@
         "Id": 369732,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/369732",
-                    "Id": 369732
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/1589c9a374c64318bfa8417168944802-1549243545-1549243567-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1589c9a374c64318bfa8417168944802-1549243545-1549243567-jpg/<size>-0-",
@@ -22251,20 +21979,12 @@
         "Id": 570466,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570466",
-                    "Id": 570466
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/674d95a875ab4fb2b14a46bf0da54ae9-1550532647-1550532659-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/674d95a875ab4fb2b14a46bf0da54ae9-1550532647-1550532659-jpg/<size>-0-",
                 "Id": 779253
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570466",
-                    "Id": 570466
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/755bc8b6dfc246e5bc86ea7e1c1c2d66-1550532647-1550532666-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/755bc8b6dfc246e5bc86ea7e1c1c2d66-1550532647-1550532666-jpg/<size>-0-",
@@ -22491,10 +22211,6 @@
         "Id": 570265,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570265",
-                    "Id": 570265
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/6575465f61b44ce9a99766d5f5573a87-1548378577-1548378601-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6575465f61b44ce9a99766d5f5573a87-1548378577-1548378601-jpg/<size>-0-",
@@ -22721,10 +22437,6 @@
         "Id": 570267,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570267",
-                    "Id": 570267
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a4758790a06b4d5dab0503bfd8572640-1548378683-1548378696-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a4758790a06b4d5dab0503bfd8572640-1548378683-1548378696-jpg/<size>-0-",
@@ -22952,7 +22664,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 574115,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Sunkissed",
@@ -23169,10 +22881,6 @@
         "Id": 574061,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574061",
-                    "Id": 574061
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7c813b13bf764b078714634e150d26fe-1550000831-1550000848-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7c813b13bf764b078714634e150d26fe-1550000831-1550000848-jpg/<size>-0-",
@@ -23393,10 +23101,6 @@
         "Id": 571531,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571531",
-                    "Id": 571531
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/79228b8bda8c4aac95206cbe94237b3f-1548889777-1548889786-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/79228b8bda8c4aac95206cbe94237b3f-1548889777-1548889786-jpg/<size>-0-",
@@ -23627,7 +23331,7 @@
             }
         ],
         "Id": 575172,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Star",
@@ -23845,10 +23549,6 @@
         "Id": 575170,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575170",
-                    "Id": 575170
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/81efed37b2cf47c29f1f76877b88da8a-1550428997-1550429002-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/81efed37b2cf47c29f1f76877b88da8a-1550428997-1550429002-jpg/<size>-0-",
@@ -24079,7 +23779,7 @@
             }
         ],
         "Id": 575173,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Tauri",
@@ -24304,7 +24004,7 @@
             }
         ],
         "Id": 575174,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Rigel",
@@ -24529,7 +24229,7 @@
             }
         ],
         "Id": 575175,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Leonis ",
@@ -24754,7 +24454,7 @@
             }
         ],
         "Id": 575176,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Leia",
@@ -24970,20 +24670,12 @@
         "Id": 573467,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573467",
-                    "Id": 573467
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f86e96af7757417391f18350649f1694-1550023394-1550023418-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f86e96af7757417391f18350649f1694-1550023394-1550023418-jpg/<size>-0-",
                 "Id": 773521
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573467",
-                    "Id": 573467
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/f205160cc394490c86f002583eea83d5-1550006069-1550006085-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f205160cc394490c86f002583eea83d5-1550006069-1550006085-jpg/<size>-0-",
@@ -25213,30 +24905,18 @@
         "Id": 571948,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571948",
-                    "Id": 571948
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/104ee37b2db440139c4b895b095540c4-1550695076-1550695104-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/104ee37b2db440139c4b895b095540c4-1550695076-1550695104-jpg/<size>-0-",
                 "Id": 780684
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571948",
-                    "Id": 571948
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/925266bbc25b47acbce440dfb82e0dfc-1550695076-1550695101-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/925266bbc25b47acbce440dfb82e0dfc-1550695076-1550695101-jpg/<size>-0-",
                 "Id": 780683
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571948",
-                    "Id": 571948
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/fa1897f4cfa24930bcd3555bde88e289-1550695076-1550695096-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/fa1897f4cfa24930bcd3555bde88e289-1550695076-1550695096-jpg/<size>-0-",
@@ -25471,10 +25151,6 @@
         "Id": 573606,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573606",
-                    "Id": 573606
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/e42b360577ac454599d1785541329ee3-1549756309-1549756315-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e42b360577ac454599d1785541329ee3-1549756309-1549756315-jpg/<size>-0-",
@@ -25710,10 +25386,6 @@
         "Id": 165882,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/165882",
-                    "Id": 165882
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/16d6b95ad6f149b28740494869ee537c-1425508570-1511767754-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/16d6b95ad6f149b28740494869ee537c-1425508570-1511767754-jpg/<size>-0-",
@@ -25953,20 +25625,12 @@
         "Id": 211464,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/211464",
-                    "Id": 211464
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7c551e3c21094905bd0695ed46cdff09-1541198717-1541198728-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7c551e3c21094905bd0695ed46cdff09-1541198717-1541198728-jpg/<size>-0-",
                 "Id": 689992
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/211464",
-                    "Id": 211464
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/f7ff228ef1c94582a0f869b58b992292-1549068421-1549068427-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f7ff228ef1c94582a0f869b58b992292-1549068421-1549068427-jpg/<size>-0-",
@@ -26200,7 +25864,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 349602,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Capone",
@@ -26421,7 +26085,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 552118,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Betsy",
@@ -26637,10 +26301,6 @@
         "Id": 574283,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574283",
-                    "Id": 574283
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d6efaac6942c4e9ab8027b1247a6840b-1550018958-1550018972-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d6efaac6942c4e9ab8027b1247a6840b-1550018958-1550018972-jpg/<size>-0-",
@@ -26873,7 +26533,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 571420,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Biscuit",
@@ -27091,10 +26751,6 @@
         "Id": 572332,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572332",
-                    "Id": 572332
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/8dbbae531af84f639c7d2e383f076710-1549309572-1549420154-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8dbbae531af84f639c7d2e383f076710-1549309572-1549420154-jpg/<size>-0-",
@@ -27337,10 +26993,6 @@
         "Id": 570368,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570368",
-                    "Id": 570368
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/81d5a641a4d54b55879fd05b53175657-1548453534-1548453573-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/81d5a641a4d54b55879fd05b53175657-1548453534-1548453573-jpeg/<size>-0-",
@@ -27583,10 +27235,6 @@
         "Id": 570369,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570369",
-                    "Id": 570369
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2c7c735001584eebbc48bed60a98d89a-1548453670-1548453688-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2c7c735001584eebbc48bed60a98d89a-1548453670-1548453688-jpeg/<size>-0-",
@@ -27810,10 +27458,6 @@
         "Id": 572907,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572907",
-                    "Id": 572907
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/8a0397679fc749ac8534461b753cd46e-1549486687-1549486713-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8a0397679fc749ac8534461b753cd46e-1549486687-1549486713-jpeg/<size>-0-",
@@ -28062,10 +27706,6 @@
         "Id": 559122,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/559122",
-                    "Id": 559122
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/4b2b6682b0234c1c98cd6d5ea4694a03-1543776703-1543776731-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/4b2b6682b0234c1c98cd6d5ea4694a03-1543776703-1543776731-jpeg/<size>-0-",
@@ -28295,10 +27935,6 @@
         "Id": 574150,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574150",
-                    "Id": 574150
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/1df326ad7b6644c6831dee0d5fefa291-1550004645-1550004700-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1df326ad7b6644c6831dee0d5fefa291-1550004645-1550004700-jpeg/<size>-0-",
@@ -28533,20 +28169,12 @@
         "Id": 572318,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572318",
-                    "Id": 572318
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/46abc3ba9a9e4e89b3ae345a8eecd402-1549922726-1549922738-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/46abc3ba9a9e4e89b3ae345a8eecd402-1549922726-1549922738-jpeg/<size>-0-",
                 "Id": 772264
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572318",
-                    "Id": 572318
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/d4bf649389264b49a17843acebec44f9-1549238846-1549238862-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d4bf649389264b49a17843acebec44f9-1549238846-1549238862-jpg/<size>-0-",
@@ -28778,20 +28406,12 @@
         "Id": 570675,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570675",
-                    "Id": 570675
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/68cb549abdbd43669ffa1716aad94eb6-1548553271-1548553285-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/68cb549abdbd43669ffa1716aad94eb6-1548553271-1548553285-jpeg/<size>-0-",
                 "Id": 758827
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570675",
-                    "Id": 570675
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/74a0c7137ad04498bf6c8bf25e9e4333-1548553188-1548553206-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/74a0c7137ad04498bf6c8bf25e9e4333-1548553188-1548553206-jpeg/<size>-0-",
@@ -29022,7 +28642,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573461,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Diva",
@@ -29231,10 +28851,6 @@
         "Id": 564519,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/564519",
-                    "Id": 564519
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/8e5932ee016049949ed2e38555784881-1546043549-1546043563-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8e5932ee016049949ed2e38555784881-1546043549-1546043563-jpg/<size>-0-",
@@ -29475,20 +29091,12 @@
         "Id": 407213,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/407213",
-                    "Id": 407213
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/1088d5d5eb7641fd8b6099b52f5f97a1-1549407529-1549407567-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1088d5d5eb7641fd8b6099b52f5f97a1-1549407529-1549407567-jpg/<size>-0-",
                 "Id": 766986
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/407213",
-                    "Id": 407213
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/0b960dd435ce4d698f57929889148f8b-1546823926-1546823935-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/0b960dd435ce4d698f57929889148f8b-1546823926-1546823935-jpeg/<size>-0-",
@@ -29730,10 +29338,6 @@
         "Id": 560794,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/560794",
-                    "Id": 560794
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c7e3ce2af7ed49319bcf0e4872b140ba-1544568605-1544568639-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c7e3ce2af7ed49319bcf0e4872b140ba-1544568605-1544568639-jpeg/<size>-0-",
@@ -29975,10 +29579,6 @@
         "Id": 573136,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573136",
-                    "Id": 573136
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/75437987e74b4cbcb0b5260531959944-1550432095-1550432107-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/75437987e74b4cbcb0b5260531959944-1550432095-1550432107-jpg/<size>-0-",
@@ -30200,10 +29800,6 @@
         "Id": 569353,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/569353",
-                    "Id": 569353
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/eade72e173594730a9d75434c5dbbcd5-1548111616-1548111632-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/eade72e173594730a9d75434c5dbbcd5-1548111616-1548111632-jpeg/<size>-0-",
@@ -30448,20 +30044,12 @@
         "Id": 573120,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573120",
-                    "Id": 573120
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d4e1db34140444ca9a88157434f5e9ec-1549651317-1549651467-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d4e1db34140444ca9a88157434f5e9ec-1549651317-1549651467-jpg/<size>-0-",
                 "Id": 769395
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573120",
-                    "Id": 573120
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/02d980d04b864531af85436c4dd26750-1549651321-1549651479-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/02d980d04b864531af85436c4dd26750-1549651321-1549651479-jpg/<size>-0-",
@@ -30684,30 +30272,18 @@
         "Id": 573248,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573248",
-                    "Id": 573248
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f6f0ded2e9024317994d7d83ef4a7fba-1550695886-1550695896-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f6f0ded2e9024317994d7d83ef4a7fba-1550695886-1550695896-jpg/<size>-0-",
                 "Id": 780726
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573248",
-                    "Id": 573248
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/9f18bc0d4f964d1cbf4ee2664c89939f-1550695886-1550695905-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9f18bc0d4f964d1cbf4ee2664c89939f-1550695886-1550695905-jpg/<size>-0-",
                 "Id": 780727
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573248",
-                    "Id": 573248
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/90a6fa3003904f72901b96c92d6719f2-1550695886-1550695901-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/90a6fa3003904f72901b96c92d6719f2-1550695886-1550695901-jpg/<size>-0-",
@@ -30942,40 +30518,24 @@
         "Id": 560773,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/560773",
-                    "Id": 560773
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2f7417e2dbc14c7898d7fde1dba94d23-1546471057-1546471068-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2f7417e2dbc14c7898d7fde1dba94d23-1546471057-1546471068-jpg/<size>-0-",
                 "Id": 737867
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/560773",
-                    "Id": 560773
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/c19f3c1fefa44dd48a30488cc947b67d-1546471058-1546471086-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c19f3c1fefa44dd48a30488cc947b67d-1546471058-1546471086-jpg/<size>-0-",
                 "Id": 737870
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/560773",
-                    "Id": 560773
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/e92f000e9a724868882fc7fcface2463-1546471057-1546471080-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e92f000e9a724868882fc7fcface2463-1546471057-1546471080-jpg/<size>-0-",
                 "Id": 737869
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/560773",
-                    "Id": 560773
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/98279454389642beb7feb2d57a9af36e-1546471057-1546471073-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/98279454389642beb7feb2d57a9af36e-1546471057-1546471073-jpg/<size>-0-",
@@ -31206,10 +30766,6 @@
         "Id": 566693,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/566693",
-                    "Id": 566693
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f0b0c3ac79aa43869041e824bb36ead2-1547077504-1547077534-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f0b0c3ac79aa43869041e824bb36ead2-1547077504-1547077534-jpg/<size>-0-",
@@ -31431,20 +30987,12 @@
         "Id": 574722,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574722",
-                    "Id": 574722
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/6355a3a626914ad1b725ab2f5828900d-1550191966-1550191990-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6355a3a626914ad1b725ab2f5828900d-1550191966-1550191990-jpg/<size>-0-",
                 "Id": 775548
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574722",
-                    "Id": 574722
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/4088301aa8c74599855039e934bc640f-1550191964-1550191978-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/4088301aa8c74599855039e934bc640f-1550191964-1550191978-jpg/<size>-0-",
@@ -31672,10 +31220,6 @@
         "Id": 574812,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574812",
-                    "Id": 574812
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/509f05f5c09d409eb9937795d91778bf-1550264053-1550264065-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/509f05f5c09d409eb9937795d91778bf-1550264053-1550264065-jpg/<size>-0-",
@@ -31895,7 +31439,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573072,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Deborah",
@@ -32115,10 +31659,6 @@
         "Id": 570463,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570463",
-                    "Id": 570463
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/bdd59f3e0e0242eea0478a629ef99177-1548467404-1548467411-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/bdd59f3e0e0242eea0478a629ef99177-1548467404-1548467411-jpg/<size>-0-",
@@ -32349,10 +31889,6 @@
         "Id": 575135,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575135",
-                    "Id": 575135
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/737b179d856d4dc7bd022dd679398652-1550371162-1550371178-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/737b179d856d4dc7bd022dd679398652-1550371162-1550371178-jpg/<size>-0-",
@@ -32594,10 +32130,6 @@
         "Id": 573619,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573619",
-                    "Id": 573619
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/6bad6e04a6b24d2f929ad589c8539018-1549763254-1550446784-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6bad6e04a6b24d2f929ad589c8539018-1549763254-1550446784-jpg/<size>-0-",
@@ -32837,60 +32369,36 @@
         "Id": 567246,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567246",
-                    "Id": 567246
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/fa7dc315901f4337838eebef41f68880-1548446957-1548446967-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/fa7dc315901f4337838eebef41f68880-1548446957-1548446967-jpg/<size>-0-",
                 "Id": 757344
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567246",
-                    "Id": 567246
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/45553085397e46a2942c14a94882d926-1548446957-1548446982-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/45553085397e46a2942c14a94882d926-1548446957-1548446982-jpg/<size>-0-",
                 "Id": 757346
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567246",
-                    "Id": 567246
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/74521ce9a6b74f729a6dc5eeb285bf7d-1548446957-1548446976-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/74521ce9a6b74f729a6dc5eeb285bf7d-1548446957-1548446976-jpg/<size>-0-",
                 "Id": 757347
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567246",
-                    "Id": 567246
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/740830142a894f038432ccdb3153817b-1548446957-1548446972-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/740830142a894f038432ccdb3153817b-1548446957-1548446972-jpg/<size>-0-",
                 "Id": 757345
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567246",
-                    "Id": 567246
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/dcec64cddf9b472fbc8c17d0de2309a6-1548025118-1548025138-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/dcec64cddf9b472fbc8c17d0de2309a6-1548025118-1548025138-jpeg/<size>-0-",
                 "Id": 753171
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/567246",
-                    "Id": 567246
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/010ca6a83384433385e2929f1f694af0-1548025118-1548025134-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/010ca6a83384433385e2929f1f694af0-1548025118-1548025134-jpeg/<size>-0-",
@@ -33121,7 +32629,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573441,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Molly",
@@ -33344,7 +32852,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 571598,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Pip",
@@ -33569,10 +33077,6 @@
         "Id": 571601,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571601",
-                    "Id": 571601
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7bda9b5dafa545529f2ebd1a2b85fdbb-1548960983-1548960991-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7bda9b5dafa545529f2ebd1a2b85fdbb-1548960983-1548960991-jpeg/<size>-0-",
@@ -33803,10 +33307,6 @@
         "Id": 571603,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571603",
-                    "Id": 571603
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c05151548e0a40f29ce20feb92abf8f1-1548960830-1549741918-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c05151548e0a40f29ce20feb92abf8f1-1548960830-1549741918-jpeg/<size>-0-",
@@ -34037,10 +33537,6 @@
         "Id": 571599,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571599",
-                    "Id": 571599
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7618bb2d6e714ea18a3a8cf4f16d75e2-1548960052-1548960155-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7618bb2d6e714ea18a3a8cf4f16d75e2-1548960052-1548960155-jpeg/<size>-0-",
@@ -34271,10 +33767,6 @@
         "Id": 571600,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571600",
-                    "Id": 571600
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d6d028e31dfc40bdb2f089b64094776d-1548960214-1549741907-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d6d028e31dfc40bdb2f089b64094776d-1548960214-1549741907-jpeg/<size>-0-",
@@ -34505,10 +33997,6 @@
         "Id": 571602,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571602",
-                    "Id": 571602
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/afe7ec3b958c4dd4880587f131a98f47-1548960585-1549741900-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/afe7ec3b958c4dd4880587f131a98f47-1548960585-1549741900-jpeg/<size>-0-",
@@ -34732,7 +34220,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 566498,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Bob",
@@ -34953,30 +34441,18 @@
         "Id": 558885,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/558885",
-                    "Id": 558885
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/316804f8217845d3a26549094d34122f-1549327984-1549327993-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/316804f8217845d3a26549094d34122f-1549327984-1549327993-jpg/<size>-0-",
                 "Id": 766260
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/558885",
-                    "Id": 558885
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/9c8e8ffe39a4488aa65f41c15cbfa156-1549327984-1549328002-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9c8e8ffe39a4488aa65f41c15cbfa156-1549327984-1549328002-jpg/<size>-0-",
                 "Id": 766262
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/558885",
-                    "Id": 558885
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/8c30098b030b4256871cce6b4348ee7b-1549327984-1549327998-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8c30098b030b4256871cce6b4348ee7b-1549327984-1549327998-jpg/<size>-0-",
@@ -35199,60 +34675,36 @@
         "Id": 575025,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575025",
-                    "Id": 575025
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/10f35ba5c296407fac22bf08e39c5da5-1550615489-1550615550-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/10f35ba5c296407fac22bf08e39c5da5-1550615489-1550615550-jpg/<size>-0-",
                 "Id": 780052
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575025",
-                    "Id": 575025
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/4b4582a2aa4a4646a7252257e71a21d3-1550615489-1550615566-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/4b4582a2aa4a4646a7252257e71a21d3-1550615489-1550615566-jpg/<size>-0-",
                 "Id": 780054
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575025",
-                    "Id": 575025
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/2b6720ff536743edb84c4df68d092fa0-1550532939-1550532962-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2b6720ff536743edb84c4df68d092fa0-1550532939-1550532962-jpg/<size>-0-",
                 "Id": 779294
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575025",
-                    "Id": 575025
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/44f82f92a73b465bb9a9e2b711df32b4-1550532939-1550532952-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/44f82f92a73b465bb9a9e2b711df32b4-1550532939-1550532952-jpg/<size>-0-",
                 "Id": 779293
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575025",
-                    "Id": 575025
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/6dc4b0a08c1741dbba4ae9b0d3047dde-1550532939-1550532947-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6dc4b0a08c1741dbba4ae9b0d3047dde-1550532939-1550532947-jpg/<size>-0-",
                 "Id": 779292
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575025",
-                    "Id": 575025
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/0e56c97418884ace9c1ddb68a8e19217-1550351572-1550363281-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/0e56c97418884ace9c1ddb68a8e19217-1550351572-1550363281-jpeg/<size>-0-",
@@ -35479,20 +34931,12 @@
         "Id": 573050,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573050",
-                    "Id": 573050
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c34fa673b5bb436da451f7a4e821068b-1549565502-1549565533-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c34fa673b5bb436da451f7a4e821068b-1549565502-1549565533-jpg/<size>-0-",
                 "Id": 768526
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573050",
-                    "Id": 573050
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/b2f189210d4c467184928bed6ceffdbd-1549565502-1549565522-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/b2f189210d4c467184928bed6ceffdbd-1549565502-1549565522-jpg/<size>-0-",
@@ -35691,7 +35135,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569731,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Boss",
@@ -35909,7 +35353,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 575213,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Martin",
@@ -36145,10 +35589,6 @@
         "Id": 573832,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573832",
-                    "Id": 573832
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2589f9893afa4d23bc917d4f8b380d39-1549845322-1549845342-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2589f9893afa4d23bc917d4f8b380d39-1549845322-1549845342-jpg/<size>-0-",
@@ -36368,10 +35808,6 @@
         "Id": 574918,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574918",
-                    "Id": 574918
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/98297364af3a406aa03565a789528a08-1550281247-1550285346-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/98297364af3a406aa03565a789528a08-1550281247-1550285346-jpeg/<size>-0-",
@@ -36591,10 +36027,6 @@
         "Id": 574919,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574919",
-                    "Id": 574919
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c12cd1ab624c4dcd8d96b19dff8b0c90-1550281081-1550285360-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c12cd1ab624c4dcd8d96b19dff8b0c90-1550281081-1550285360-jpeg/<size>-0-",
@@ -36814,10 +36246,6 @@
         "Id": 574920,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574920",
-                    "Id": 574920
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d93e5bb887c54d91ad717154d1f19fbe-1550280987-1550285373-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d93e5bb887c54d91ad717154d1f19fbe-1550280987-1550285373-jpeg/<size>-0-",
@@ -37031,10 +36459,6 @@
         "Id": 568223,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568223",
-                    "Id": 568223
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/1fda1d8a64844d7da9166c5b52bbda1c-1547690251-1547690264-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1fda1d8a64844d7da9166c5b52bbda1c-1547690251-1547690264-jpg/<size>-0-",
@@ -37248,10 +36672,6 @@
         "Id": 568222,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568222",
-                    "Id": 568222
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a504a39423f647f5a2d24d1f7014073f-1547690275-1547690284-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a504a39423f647f5a2d24d1f7014073f-1547690275-1547690284-jpg/<size>-0-",
@@ -37477,10 +36897,6 @@
         "Id": 568085,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568085",
-                    "Id": 568085
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2cb7490e740542b2aba114c429fb1519-1547687165-1547687202-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2cb7490e740542b2aba114c429fb1519-1547687165-1547687202-jpeg/<size>-0-",
@@ -37717,10 +37133,6 @@
         "Id": 575139,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575139",
-                    "Id": 575139
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/97bfe99ef5de4aafa729d38130a51551-1550430642-1550430652-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/97bfe99ef5de4aafa729d38130a51551-1550430642-1550430652-jpg/<size>-0-",
@@ -37956,7 +37368,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 575308,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Jon",
@@ -38169,10 +37581,6 @@
         "Id": 573809,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573809",
-                    "Id": 573809
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c567239b51784987b5a784eb1bc5d812-1549845740-1549845755-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c567239b51784987b5a784eb1bc5d812-1549845740-1549845755-jpg/<size>-0-",
@@ -38391,10 +37799,6 @@
         "Id": 573810,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573810",
-                    "Id": 573810
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/3bd236cb6baf4710947ab77a91c5dd77-1549845778-1549845792-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3bd236cb6baf4710947ab77a91c5dd77-1549845778-1549845792-jpg/<size>-0-",
@@ -38613,10 +38017,6 @@
         "Id": 573815,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573815",
-                    "Id": 573815
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d02d70fe58b4429db95dbc01a25c46b1-1549845976-1549845993-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d02d70fe58b4429db95dbc01a25c46b1-1549845976-1549845993-jpg/<size>-0-",
@@ -38831,10 +38231,6 @@
         "Id": 576196,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576196",
-                    "Id": 576196
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/77d8fa157eca42a1ba05ed8d87e34f69-1550867045-1550867056-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/77d8fa157eca42a1ba05ed8d87e34f69-1550867045-1550867056-jpeg/<size>-0-",
@@ -39053,10 +38449,6 @@
         "Id": 573811,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573811",
-                    "Id": 573811
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c321c063548e417fb32de7aaf8b23dbe-1549845813-1549845829-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c321c063548e417fb32de7aaf8b23dbe-1549845813-1549845829-jpg/<size>-0-",
@@ -39275,10 +38667,6 @@
         "Id": 573813,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573813",
-                    "Id": 573813
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/0dbd7cd6f2be4ee2a2b22f0cb6b2c751-1549845897-1549845916-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/0dbd7cd6f2be4ee2a2b22f0cb6b2c751-1549845897-1549845916-jpg/<size>-0-",
@@ -39497,10 +38885,6 @@
         "Id": 573816,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573816",
-                    "Id": 573816
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/8f1583be6fe34b90a63d190522179408-1549846008-1549846020-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8f1583be6fe34b90a63d190522179408-1549846008-1549846020-jpg/<size>-0-",
@@ -39730,30 +39114,18 @@
         "Id": 568041,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568041",
-                    "Id": 568041
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d2afde6f799543389e867a7da5dcbf24-1549328103-1549328112-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d2afde6f799543389e867a7da5dcbf24-1549328103-1549328112-jpg/<size>-0-",
                 "Id": 766264
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568041",
-                    "Id": 568041
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a5a1cec16ea44d389ae4fcf6ad33c86e-1550884185-1550884204-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a5a1cec16ea44d389ae4fcf6ad33c86e-1550884185-1550884204-jpg/<size>-0-",
                 "Id": 782824
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568041",
-                    "Id": 568041
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/ce75ca3e694543d79a8306f4dd9b893b-1550884185-1550884199-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/ce75ca3e694543d79a8306f4dd9b893b-1550884185-1550884199-jpg/<size>-0-",
@@ -39997,30 +39369,18 @@
         "Id": 546267,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/546267",
-                    "Id": 546267
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/70607ffc35e24075ab99015c2b1c15f4-1546721793-1546721832-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/70607ffc35e24075ab99015c2b1c15f4-1546721793-1546721832-jpg/<size>-0-",
                 "Id": 740538
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/546267",
-                    "Id": 546267
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/ff1cb625bc4d4ac6aec4c7eaf54fbfb4-1538501657-1546721781-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/ff1cb625bc4d4ac6aec4c7eaf54fbfb4-1538501657-1546721781-jpg/<size>-0-",
                 "Id": 664370
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/546267",
-                    "Id": 546267
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/bfe9ef2504564cfba7145d022f2516da-1538263049-1546721778-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/bfe9ef2504564cfba7145d022f2516da-1538263049-1546721778-jpg/<size>-0-",
@@ -40227,7 +39587,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576277,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Jeremy ",
@@ -40452,10 +39812,6 @@
         "Id": 544658,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/544658",
-                    "Id": 544658
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/790f2344213848a9b57cf860e1b92f41-1537559518-1537559560-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/790f2344213848a9b57cf860e1b92f41-1537559518-1537559560-jpg/<size>-0-",
@@ -40695,30 +40051,18 @@
         "Id": 550432,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/550432",
-                    "Id": 550432
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d403ce4ffaf44e7ab93928106245d431-1544830148-1544830157-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d403ce4ffaf44e7ab93928106245d431-1544830148-1544830157-jpg/<size>-0-",
                 "Id": 724344
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/550432",
-                    "Id": 550432
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/46843c34271d4f55923df09a2fc3c4fb-1544830055-1544830167-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/46843c34271d4f55923df09a2fc3c4fb-1544830055-1544830167-jpg/<size>-0-",
                 "Id": 724340
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/550432",
-                    "Id": 550432
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/385e61c8a3ea456d9411eaefee2a04bd-1544830055-1544830163-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/385e61c8a3ea456d9411eaefee2a04bd-1544830055-1544830163-jpg/<size>-0-",
@@ -40951,10 +40295,6 @@
         "Id": 570028,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570028",
-                    "Id": 570028
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/170157d2edfe467a84eda348544ee8ec-1548285488-1548285496-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/170157d2edfe467a84eda348544ee8ec-1548285488-1548285496-jpg/<size>-0-",
@@ -41168,10 +40508,6 @@
         "Id": 568221,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568221",
-                    "Id": 568221
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/99bd3062960e4fc8a0b41176dff367df-1547690292-1547690304-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/99bd3062960e4fc8a0b41176dff367df-1547690292-1547690304-jpg/<size>-0-",
@@ -41400,10 +40736,6 @@
         "Id": 573212,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573212",
-                    "Id": 573212
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/e458653fc7f54a6abf958b5e69991157-1549650477-1549650526-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e458653fc7f54a6abf958b5e69991157-1549650477-1549650526-jpg/<size>-0-",
@@ -41633,10 +40965,6 @@
         "Id": 575542,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575542",
-                    "Id": 575542
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/32e1f9d130d745ebaf210f9abf27206f-1550541305-1550541317-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/32e1f9d130d745ebaf210f9abf27206f-1550541305-1550541317-jpg/<size>-0-",
@@ -41869,7 +41197,7 @@
             }
         ],
         "Id": 572999,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Rita",
@@ -42093,10 +41421,6 @@
         "Id": 571564,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571564",
-                    "Id": 571564
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/677aeb02d4824ca99ebe4971035fbe22-1548896721-1548896763-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/677aeb02d4824ca99ebe4971035fbe22-1548896721-1548896763-jpg/<size>-0-",
@@ -42327,10 +41651,6 @@
         "Id": 565831,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565831",
-                    "Id": 565831
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/4f3fd31211a443f599293d6ebe531d69-1546715677-1546715684-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/4f3fd31211a443f599293d6ebe531d69-1546715677-1546715684-jpg/<size>-0-",
@@ -42546,20 +41866,12 @@
         "Id": 568704,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568704",
-                    "Id": 568704
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/165a8a59e18248f588ade7f14f7ee753-1549756555-1549756596-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/165a8a59e18248f588ade7f14f7ee753-1549756555-1549756596-jpg/<size>-0-",
                 "Id": 770776
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568704",
-                    "Id": 568704
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/8d7ba8d95fb74b36b46837f579af8569-1547927157-1547929055-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8d7ba8d95fb74b36b46837f579af8569-1547927157-1547929055-jpg/<size>-0-",
@@ -42775,20 +42087,12 @@
         "Id": 568705,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568705",
-                    "Id": 568705
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/6fd960a142884e8f90bad8f07a0fd2ca-1549756710-1549756724-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6fd960a142884e8f90bad8f07a0fd2ca-1549756710-1549756724-jpg/<size>-0-",
                 "Id": 770786
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568705",
-                    "Id": 568705
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/b7cb9f0ed87d4923ac108fb22b4016bd-1547927232-1547929106-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/b7cb9f0ed87d4923ac108fb22b4016bd-1547927232-1547929106-jpg/<size>-0-",
@@ -43007,7 +42311,7 @@
             }
         ],
         "Id": 572451,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Muffin",
@@ -43220,7 +42524,7 @@
             }
         ],
         "Id": 572450,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Biscuit",
@@ -43433,7 +42737,7 @@
             }
         ],
         "Id": 572452,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Waffle",
@@ -43646,7 +42950,7 @@
             }
         ],
         "Id": 572453,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Pancake",
@@ -43859,7 +43163,7 @@
             }
         ],
         "Id": 572521,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Goldee",
@@ -44068,10 +43372,6 @@
         "Id": 576387,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576387",
-                    "Id": 576387
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/bd4aaf7ded0341c6a4e0e9528acb2bf7-1550956271-1550956278-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/bd4aaf7ded0341c6a4e0e9528acb2bf7-1550956271-1550956278-jpeg/<size>-0-",
@@ -44295,10 +43595,6 @@
         "Id": 571596,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571596",
-                    "Id": 571596
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/9197b8521f97478cb06f46f10d0c3f18-1548959837-1548959860-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9197b8521f97478cb06f46f10d0c3f18-1548959837-1548959860-jpeg/<size>-0-",
@@ -44522,10 +43818,6 @@
         "Id": 571597,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571597",
-                    "Id": 571597
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7e65b5e50b3e48ab8923c6c366eb8d08-1548959954-1548959974-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7e65b5e50b3e48ab8923c6c366eb8d08-1548959954-1548959974-jpeg/<size>-0-",
@@ -44756,10 +44048,6 @@
         "Id": 571604,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571604",
-                    "Id": 571604
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7ae5a57546b145ed8578d8ecc1ade219-1548960471-1549741924-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7ae5a57546b145ed8578d8ecc1ade219-1548960471-1549741924-jpeg/<size>-0-",
@@ -44976,7 +44264,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 550564,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Jolie",
@@ -45193,40 +44481,24 @@
         "Id": 565712,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565712",
-                    "Id": 565712
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/fd205cf804a1487d8968a0d2048c4fce-1550884231-1550884263-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/fd205cf804a1487d8968a0d2048c4fce-1550884231-1550884263-jpg/<size>-0-",
                 "Id": 782828
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565712",
-                    "Id": 565712
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/9a2cbd720a2a4eccb36ab895066cbd30-1550884231-1550884253-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9a2cbd720a2a4eccb36ab895066cbd30-1550884231-1550884253-jpg/<size>-0-",
                 "Id": 782827
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565712",
-                    "Id": 565712
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/285f1b7649d148e8913aef567432e53f-1550884231-1550884241-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/285f1b7649d148e8913aef567432e53f-1550884231-1550884241-jpg/<size>-0-",
                 "Id": 782826
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565712",
-                    "Id": 565712
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/72e69b38d6e54fce9c3f7aa41d1959f0-1549328269-1549328276-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/72e69b38d6e54fce9c3f7aa41d1959f0-1549328269-1549328276-jpg/<size>-0-",
@@ -45442,20 +44714,12 @@
         "Id": 568706,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568706",
-                    "Id": 568706
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c4e37dae6553446ebd3dcfd914d674f9-1549756796-1549756808-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c4e37dae6553446ebd3dcfd914d674f9-1549756796-1549756808-jpg/<size>-0-",
                 "Id": 770787
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568706",
-                    "Id": 568706
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/ad59e7a4c6764b4e8b67d2f2413eba01-1547927252-1547929123-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/ad59e7a4c6764b4e8b67d2f2413eba01-1547927252-1547929123-jpg/<size>-0-",
@@ -45671,20 +44935,12 @@
         "Id": 568707,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568707",
-                    "Id": 568707
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/0ded39607d7441aab5ba38300b886683-1549756864-1549756882-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/0ded39607d7441aab5ba38300b886683-1549756864-1549756882-jpg/<size>-0-",
                 "Id": 770792
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568707",
-                    "Id": 568707
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/6f845ff3e8f84a0189dbbeb962afe41e-1547927275-1547929140-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6f845ff3e8f84a0189dbbeb962afe41e-1547927275-1547929140-jpg/<size>-0-",
@@ -45900,20 +45156,12 @@
         "Id": 568708,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568708",
-                    "Id": 568708
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/4cac1d7cb4f44bfca727d3bd1b769904-1549756972-1549756984-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/4cac1d7cb4f44bfca727d3bd1b769904-1549756972-1549756984-jpg/<size>-0-",
                 "Id": 770798
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568708",
-                    "Id": 568708
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/62821849f4a346108dd758cf6e58e19a-1547927301-1547929158-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/62821849f4a346108dd758cf6e58e19a-1547927301-1547929158-jpg/<size>-0-",
@@ -46137,7 +45385,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576259,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Sprinkle Twinkle Toes",
@@ -46359,7 +45607,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 575692,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Mimis",
@@ -46580,10 +45828,6 @@
         "Id": 570266,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570266",
-                    "Id": 570266
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/3db0455f79ef4c479e4acf986ebc4949-1548378639-1548378656-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3db0455f79ef4c479e4acf986ebc4949-1548378639-1548378656-jpg/<size>-0-",
@@ -46810,10 +46054,6 @@
         "Id": 570262,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570262",
-                    "Id": 570262
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/05c884d1b7ab405ea39dd838df0ba8be-1548378456-1548378492-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/05c884d1b7ab405ea39dd838df0ba8be-1548378456-1548378492-jpg/<size>-0-",
@@ -47048,10 +46288,6 @@
         "Id": 554472,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/554472",
-                    "Id": 554472
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a3c440f696514a33b84341b3d73c0120-1541640203-1541640211-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a3c440f696514a33b84341b3d73c0120-1541640203-1541640211-jpg/<size>-0-",
@@ -47270,10 +46506,6 @@
         "Id": 574538,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574538",
-                    "Id": 574538
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/8feca50cfa7a42509ca9fb8e98384e4a-1550110936-1550110945-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8feca50cfa7a42509ca9fb8e98384e4a-1550110936-1550110945-jpg/<size>-0-",
@@ -47502,7 +46734,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576480,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Ginger",
@@ -47722,10 +46954,6 @@
         "Id": 572646,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572646",
-                    "Id": 572646
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a160687d624f4bc1b01ea8ca4f546e20-1551237047-1551237054-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a160687d624f4bc1b01ea8ca4f546e20-1551237047-1551237054-jpg/<size>-0-",
@@ -47955,10 +47183,6 @@
         "Id": 572089,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572089",
-                    "Id": 572089
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/1fa71c74ef5a493593b7bd58716e506d-1549151434-1549151451-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1fa71c74ef5a493593b7bd58716e506d-1549151434-1549151451-jpg/<size>-0-",
@@ -48182,7 +47406,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 556831,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Sofia",
@@ -48403,30 +47627,18 @@
         "Id": 575216,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575216",
-                    "Id": 575216
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/e266722a0a0d486a8bc0dd1939446a26-1550618303-1550618337-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e266722a0a0d486a8bc0dd1939446a26-1550618303-1550618337-jpg/<size>-0-",
                 "Id": 780139
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575216",
-                    "Id": 575216
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/371350dbc46b4e10ad2f173bdeb30fff-1550533004-1550533013-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/371350dbc46b4e10ad2f173bdeb30fff-1550533004-1550533013-jpg/<size>-0-",
                 "Id": 779303
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575216",
-                    "Id": 575216
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/229d9354cf5e41eb9a5cc034ad4296fe-1550533004-1550533008-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/229d9354cf5e41eb9a5cc034ad4296fe-1550533004-1550533008-jpg/<size>-0-",
@@ -48645,10 +47857,6 @@
         "Id": 575239,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575239",
-                    "Id": 575239
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/9989c39c58b34af797f806b1ae540b2e-1550436230-1550436248-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9989c39c58b34af797f806b1ae540b2e-1550436230-1550436248-jpg/<size>-0-",
@@ -48858,7 +48066,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573827,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Eli",
@@ -49089,10 +48297,6 @@
         "Id": 572558,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572558",
-                    "Id": 572558
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f484a8a789394881840cef1e80b0dcbd-1549395540-1549395558-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f484a8a789394881840cef1e80b0dcbd-1549395540-1549395558-jpeg/<size>-0-",
@@ -49316,10 +48520,6 @@
         "Id": 35902,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/35902",
-                    "Id": 35902
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/f281156a34b9426daec0668beb9cb7cf-1549138734-1549138757-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f281156a34b9426daec0668beb9cb7cf-1549138734-1549138757-jpg/<size>-0-",
@@ -49543,10 +48743,6 @@
         "Id": 35899,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/35899",
-                    "Id": 35899
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/5dfb2c7a49884d69aac9866f9314f986-1549139132-1549139290-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/5dfb2c7a49884d69aac9866f9314f986-1549139132-1549139290-jpg/<size>-0-",
@@ -49763,7 +48959,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576436,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Marty",
@@ -49999,10 +49195,6 @@
         "Id": 563584,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/563584",
-                    "Id": 563584
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/3283a76e629544ff9c98e9c5fc8e47fb-1545608010-1545679539-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3283a76e629544ff9c98e9c5fc8e47fb-1545608010-1545679539-jpg/<size>-0-",
@@ -50220,7 +49412,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 564762,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Ooj- National City",
@@ -50426,10 +49618,6 @@
         "Id": 576551,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576551",
-                    "Id": 576551
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d9af4053eaba43d699b5125b171ad703-1551220353-1551220409-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d9af4053eaba43d699b5125b171ad703-1551220353-1551220409-jpg/<size>-0-",
@@ -50660,10 +49848,6 @@
         "Id": 568561,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568561",
-                    "Id": 568561
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/fd243db211d94b84bdd878820bbefae2-1547850086-1547850095-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/fd243db211d94b84bdd878820bbefae2-1547850086-1547850095-jpg/<size>-0-",
@@ -50879,10 +50063,6 @@
         "Id": 573814,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573814",
-                    "Id": 573814
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/ac026e63280e41c8bdc282f4d22fe910-1549845929-1549845949-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/ac026e63280e41c8bdc282f4d22fe910-1549845929-1549845949-jpg/<size>-0-",
@@ -51101,10 +50281,6 @@
         "Id": 573812,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573812",
-                    "Id": 573812
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/66408024717a45db8fc309054b4bfbb5-1549845845-1549845859-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/66408024717a45db8fc309054b4bfbb5-1549845845-1549845859-jpg/<size>-0-",
@@ -51321,7 +50497,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573710,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Apollo",
@@ -51533,7 +50709,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573625,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Ajay",
@@ -51745,7 +50921,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573626,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Amanda",
@@ -51957,7 +51133,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573627,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Abigail",
@@ -52169,7 +51345,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573628,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Feisty",
@@ -52374,7 +51550,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576553,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Nullah ",
@@ -52607,60 +51783,36 @@
         "Id": 568689,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568689",
-                    "Id": 568689
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/e6beb10e8d264959a0ca65fa8979cb87-1548447702-1548447712-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e6beb10e8d264959a0ca65fa8979cb87-1548447702-1548447712-jpg/<size>-0-",
                 "Id": 757396
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568689",
-                    "Id": 568689
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/3601575166b14e83a7928533f77fe3b3-1548447702-1550512063-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3601575166b14e83a7928533f77fe3b3-1548447702-1550512063-jpg/<size>-0-",
                 "Id": 757395
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568689",
-                    "Id": 568689
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/96a5616a44ab475897035c2d628c5eec-1548447702-1548447731-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/96a5616a44ab475897035c2d628c5eec-1548447702-1548447731-jpg/<size>-0-",
                 "Id": 757391
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568689",
-                    "Id": 568689
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a2c7de3fbe85446d9351099f2da94357-1548447702-1548447727-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a2c7de3fbe85446d9351099f2da94357-1548447702-1548447727-jpg/<size>-0-",
                 "Id": 757392
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568689",
-                    "Id": 568689
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/0cbd12af4a064244b94b90393dfe8c67-1548447702-1548447723-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/0cbd12af4a064244b94b90393dfe8c67-1548447702-1548447723-jpg/<size>-0-",
                 "Id": 757393
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/568689",
-                    "Id": 568689
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/d5280591f19047ffa6edf67776214dcb-1548447702-1548447720-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d5280591f19047ffa6edf67776214dcb-1548447702-1548447720-jpg/<size>-0-",
@@ -52891,20 +52043,12 @@
         "Id": 230267,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/230267",
-                    "Id": 230267
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/51a6ec9d2925401ab4eda54f50691ff6-1548362932-1548362945-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/51a6ec9d2925401ab4eda54f50691ff6-1548362932-1548362945-jpg/<size>-0-",
                 "Id": 756605
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/230267",
-                    "Id": 230267
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/8a506f5d87f24bc49a4885b1b7f2e169-1481072862-1550714037-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8a506f5d87f24bc49a4885b1b7f2e169-1481072862-1550714037-jpg/<size>-0-",
@@ -53139,10 +52283,6 @@
         "Id": 576621,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576621",
-                    "Id": 576621
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f76f4420013a43d4b36747058a43902a-1551204744-1551204761-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f76f4420013a43d4b36747058a43902a-1551204744-1551204761-jpg/<size>-0-",
@@ -53364,10 +52504,6 @@
         "Id": 575142,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575142",
-                    "Id": 575142
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/996cf0b988014466845bf799dd2083fd-1550369863-1550369868-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/996cf0b988014466845bf799dd2083fd-1550369863-1550369868-jpeg/<size>-0-",
@@ -53602,10 +52738,6 @@
         "Id": 575312,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575312",
-                    "Id": 575312
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/125b115decc4443d89e0fc7593220763-1550526439-1550526455-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/125b115decc4443d89e0fc7593220763-1550526439-1550526455-jpeg/<size>-0-",
@@ -53832,10 +52964,6 @@
         "Id": 575460,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575460",
-                    "Id": 575460
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d14659775988451b9480216e1a6ac5b2-1550526044-1550526049-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d14659775988451b9480216e1a6ac5b2-1550526044-1550526049-jpg/<size>-0-",
@@ -54063,7 +53191,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576064,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Otis Jackson",
@@ -54290,10 +53418,6 @@
         "Id": 573933,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573933",
-                    "Id": 573933
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/b4a8bccb23e643d6b3c561a1a2d5d99c-1549915890-1549915916-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/b4a8bccb23e643d6b3c561a1a2d5d99c-1549915890-1549915916-jpg/<size>-0-",
@@ -54541,10 +53665,6 @@
         "Id": 244681,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/244681",
-                    "Id": 244681
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7d64b04fa80a4ad291cb85fa73aeec3e-1549933926-1549933956-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7d64b04fa80a4ad291cb85fa73aeec3e-1549933926-1549933956-jpeg/<size>-0-",
@@ -54767,20 +53887,12 @@
         "Id": 194178,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/194178",
-                    "Id": 194178
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/96bba179da0248509762bc3bb0669889-1495484268-1511810048-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/96bba179da0248509762bc3bb0669889-1495484268-1511810048-jpg/<size>-0-",
                 "Id": 441563
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/194178",
-                    "Id": 194178
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/168d93082c5b4d238390a510952c340c-1494539104-1511809706-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/168d93082c5b4d238390a510952c340c-1494539104-1511809706-jpg/<size>-0-",
@@ -55015,20 +54127,12 @@
         "Id": 569922,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/569922",
-                    "Id": 569922
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/931183624be845ef8f30b832c61b7481-1549504453-1549504495-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/931183624be845ef8f30b832c61b7481-1549504453-1549504495-jpg/<size>-0-",
                 "Id": 768344
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/569922",
-                    "Id": 569922
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/890446cf0b014c9984044539a7f0722d-1548276607-1548276621-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/890446cf0b014c9984044539a7f0722d-1548276607-1548276621-jpg/<size>-0-",
@@ -55270,10 +54374,6 @@
         "Id": 571648,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571648",
-                    "Id": 571648
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/069a217536c14917aa30b372deda6a2e-1549309449-1549309462-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/069a217536c14917aa30b372deda6a2e-1549309449-1549309462-jpeg/<size>-0-",
@@ -55492,10 +54592,6 @@
         "Id": 575211,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575211",
-                    "Id": 575211
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/5520a7acfbc94ec18f4e8197df94f380-1550435476-1550435488-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/5520a7acfbc94ec18f4e8197df94f380-1550435476-1550435488-jpg/<size>-0-",
@@ -55706,7 +54802,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576555,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Frodo",
@@ -55911,7 +55007,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576556,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Merry",
@@ -56116,7 +55212,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576557,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Pippin",
@@ -56321,7 +55417,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576558,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Salina",
@@ -56537,10 +55633,6 @@
         "Id": 573548,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573548",
-                    "Id": 573548
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/3f9dc7ecb1ce4db098582e5b54970b8e-1549752349-1549752363-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3f9dc7ecb1ce4db098582e5b54970b8e-1549752349-1549752363-jpg/<size>-0-",
@@ -56763,10 +55855,6 @@
         "Id": 575736,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575736",
-                    "Id": 575736
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a7b1935c3e2f4507bf855951a92cb400-1550627715-1550627727-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a7b1935c3e2f4507bf855951a92cb400-1550627715-1550627727-jpeg/<size>-0-",
@@ -56989,10 +56077,6 @@
         "Id": 575735,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575735",
-                    "Id": 575735
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d56604aef2854f7e9675e9d213a68dc7-1550627755-1550627777-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d56604aef2854f7e9675e9d213a68dc7-1550627755-1550627777-jpeg/<size>-0-",
@@ -57215,10 +56299,6 @@
         "Id": 575771,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575771",
-                    "Id": 575771
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/8cb6b78cf61346fb9da80d0cc2852a1f-1550698248-1550698271-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8cb6b78cf61346fb9da80d0cc2852a1f-1550698248-1550698271-jpeg/<size>-0-",
@@ -57441,10 +56521,6 @@
         "Id": 575935,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575935",
-                    "Id": 575935
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/5795f4ee728a4a1385867052dc2e14ac-1550776093-1550776133-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/5795f4ee728a4a1385867052dc2e14ac-1550776093-1550776133-jpeg/<size>-0-",
@@ -57668,10 +56744,6 @@
         "Id": 575808,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575808",
-                    "Id": 575808
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d8768975a3684b3982d1c9a87730058b-1550694765-1550694769-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d8768975a3684b3982d1c9a87730058b-1550694765-1550694769-jpeg/<size>-0-",
@@ -57899,10 +56971,6 @@
         "Id": 575809,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575809",
-                    "Id": 575809
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2d50d3501a614107b087b94fcf0d4305-1550695807-1550695813-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2d50d3501a614107b087b94fcf0d4305-1550695807-1550695813-jpeg/<size>-0-",
@@ -58130,10 +57198,6 @@
         "Id": 575810,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575810",
-                    "Id": 575810
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/cd473d42e186459c9174cb1c7955afef-1550695951-1550695954-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/cd473d42e186459c9174cb1c7955afef-1550695951-1550695954-jpeg/<size>-0-",
@@ -58361,10 +57425,6 @@
         "Id": 575811,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575811",
-                    "Id": 575811
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/e98b3bbf9ffd4cbca3f695c48d44d92f-1550695985-1550695988-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e98b3bbf9ffd4cbca3f695c48d44d92f-1550695985-1550695988-jpeg/<size>-0-",
@@ -58592,10 +57652,6 @@
         "Id": 575812,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575812",
-                    "Id": 575812
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/87f296c48afa4f16a29e8e2020d48a54-1550696015-1550696017-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/87f296c48afa4f16a29e8e2020d48a54-1550696015-1550696017-jpeg/<size>-0-",
@@ -58823,10 +57879,6 @@
         "Id": 575813,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575813",
-                    "Id": 575813
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f3e79c072b7e42a5bf815f5256840b67-1550696077-1550696080-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f3e79c072b7e42a5bf815f5256840b67-1550696077-1550696080-jpeg/<size>-0-",
@@ -59054,10 +58106,6 @@
         "Id": 575814,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575814",
-                    "Id": 575814
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/790fbbec65494ec399ec95b1949c1a35-1550696114-1550696118-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/790fbbec65494ec399ec95b1949c1a35-1550696114-1550696118-jpeg/<size>-0-",
@@ -59285,10 +58333,6 @@
         "Id": 575815,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575815",
-                    "Id": 575815
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/6dca28abbbb343729a0b1d93534b197c-1550696139-1550696143-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6dca28abbbb343729a0b1d93534b197c-1550696139-1550696143-jpeg/<size>-0-",
@@ -59518,10 +58562,6 @@
         "Id": 574741,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574741",
-                    "Id": 574741
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/e84bb659486744c5a4377a1e4033d559-1550254831-1550254858-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e84bb659486744c5a4377a1e4033d559-1550254831-1550254858-jpg/<size>-0-",
@@ -59745,20 +58785,12 @@
         "Id": 573264,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573264",
-                    "Id": 573264
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/cd225c42aa8346c7b37ee1906a611674-1550529815-1550529823-png/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/cd225c42aa8346c7b37ee1906a611674-1550529815-1550529823-png/<size>-0-",
                 "Id": 779204
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573264",
-                    "Id": 573264
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/499a36191db0488e9a13972e1f56f961-1549652041-1549652066-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/499a36191db0488e9a13972e1f56f961-1549652041-1549652066-jpg/<size>-0-",
@@ -59982,10 +59014,6 @@
         "Id": 573374,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573374",
-                    "Id": 573374
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d808aa2a871f43428e1c398774355c80-1550529724-1550529738-png/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d808aa2a871f43428e1c398774355c80-1550529724-1550529738-png/<size>-0-",
@@ -60203,40 +59231,24 @@
         "Id": 576675,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576675",
-                    "Id": 576675
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/50d18389c50d4ac2bb65c8c32ea48c9d-1551204821-1551204846-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/50d18389c50d4ac2bb65c8c32ea48c9d-1551204821-1551204846-jpg/<size>-0-",
                 "Id": 785464
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576675",
-                    "Id": 576675
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/12cf44c9ecc1451e8429df4cad369050-1551204822-1551204858-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/12cf44c9ecc1451e8429df4cad369050-1551204822-1551204858-jpg/<size>-0-",
                 "Id": 785466
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576675",
-                    "Id": 576675
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/e27e0008ef504bc3888f3745b114f658-1551204821-1551204852-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e27e0008ef504bc3888f3745b114f658-1551204821-1551204852-jpg/<size>-0-",
                 "Id": 785465
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576675",
-                    "Id": 576675
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/8639a6fbbe99464c94a233834466f727-1551060346-1551060356-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8639a6fbbe99464c94a233834466f727-1551060346-1551060356-jpeg/<size>-0-",
@@ -60462,10 +59474,6 @@
         "Id": 575003,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575003",
-                    "Id": 575003
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2061baa5a7b54a9bb6cfaff27160c852-1550347229-1550347235-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2061baa5a7b54a9bb6cfaff27160c852-1550347229-1550347235-jpg/<size>-0-",
@@ -60712,10 +59720,6 @@
         "Id": 249725,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/249725",
-                    "Id": 249725
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c8acea5f2989495a8c82fba4f95afc70-1549935067-1549935085-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c8acea5f2989495a8c82fba4f95afc70-1549935067-1549935085-jpeg/<size>-0-",
@@ -60943,30 +59947,18 @@
         "Id": 572642,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572642",
-                    "Id": 572642
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f2e695de733243f6b652470e2de849c7-1550783198-1550783871-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f2e695de733243f6b652470e2de849c7-1550783198-1550783871-jpeg/<size>-0-",
                 "Id": 781680
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572642",
-                    "Id": 572642
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/7ab3befa18704f45a6f0ffaaf150cf69-1550783235-1550783272-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7ab3befa18704f45a6f0ffaaf150cf69-1550783235-1550783272-jpeg/<size>-0-",
                 "Id": 781682
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572642",
-                    "Id": 572642
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a7e4efd8ef164f9985f7fb51c7e60a73-1549396521-1550781147-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a7e4efd8ef164f9985f7fb51c7e60a73-1549396521-1550781147-jpg/<size>-0-",
@@ -61203,10 +60195,6 @@
         "Id": 573529,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573529",
-                    "Id": 573529
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/527954e845a44098afe18ee4c31466bf-1549756103-1549756128-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/527954e845a44098afe18ee4c31466bf-1549756103-1549756128-jpeg/<size>-0-",
@@ -61429,10 +60417,6 @@
         "Id": 575981,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575981",
-                    "Id": 575981
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/1f4e36fbfb654925a03126b88a674920-1551041532-1551041546-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1f4e36fbfb654925a03126b88a674920-1551041532-1551041546-jpg/<size>-0-",
@@ -61660,10 +60644,6 @@
         "Id": 572892,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/572892",
-                    "Id": 572892
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/91e69a1d33314e3fb124d4df799c3311-1549492641-1549492656-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/91e69a1d33314e3fb124d4df799c3311-1549492641-1549492656-jpeg/<size>-0-",
@@ -61896,30 +60876,18 @@
         "Id": 569712,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/569712",
-                    "Id": 569712
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/fdf1326e4200496d955fbf83618885c7-1550695331-1550695344-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/fdf1326e4200496d955fbf83618885c7-1550695331-1550695344-jpg/<size>-0-",
                 "Id": 780695
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/569712",
-                    "Id": 569712
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/5359eee3ec6e42bda07a61d576c86e91-1550695331-1550695358-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/5359eee3ec6e42bda07a61d576c86e91-1550695331-1550695358-jpg/<size>-0-",
                 "Id": 780693
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/569712",
-                    "Id": 569712
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/baa1596617074f9d9354eb53b92e1f28-1550695331-1550695346-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/baa1596617074f9d9354eb53b92e1f28-1550695331-1550695346-jpg/<size>-0-",
@@ -62145,10 +61113,6 @@
         "Id": 575862,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575862",
-                    "Id": 575862
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/14a6b98bd28b4287801831260743c638-1550706485-1551229993-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/14a6b98bd28b4287801831260743c638-1550706485-1551229993-jpg/<size>-0-",
@@ -62374,20 +61338,12 @@
         "Id": 576190,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576190",
-                    "Id": 576190
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/219951d115db47429dcadd3c330720e7-1551059545-1551059580-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/219951d115db47429dcadd3c330720e7-1551059545-1551059580-jpg/<size>-0-",
                 "Id": 784419
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576190",
-                    "Id": 576190
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/0cf35897bebf4dd8b052f3b33ec6767d-1551059545-1551059561-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/0cf35897bebf4dd8b052f3b33ec6767d-1551059545-1551059561-jpg/<size>-0-",
@@ -62603,7 +61559,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576221,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Buddy",
@@ -62820,10 +61776,6 @@
         "Id": 576699,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576699",
-                    "Id": 576699
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a2599fc6ae624b1d8f64d44876c21333-1551060290-1551060297-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a2599fc6ae624b1d8f64d44876c21333-1551060290-1551060297-jpg/<size>-0-",
@@ -63049,10 +62001,6 @@
         "Id": 575859,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575859",
-                    "Id": 575859
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f5470867027a4dabab4421b0634ba923-1550696702-1550696725-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f5470867027a4dabab4421b0634ba923-1550696702-1550696725-jpg/<size>-0-",
@@ -63279,10 +62227,6 @@
         "Id": 576509,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576509",
-                    "Id": 576509
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a49410b6016342ac9ad833021581795e-1551125661-1551125682-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a49410b6016342ac9ad833021581795e-1551125661-1551125682-jpeg/<size>-0-",
@@ -63515,30 +62459,18 @@
         "Id": 573190,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573190",
-                    "Id": 573190
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/9ee44a8f4bdc4f90857cdcafe17628d4-1550695655-1550695663-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9ee44a8f4bdc4f90857cdcafe17628d4-1550695655-1550695663-jpg/<size>-0-",
                 "Id": 780711
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573190",
-                    "Id": 573190
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/8368a60b294b4aa49406f16ccd59249e-1550695655-1550695671-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8368a60b294b4aa49406f16ccd59249e-1550695655-1550695671-jpg/<size>-0-",
                 "Id": 780710
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573190",
-                    "Id": 573190
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/bcfbd960d08347a49b2133dcbe898dc5-1550695655-1550695667-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/bcfbd960d08347a49b2133dcbe898dc5-1550695655-1550695667-jpg/<size>-0-",
@@ -63785,10 +62717,6 @@
         "Id": 566101,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/566101",
-                    "Id": 566101
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/eb3eb2dd45874841856f96fab476a2e3-1546818041-1549244471-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/eb3eb2dd45874841856f96fab476a2e3-1546818041-1549244471-jpeg/<size>-0-",
@@ -64006,10 +62934,6 @@
         "Id": 574393,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574393",
-                    "Id": 574393
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/65a1f789c75c4c7cbaafacf885b78296-1550093041-1550093081-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/65a1f789c75c4c7cbaafacf885b78296-1550093041-1550093081-jpg/<size>-0-",
@@ -64231,7 +63155,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576743,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Bubbles",
@@ -64447,7 +63371,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576744,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Canelo",
@@ -64683,20 +63607,12 @@
         "Id": 569938,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/569938",
-                    "Id": 569938
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/bea872a7fd7c4c46a2bb164196c28188-1549126176-1549139678-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/bea872a7fd7c4c46a2bb164196c28188-1549126176-1549139678-jpeg/<size>-0-",
                 "Id": 763578
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/569938",
-                    "Id": 569938
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/b2875be012c1447ba748bd8e7ae03e0c-1548278397-1548278418-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/b2875be012c1447ba748bd8e7ae03e0c-1548278397-1548278418-jpeg/<size>-0-",
@@ -64919,10 +63835,6 @@
         "Id": 575989,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575989",
-                    "Id": 575989
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/a6cd369b5c994908bbda23cdeebe8773-1550776212-1550776259-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a6cd369b5c994908bbda23cdeebe8773-1550776212-1550776259-jpg/<size>-0-",
@@ -65156,10 +64068,6 @@
         "Id": 140002,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/140002",
-                    "Id": 140002
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/452423722dc14ede8a5bdb56e2edf12c-1548630049-1548630058-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/452423722dc14ede8a5bdb56e2edf12c-1548630049-1548630058-jpg/<size>-0-",
@@ -65389,40 +64297,24 @@
         "Id": 570597,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570597",
-                    "Id": 570597
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/dcf272a20a194cfba1f1f906cc76a310-1548800956-1548800969-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/dcf272a20a194cfba1f1f906cc76a310-1548800956-1548800969-jpg/<size>-0-",
                 "Id": 760879
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570597",
-                    "Id": 570597
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a91a1ec1a7784956b8fed141fb144acf-1549400846-1549400874-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a91a1ec1a7784956b8fed141fb144acf-1549400846-1549400874-jpg/<size>-0-",
                 "Id": 766835
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570597",
-                    "Id": 570597
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/20b15b19c2ba47c689a2a3ec2b7af4e0-1549400848-1549400867-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/20b15b19c2ba47c689a2a3ec2b7af4e0-1549400848-1549400867-jpg/<size>-0-",
                 "Id": 766836
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/570597",
-                    "Id": 570597
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a9367567f1104d809b26eb71eaca93da-1548800958-1548800980-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a9367567f1104d809b26eb71eaca93da-1548800958-1548800980-jpg/<size>-0-",
@@ -65648,30 +64540,18 @@
         "Id": 575516,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575516",
-                    "Id": 575516
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f636a048dc5f4c52a93c15f50366dc40-1551131463-1551131474-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f636a048dc5f4c52a93c15f50366dc40-1551131463-1551131474-jpg/<size>-0-",
                 "Id": 784869
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575516",
-                    "Id": 575516
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/f4b4bbda6d7843fe9ea5c5bd98ad533a-1551131463-1551131482-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f4b4bbda6d7843fe9ea5c5bd98ad533a-1551131463-1551131482-jpg/<size>-0-",
                 "Id": 784867
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575516",
-                    "Id": 575516
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/62597919e76b4e78a4e978dc9f8fddb9-1551131463-1551131479-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/62597919e76b4e78a4e978dc9f8fddb9-1551131463-1551131479-jpg/<size>-0-",
@@ -65897,10 +64777,6 @@
         "Id": 576120,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576120",
-                    "Id": 576120
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/80099b5dc26c4a98a60c700c98da1f0a-1550798731-1550798756-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/80099b5dc26c4a98a60c700c98da1f0a-1550798731-1550798756-jpeg/<size>-0-",
@@ -66133,30 +65009,18 @@
         "Id": 574636,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574636",
-                    "Id": 574636
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/111c5c20de044a5981d394b3ece9f60c-1551131701-1551131708-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/111c5c20de044a5981d394b3ece9f60c-1551131701-1551131708-jpg/<size>-0-",
                 "Id": 784884
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574636",
-                    "Id": 574636
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/d8ed130e0dfe4452af5e7a6f46e1649f-1551131701-1551131717-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d8ed130e0dfe4452af5e7a6f46e1649f-1551131701-1551131717-jpg/<size>-0-",
                 "Id": 784886
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574636",
-                    "Id": 574636
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/45680cc89749451f9d710026d9d94b76-1551131701-1551131712-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/45680cc89749451f9d710026d9d94b76-1551131701-1551131712-jpg/<size>-0-",
@@ -66396,40 +65260,24 @@
         "Id": 557185,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/557185",
-                    "Id": 557185
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/e57c113733994c2fa81822f1345adfae-1544830414-1544830428-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e57c113733994c2fa81822f1345adfae-1544830414-1544830428-jpg/<size>-0-",
                 "Id": 724357
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/557185",
-                    "Id": 557185
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/7130814c218343e0afbfc5ce18cc8570-1549595192-1549595215-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7130814c218343e0afbfc5ce18cc8570-1549595192-1549595215-jpg/<size>-0-",
                 "Id": 769110
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/557185",
-                    "Id": 557185
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/53abe8640e42437582bfef830568ddba-1549595197-1549595207-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/53abe8640e42437582bfef830568ddba-1549595197-1549595207-jpg/<size>-0-",
                 "Id": 769111
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/557185",
-                    "Id": 557185
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a41fc84d80af417fb88d4ceae89a5651-1544830413-1544830433-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a41fc84d80af417fb88d4ceae89a5651-1544830413-1544830433-jpg/<size>-0-",
@@ -66655,10 +65503,6 @@
         "Id": 575645,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575645",
-                    "Id": 575645
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/524bfd8d0c904bf3b8fc77dcc8f404be-1550611828-1550611838-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/524bfd8d0c904bf3b8fc77dcc8f404be-1550611828-1550611838-jpg/<size>-0-",
@@ -66883,20 +65727,12 @@
         "Id": 576806,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576806",
-                    "Id": 576806
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/20418cbe77c04b4cb587159779bc1302-1551134826-1551134837-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/20418cbe77c04b4cb587159779bc1302-1551134826-1551134837-jpg/<size>-0-",
                 "Id": 784961
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576806",
-                    "Id": 576806
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/bdf2df88cc744e649001f99cb6e8d35c-1551134693-1551134721-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/bdf2df88cc744e649001f99cb6e8d35c-1551134693-1551134721-jpg/<size>-0-",
@@ -67119,10 +65955,6 @@
         "Id": 575937,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575937",
-                    "Id": 575937
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/1920e08c4f024bd38c87c41baed36120-1550775850-1550775864-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1920e08c4f024bd38c87c41baed36120-1550775850-1550775864-jpg/<size>-0-",
@@ -67352,10 +66184,6 @@
         "Id": 576729,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576729",
-                    "Id": 576729
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/17a2fa7a1b3f410fa2b6ccc2a2bc6ec1-1551119358-1551119372-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/17a2fa7a1b3f410fa2b6ccc2a2bc6ec1-1551119358-1551119372-jpg/<size>-0-",
@@ -67571,7 +66399,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576779,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Chamomile",
@@ -67781,7 +66609,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576780,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Earl",
@@ -67991,7 +66819,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576781,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Matcha",
@@ -68201,7 +67029,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576782,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Bernadette",
@@ -68432,10 +67260,6 @@
         "Id": 571037,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/571037",
-                    "Id": 571037
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/33043e460eb5431d96ebe4249e2bb1d9-1548715809-1548715825-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/33043e460eb5431d96ebe4249e2bb1d9-1548715809-1548715825-jpg/<size>-0-",
@@ -68681,40 +67505,24 @@
         "Id": 372904,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/372904",
-                    "Id": 372904
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f1930eda27d846ba84de82dcaf6e5cfc-1548882573-1548882593-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f1930eda27d846ba84de82dcaf6e5cfc-1548882573-1548882593-jpg/<size>-0-",
                 "Id": 761412
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/372904",
-                    "Id": 372904
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/67dfa249cf794807b79ef0f550665fec-1548882573-1548882616-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/67dfa249cf794807b79ef0f550665fec-1548882573-1548882616-jpg/<size>-0-",
                 "Id": 761409
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/372904",
-                    "Id": 372904
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/517b3c0460a6456d8e0c26b12b1b951f-1548882573-1548882587-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/517b3c0460a6456d8e0c26b12b1b951f-1548882573-1548882587-jpg/<size>-0-",
                 "Id": 761413
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/372904",
-                    "Id": 372904
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a406f0a5df22479688215154125d8a51-1548882573-1548882582-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a406f0a5df22479688215154125d8a51-1548882573-1548882582-jpg/<size>-0-",
@@ -68940,10 +67748,6 @@
         "Id": 576750,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576750",
-                    "Id": 576750
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/dbb32376a7b5409293e2b9564ca9eff1-1551131307-1551131311-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/dbb32376a7b5409293e2b9564ca9eff1-1551131307-1551131311-jpeg/<size>-0-",
@@ -69175,10 +67979,6 @@
         "Id": 545420,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/545420",
-                    "Id": 545420
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c8de893db73c49a48c27ee9146f27b29-1537918943-1537918955-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c8de893db73c49a48c27ee9146f27b29-1537918943-1537918955-jpg/<size>-0-",
@@ -69404,20 +68204,12 @@
         "Id": 576793,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576793",
-                    "Id": 576793
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/6062f30fbcbe4492b9512d2956c76c42-1551131635-1551131666-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6062f30fbcbe4492b9512d2956c76c42-1551131635-1551131666-jpg/<size>-0-",
                 "Id": 784878
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576793",
-                    "Id": 576793
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/3a6e46f8d96a4107aca186bda54ef2a0-1551131635-1551131662-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/3a6e46f8d96a4107aca186bda54ef2a0-1551131635-1551131662-jpg/<size>-0-",
@@ -69648,7 +68440,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576807,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Nikki",
@@ -69873,7 +68665,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576808,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Gracie",
@@ -70107,10 +68899,6 @@
         "Id": 393757,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/393757",
-                    "Id": 393757
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f160af7d32154c9b843d990108504d77-1550350812-1550350837-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f160af7d32154c9b843d990108504d77-1550350812-1550350837-jpg/<size>-0-",
@@ -70322,10 +69110,6 @@
         "Id": 576738,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576738",
-                    "Id": 576738
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/235b341935e44adbac12a8c7f15ee12d-1551138152-1551138203-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/235b341935e44adbac12a8c7f15ee12d-1551138152-1551138203-jpeg/<size>-0-",
@@ -70544,10 +69328,6 @@
         "Id": 576007,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576007",
-                    "Id": 576007
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/181e1683b08f4bb1a1f521c0c3060b65-1550782125-1550782155-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/181e1683b08f4bb1a1f521c0c3060b65-1550782125-1550782155-jpg/<size>-0-",
@@ -70769,40 +69549,24 @@
         "Id": 565447,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565447",
-                    "Id": 565447
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/886263cd9aaa4f5f9bb9cf291b50f7ac-1550344756-1550344769-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/886263cd9aaa4f5f9bb9cf291b50f7ac-1550344756-1550344769-jpg/<size>-0-",
                 "Id": 776996
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565447",
-                    "Id": 565447
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/8c37871f3b854f748e11154fa5eef556-1550344805-1550344822-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8c37871f3b854f748e11154fa5eef556-1550344805-1550344822-jpg/<size>-0-",
                 "Id": 777001
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565447",
-                    "Id": 565447
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/b686a6cd8a7a4e36a0042196f211b530-1550344789-1550344794-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/b686a6cd8a7a4e36a0042196f211b530-1550344789-1550344794-jpg/<size>-0-",
                 "Id": 777000
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/565447",
-                    "Id": 565447
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a0dccca6236e4f048c2bf6bb6fd8171c-1550344775-1550344782-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a0dccca6236e4f048c2bf6bb6fd8171c-1550344775-1550344782-jpg/<size>-0-",
@@ -71043,10 +69807,6 @@
         "Id": 420796,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/420796",
-                    "Id": 420796
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/ec942aa482444671b920ce825b4ceec9-1550362568-1550362607-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/ec942aa482444671b920ce825b4ceec9-1550362568-1550362607-jpg/<size>-0-",
@@ -71272,10 +70032,6 @@
         "Id": 576336,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576336",
-                    "Id": 576336
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/6c1207769402474aac6fa276649f3ada-1550953598-1550953616-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/6c1207769402474aac6fa276649f3ada-1550953598-1550953616-jpg/<size>-0-",
@@ -71497,10 +70253,6 @@
         "Id": 576474,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576474",
-                    "Id": 576474
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/5520573995e5456bbcb6f3791ba5677a-1550967860-1550967866-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/5520573995e5456bbcb6f3791ba5677a-1550967860-1550967866-jpg/<size>-0-",
@@ -71738,20 +70490,12 @@
         "Id": 576818,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576818",
-                    "Id": 576818
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/1091cdf39d3a422aa888fc213958c39f-1551203907-1551206673-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1091cdf39d3a422aa888fc213958c39f-1551203907-1551206673-jpg/<size>-0-",
                 "Id": 785423
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576818",
-                    "Id": 576818
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/a45936d3c120411783ca2e7cf40bbdce-1551206650-1551206661-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/a45936d3c120411783ca2e7cf40bbdce-1551206650-1551206661-jpg/<size>-0-",
@@ -71973,10 +70717,6 @@
         "Id": 573099,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573099",
-                    "Id": 573099
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/1102924f9316497d8bf77b85f3e56091-1549827843-1549827865-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1102924f9316497d8bf77b85f3e56091-1549827843-1549827865-jpg/<size>-0-",
@@ -72202,10 +70942,6 @@
         "Id": 575930,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575930",
-                    "Id": 575930
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c5bb14c49b364bbba32f6a49ee8c3aa2-1550716878-1550716886-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c5bb14c49b364bbba32f6a49ee8c3aa2-1550716878-1550716886-jpg/<size>-0-",
@@ -72441,7 +71177,7 @@
             }
         ],
         "Id": 573797,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Pinky",
@@ -72665,20 +71401,12 @@
         "Id": 573562,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573562",
-                    "Id": 573562
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/74b1de8832b4493fb3801cded0ea824b-1550094094-1550094133-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/74b1de8832b4493fb3801cded0ea824b-1550094094-1550094133-jpg/<size>-0-",
                 "Id": 774069
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/573562",
-                    "Id": 573562
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/0881866da11b4072ab340bff43083622-1549750214-1549750224-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/0881866da11b4072ab340bff43083622-1549750214-1549750224-jpg/<size>-0-",
@@ -72908,10 +71636,6 @@
         "Id": 574824,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574824",
-                    "Id": 574824
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/454e5f70f0884adeb7e5506dd3c0bb94-1550264542-1550264554-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/454e5f70f0884adeb7e5506dd3c0bb94-1550264542-1550264554-jpeg/<size>-0-",
@@ -73139,10 +71863,6 @@
         "Id": 575506,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575506",
-                    "Id": 575506
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/9ef0486bcdba4e84a4f31f18ddef4a59-1550529292-1550611192-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9ef0486bcdba4e84a4f31f18ddef4a59-1550529292-1550611192-jpg/<size>-0-",
@@ -73373,10 +72093,6 @@
         "Id": 575235,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575235",
-                    "Id": 575235
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/aa9e71ab2fcf49eca6bb850d4b0659ac-1550440092-1550440104-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/aa9e71ab2fcf49eca6bb850d4b0659ac-1550440092-1550440104-jpg/<size>-0-",
@@ -73604,10 +72320,6 @@
         "Id": 575507,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575507",
-                    "Id": 575507
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/84440b33e68a42c8b78f466ded777cdc-1550528915-1550611200-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/84440b33e68a42c8b78f466ded777cdc-1550528915-1550611200-jpg/<size>-0-",
@@ -73835,10 +72547,6 @@
         "Id": 575509,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575509",
-                    "Id": 575509
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/747bb62757244d7d8d36ebeb69211eff-1550529121-1550611215-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/747bb62757244d7d8d36ebeb69211eff-1550529121-1550611215-jpg/<size>-0-",
@@ -74066,10 +72774,6 @@
         "Id": 575510,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575510",
-                    "Id": 575510
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/9a89a9ee339b4da8b979d24c8acfc1dc-1550529208-1550611221-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9a89a9ee339b4da8b979d24c8acfc1dc-1550529208-1550611221-jpg/<size>-0-",
@@ -74297,10 +73001,6 @@
         "Id": 575511,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575511",
-                    "Id": 575511
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/956735c9879f432ea54e89a82034c31f-1550529352-1550611227-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/956735c9879f432ea54e89a82034c31f-1550529352-1550611227-jpg/<size>-0-",
@@ -74515,10 +73215,6 @@
         "Id": 576830,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576830",
-                    "Id": 576830
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/33154d55f69e4f45972b0082768576ad-1551136964-1551140449-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/33154d55f69e4f45972b0082768576ad-1551136964-1551140449-jpg/<size>-0-",
@@ -74741,10 +73437,6 @@
         "Id": 558067,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/558067",
-                    "Id": 558067
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/86a14282e3e84f09959b41ab1a8f8c41-1549844812-1549844833-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/86a14282e3e84f09959b41ab1a8f8c41-1549844812-1549844833-jpg/<size>-0-",
@@ -74962,7 +73654,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569665,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Odin",
@@ -75174,7 +73866,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 569668,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Sugar",
@@ -75387,7 +74079,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 564367,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Oatmeal",
@@ -75600,7 +74292,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 564368,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Raisin",
@@ -75813,7 +74505,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 564369,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Gizmo ",
@@ -76042,7 +74734,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576810,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Gus",
@@ -76257,7 +74949,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573500,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Lilly",
@@ -76472,7 +75164,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573501,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Anthony",
@@ -76687,7 +75379,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573502,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Mark",
@@ -76902,7 +75594,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 573503,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Lucy Liu",
@@ -77120,10 +75812,6 @@
         "Id": 574064,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/574064",
-                    "Id": 574064
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/9360b120d840441cb347b4bd573da4d9-1549999142-1549999161-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9360b120d840441cb347b4bd573da4d9-1549999142-1549999161-jpg/<size>-0-",
@@ -77342,10 +76030,6 @@
         "Id": 576589,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576589",
-                    "Id": 576589
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/603c58c4521d41ae87479e6c349d8147-1551041035-1551041048-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/603c58c4521d41ae87479e6c349d8147-1551041035-1551041048-jpg/<size>-0-",
@@ -77567,7 +76251,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 576745,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Foxy",
@@ -77786,7 +76470,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 575999,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Youngster",
@@ -78005,7 +76689,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 575998,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Jessie James",
@@ -78235,10 +76919,6 @@
         "Id": 182873,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/182873",
-                    "Id": 182873
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/cee5b88b07624931acce7468abe2edbc-1551124318-1551124327-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/cee5b88b07624931acce7468abe2edbc-1551124318-1551124327-jpeg/<size>-0-",
@@ -78461,10 +77141,6 @@
         "Id": 575839,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575839",
-                    "Id": 575839
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2615dcaa85e54be1aabdd90b2cfc924e-1550698838-1550698845-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2615dcaa85e54be1aabdd90b2cfc924e-1550698838-1550698845-jpg/<size>-0-",
@@ -78689,7 +77365,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 575997,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": null,
@@ -78911,10 +77587,6 @@
         "Id": 575508,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575508",
-                    "Id": 575508
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/2c64505551334b56a0b3caeb49024ba4-1550529060-1550611207-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/2c64505551334b56a0b3caeb49024ba4-1550529060-1550611207-jpg/<size>-0-",
@@ -79138,10 +77810,6 @@
         "Id": 553664,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/553664",
-                    "Id": 553664
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/c6e6764324654aad980452f13425dcb6-1541290515-1541290521-jpeg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/c6e6764324654aad980452f13425dcb6-1541290515-1541290521-jpeg/<size>-0-",
@@ -79357,7 +78025,7 @@
         "Behaviour": null,
         "Media": null,
         "Id": 400528,
-        "Photos": null
+        "Photos": []
     },
     {
         "Name": "Charlie ",
@@ -79579,10 +78247,6 @@
         "Id": 400529,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/400529",
-                    "Id": 400529
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/22dcf12c2fc04758b391e70eeb341a21-1551144586-1551144599-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/22dcf12c2fc04758b391e70eeb341a21-1551144586-1551144599-jpg/<size>-0-",
@@ -79810,10 +78474,6 @@
         "Id": 575976,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575976",
-                    "Id": 575976
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/efa58b79ba1e44b08197e9ef30a322f5-1550778098-1550778108-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/efa58b79ba1e44b08197e9ef30a322f5-1550778098-1550778108-jpg/<size>-0-",
@@ -80036,10 +78696,6 @@
         "Id": 575978,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575978",
-                    "Id": 575978
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/e929215d4ff94cb1a8d39ab81884d0bd-1550779471-1550779507-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/e929215d4ff94cb1a8d39ab81884d0bd-1550779471-1550779507-jpg/<size>-0-",
@@ -80262,10 +78918,6 @@
         "Id": 575955,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575955",
-                    "Id": 575955
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/8be819fde4bb4a29bc411beb5800e1f3-1550780299-1550780325-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/8be819fde4bb4a29bc411beb5800e1f3-1550780299-1550780325-jpg/<size>-0-",
@@ -80485,10 +79137,6 @@
         "Id": 576110,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576110",
-                    "Id": 576110
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/d02d602d88554afaabd6b8a235a8ba2d-1550796184-1550796207-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/d02d602d88554afaabd6b8a235a8ba2d-1550796184-1550796207-jpg/<size>-0-",
@@ -80718,10 +79366,6 @@
         "Id": 576111,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576111",
-                    "Id": 576111
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/f77c7a5638014e8b8cad6ea5d49fa143-1550799033-1550799055-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/f77c7a5638014e8b8cad6ea5d49fa143-1550799033-1550799055-jpg/<size>-0-",
@@ -80951,10 +79595,6 @@
         "Id": 576112,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576112",
-                    "Id": 576112
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/60ab087d944e4941812ddbe1b8d5e63e-1550799134-1550799151-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/60ab087d944e4941812ddbe1b8d5e63e-1550799134-1550799151-jpg/<size>-0-",
@@ -81173,10 +79813,6 @@
         "Id": 576026,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576026",
-                    "Id": 576026
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/91a12c811e54499e929f3e00914c3d26-1550780093-1550780145-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/91a12c811e54499e929f3e00914c3d26-1550780093-1550780145-jpg/<size>-0-",
@@ -81395,10 +80031,6 @@
         "Id": 576074,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576074",
-                    "Id": 576074
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/030ab0a4ae614d808ada3f03c007f677-1550787926-1550787936-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/030ab0a4ae614d808ada3f03c007f677-1550787926-1550787936-jpg/<size>-0-",
@@ -81621,10 +80253,6 @@
         "Id": 575984,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575984",
-                    "Id": 575984
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/33e72efe97c74461a0d9b8e772280eb6-1550778693-1550778704-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/33e72efe97c74461a0d9b8e772280eb6-1550778693-1550778704-jpg/<size>-0-",
@@ -81841,10 +80469,6 @@
         "Id": 576069,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576069",
-                    "Id": 576069
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/af49c6e88eeb411788689c5285968616-1550797469-1550800440-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/af49c6e88eeb411788689c5285968616-1550797469-1550800440-jpg/<size>-0-",
@@ -82063,10 +80687,6 @@
         "Id": 575966,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/575966",
-                    "Id": 575966
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/cf1ce6f1feb04aeda71a40172a8c4465-1550781556-1550781565-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/cf1ce6f1feb04aeda71a40172a8c4465-1550781556-1550781565-jpg/<size>-0-",
@@ -82279,10 +80899,6 @@
         "Id": 576016,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/576016",
-                    "Id": 576016
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/9a6595e2c8284cedb619c22a2c4418df-1550783929-1550785694-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/9a6595e2c8284cedb619c22a2c4418df-1550783929-1550785694-jpg/<size>-0-",
@@ -82514,30 +81130,18 @@
         "Id": 556512,
         "Photos": [
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/556512",
-                    "Id": 556512
-                },
                 "IsDefault": true,
                 "Photo": "/storage/image/7282c109479e45ab905e5da915edaa11-1546903670-1546903677-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/7282c109479e45ab905e5da915edaa11-1546903670-1546903677-jpg/<size>-0-",
                 "Id": 742263
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/556512",
-                    "Id": 556512
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/1194966839af4e7a8549653b3ef45abf-1546903670-1546903694-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/1194966839af4e7a8549653b3ef45abf-1546903670-1546903694-jpg/<size>-0-",
                 "Id": 742265
             },
             {
-                "Animal": {
-                    "Uri": "/api/v2/animal/556512",
-                    "Id": 556512
-                },
                 "IsDefault": false,
                 "Photo": "/storage/image/73a37441e66b478ea8a8e9759e9e7ca7-1546903670-1546903681-jpg/1024---n",
                 "PhotoThumbnailFormat": "/storage/image/73a37441e66b478ea8a8e9759e9e7ca7-1546903670-1546903681-jpg/<size>-0-",

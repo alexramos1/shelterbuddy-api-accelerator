@@ -58,6 +58,7 @@ class ShelterBuddyConnection:
     def fetchPhotos(self, animalId):
         
         postparam = urllib.parse.urlencode({"AnimalId": animalId})
+        print(postparam)
         url = self.shelterbuddyUrl + "/api/v2/animal/photo/list?page=1&pageSize=100"
         req = Request(url, method='POST', data=postparam.encode('utf-8'))
         req.add_header("sb-auth-token", self.token)
@@ -66,10 +67,8 @@ class ShelterBuddyConnection:
         r = urlopen(req)
         
         obj = json.loads(r.read(), parse_float=Decimal)
+
+        for photo in obj['Data']:
+            del photo['Animal'] 
         
-        if obj['Data']:
-            if 'Animal' in obj['Data']:
-                del obj['Data']['Animal'] 
-            return obj['Data']
-        else:
-            return None
+        return obj['Data']
