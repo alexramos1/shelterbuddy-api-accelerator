@@ -1,12 +1,12 @@
 from credentials import shelterbuddyUrl, username, password
-from shelterbuddy import sbauth, process
+from shelterbuddy import ShelterBuddyConnection
 import json
 
 f = open("animals.json", "r")
 animals = json.loads(f.read())
 
-token = sbauth(shelterbuddyUrl, username, password)
-animals = [a for a in process(shelterbuddyUrl, token, animals)]
+conn = ShelterBuddyConnection(shelterbuddyUrl, username, password)
+animals = [a for a in conn.process(animals)]
     
 f = open("animals2.json", "w")
 

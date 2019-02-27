@@ -1,16 +1,16 @@
 from credentials import shelterbuddyUrl, username, password
-from shelterbuddy import sbauth, sbload
+from shelterbuddy import ShelterBuddyConnection
 from datetime import datetime, timedelta
 import json
 import config
 
-token = sbauth(shelterbuddyUrl, username, password)
+conn = ShelterBuddyConnection(shelterbuddyUrl, username, password)
 target = "/api/v2/animal/list?PageSize=200"
 cutoff = (datetime.today() - timedelta(days=config.days)).replace(microsecond=0).isoformat() + "Z"
 
 animals = []
 
-for animal in sbload(shelterbuddyUrl, token, target, cutoff):
+for animal in conn.sbload(target, cutoff):
     #print(animal['Name'], ' ', animal['Id'])    
     animals.append(animal)
     
