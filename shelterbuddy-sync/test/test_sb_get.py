@@ -6,6 +6,6 @@ import sys
 conn = ShelterBuddyConnection(shelterbuddyUrl, username, password)
 target = sys.argv[1]
 
-js = conn.sbget(target)
+js = conn.fetchUri(target)
 
 print(json.dumps(js, indent=4))

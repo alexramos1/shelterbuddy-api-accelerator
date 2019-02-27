@@ -10,7 +10,7 @@ cutoff = (datetime.today() - timedelta(days=config.days)).replace(microsecond=0)
 
 animals = []
 
-for animal in conn.sbload(target, cutoff):
+for animal in conn.loadAnimals(target, cutoff):
     #print(animal['Name'], ' ', animal['Id'])    
     animals.append(animal)
     
