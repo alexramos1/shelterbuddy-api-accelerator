@@ -1,10 +1,10 @@
 import boto3
-from decimal import Decimal
 from sys import argv
 import json
+from decimal import Decimal
 
 f = open(argv[1], "r")
-animals = json.loads(f.read())
+animals = json.loads(f.read(), parse_float=Decimal)
 
 dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
 
@@ -15,8 +15,6 @@ def scan(var):
         for k, v in var.items():
             if v is None or v == '' or v == []:
                 var[k] = 'n/a'
-            if isinstance(v, float):
-                var[k] = str(v)
             if isinstance(v, (dict, list)):
                 scan(v)
     elif isinstance(var, list):

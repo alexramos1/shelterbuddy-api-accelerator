@@ -1,6 +1,7 @@
 from config import filter
 from urllib.request import Request, urlopen
 import json
+from decimal import Decimal
 
 uriCache = {}
 
@@ -33,7 +34,7 @@ def sbload(shelterbuddyUrl, token, target, cutoff):
         if(r.getcode() != 200):
             raise Exception("failed with rc=" + r.getcode())
         
-        data = json.loads(r.read())
+        data = json.loads(r.read(), parse_float=Decimal)
         
         for animal in data['Data']:
             yield animal

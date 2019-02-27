@@ -50,4 +50,4 @@ exclude_statuses = [
 def filter(animal):
     return animal['Status']['UriValue']['IsInCare'] and (animal['Status']['Name'] not in exclude_statuses) 
 
-days = 30
+days = 14

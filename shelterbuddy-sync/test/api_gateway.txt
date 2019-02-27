@@ -1,0 +1,25 @@
+-- REQUEST MAPPING --
+
+{
+    "TableName": "sdhs.animals",
+    "KeyConditionExpression": "compositeKey = :v1",
+    "ExpressionAttributeValues": {
+        ":v1": {
+            "S": "$input.params('compositekey')"
+        }
+    }
+}
+
+-- RESPONSE MAPPING --
+
+[
+#foreach($animal in $input.path('$').Items)
+{
+   Id: $animal.Id.N,
+   Name: "$animal.Name.S",
+   Sex: "$animal.Sex.M.Name.S"
+}
+#if( $foreach.hasNext ),#end
+#end
+]
+#set($context.responseOverride.header.Access-Control-Allow-Origin = "*")
