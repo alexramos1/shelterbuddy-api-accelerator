@@ -5,7 +5,7 @@
     "KeyConditionExpression": "compositeKey = :v1",
     "ExpressionAttributeValues": {
         ":v1": {
-            "S": "$input.params('compositekey')"
+            "S": "$util.urlDecode($input.params('compositekey'))"
         }
     }
 }
