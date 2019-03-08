@@ -1,53 +1,76 @@
-exclude_statuses = [
-    "Available For Adoption",
-    "Hold",
-    "Hold Finder",
-    "Protective Custody/Hold",
-    "Protective Custody/Transferred Ownership",
-    "Due For Release",
+lost = [
+    "Lost",
     "Hold For Possible Match",
-    "Hold In Foster",
-    "Protective Custody In Foster",
-    "Hold On Property Check",
-    "Hold In Vet Care",
-    "Police Hold",
-    "Hold Quarantine",
-    "Euthanized Adoptable",
-    "Awaiting Euthanasia",
-    "Bite Quarantine",
-    "Emergency Boarding",
-    "Hold Euthanasia",
-    "Court Hold",
-    "Wildlife Due For Release",
-    "Stray Hold",
-    "Awaiting Rescue",
-    "Trial Adoption",
-    "Emergency Evacuation - Temporary",
-    "Awaiting Final Disposition",
-    "Owner Hold",
-    "Protective Custody Hold Quarantine",
-    "Adopted - Awaiting Spay / Neuter",
-    "PAT",
-    "Available for Adoption - Offsite",
-    "Available for Adoption - Awaiting Spay/Neuter",
-    "Stray - In Foster",
-    "Available for Adoption - Waiting Space",
-    "Sanctuary/Life Resident",
-    "Reclaimed - Awaiting Spay / Neuter",
-    "Protective Custody - Awaiting Foster",
-    "Sanctuary/Life Resident - Upload to Public Site",
-    "Emergency Evacuation - In Foster",
-    "Adopted - Awaiting Pickup",
-    "ID Trace",
-    "Bite Quarantine/RTO",
-    "Available For Adoption - No Web Presence",
-    "Stray Hold - In Vet Care",
-    "Stray Hold - Awaiting transfer",
-    "Bite Quarantine - In Foster",
-    "Transfer Out - Awaiting Pickup"
+    "Possible Match"
 ]
 
-def filter(animal):
-    return animal['Status']['UriValue']['IsInCare'] and (animal['Status']['Name'] not in exclude_statuses) 
+found1 = [
+    "Found",
+    "Deceased"
+]
+found2 = [
+    "Available for Adoption - Waiting Space",
+    "Available For Adoption",
+    "Available for Adoption - In Foster",
+    "Hold For Possible Match",
+    "Stray - In Foster",
+    "Stray Hold",
+    "Stray Hold - Awaiting transfer",
+    "Stray Hold - In Vet Care",
+    "ID Trace",
+    "Euthanized During Stray Hold Time"
+]
 
-days = 14
+available = [
+    "Available For Adoption",
+    "Available for Adoption - Awaiting Spay/Neuter",
+    "Available for Adoption - In Foster",
+    "Available for Adoption - Offsite",
+    "Available for Adoption - Waiting Space",
+]
+
+rescue = [
+    "Bite Quarantine (Home)",
+    "Seized Release",
+    "Awaiting Surgery - Not Spay/Neuter",
+    "Awaiting Vet Exam / Health Check",
+    "Awaiting Triage",
+    "Awaiting Spay Check",
+    "Disposition Under Final Review",
+    "Hospitalised",
+    "Under Behavior Modification",
+    "Awaiting Triage Completion",
+    "Awaiting Spay/Neuter - In Foster",
+    "Awaiting Vet Approval - In Foster",
+    "Entered Care",
+    "Hold Intervention",
+    "In Foster",
+    "Awaiting Behavioral Assessment",
+    "Awaiting Spay/Neuter",
+    "Owner Relinquishment",
+    "Rehabilitating",
+    "Under Vet Care",
+    "Awaiting Foster",
+    "Awaiting Behavior Retest",
+    "Awaiting Behavior Completion",
+    "Awaiting Sort",
+    "Awaiting Transfer",
+    "Available for Adoption - In Foster"
+]
+
+def categorize(animal):
+    st = animal['Status']['Name']
+    if(st in lost and animal['Intake']['Source'] and animal['Intake']['Source']['Name'] == "Found"):
+        return "lost"
+    elif(st in available):
+        return "available"
+    elif(st in rescue):
+        return "rescue"
+    elif(st in found1 and animal['Intake']['Source'] and animal['Intake']['Source']['Name'] == "Found" ):
+        return "found"
+    elif(st in found2 and animal['Intake']['Source']['Name'] in [ "ACO Impound", "Ambulance", "Stray", "Transfer In" ]):
+        return "found"
+    else:
+        return None 
+
+days = 30

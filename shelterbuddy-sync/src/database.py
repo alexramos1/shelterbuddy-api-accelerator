@@ -20,11 +20,16 @@ class Database:
             for d in var:
                 self.prepare(d)
     
-    def saveAll(self,animals):
-        for animal in animals:
-            animal['compositeKey'] = animal['ContactLocation']['Name'] + ':' + animal['Type']['Name']
-            self.prepare(animal)
-            self.table.put_item(Item=animal)
+    def key(self, animal):
+        return animal['ContactLocation']['Name'] + ':' + animal['Type']['Name']
+    
+    def save(self,animal):
+        animal['compositeKey'] = self.key(animal)
+        self.prepare(animal)
+        self.table.put_item(Item=animal)
+        
+    def delete(self, animal):
+        self.table.delete_item(Key={'compositeKey': self.key(animal), 'Id': animal['Id']})
     
     def put(self, k, v):
         self.table.put_item(Item={ 'compositeKey': k, 'Id': 0, 'info': v })

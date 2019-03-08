@@ -4,7 +4,7 @@
 #
 import config
 
-def applyFilters(sbconn, animals):
+def applyFilters(sbconn, animals, saveFunction, deleteFunction):
     for animal in animals:
         
         # expand the status variable to allow further filtering
@@ -17,9 +17,16 @@ def applyFilters(sbconn, animals):
             del animal['Status']['UriValue']['Id']
              
         # Check local filtering rules
-        if(config.filter(animal)):
+        cat = config.categorize(animal)
+        print(str(cat) + ' ' + str(animal['Status']['Name']) + ' ' + animal['LastUpdatedUtc'])
+         
+        if(cat):
+            animal['StatusCategory'] = cat
             
             # inline the photo urls
             animal['Photos'] = sbconn.fetchPhotos(animal['Id'])
         
-            yield animal
+            saveFunction(animal)
+            
+        else:
+            deleteFunction(animal)

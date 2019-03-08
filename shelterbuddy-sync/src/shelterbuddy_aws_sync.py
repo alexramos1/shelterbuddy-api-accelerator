@@ -20,8 +20,8 @@ else:
     target = "/api/v2/animal/list?PageSize=200"
     cutoff = (datetime.today() - timedelta(days=config.days)).replace(microsecond=0).isoformat() + "Z"
     
-action = lambda animals: db.saveAll([a for a in applyFilters(conn,animals)])
-persist = lambda target: db.put('_continuation', target + '#' + cutoff if target else None)
+action = lambda animals: applyFilters(conn,animals, db.save, db.delete)
+persist = lambda target: db.put('_continuation', (target + '#' + cutoff) if target else None)
 
 for animal in conn._loadAnimals(target, cutoff, action, persist):
     print(animal['Id'])
