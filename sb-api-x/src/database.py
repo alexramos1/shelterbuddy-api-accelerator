@@ -5,8 +5,7 @@ from boto3.dynamodb.conditions import Key, Attr
 class Database:
 
     dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
-    
-    table = dynamodb.Table('sdhs.animals')
+    table = dynamodb.Table('sdhs_animals')
     
     def prepare(self, var):
         if isinstance(var, dict):
@@ -20,20 +19,16 @@ class Database:
             for d in var:
                 self.prepare(d)
     
-    def key(self, animal):
-        return animal['ContactLocation']['Name'] + ':' + animal['Type']['Name']
-    
     def save(self,animal):
-        animal['compositeKey'] = self.key(animal)
+        animal['LocationKey'] = animal['ContactLocation']['Name']
+        animal['AnimalType'] = animal['Type']['Name']
         self.prepare(animal)
-        self.table.put_item(Item=animal)
+        try:
+            self.table.put_item(Item=animal)
+        except:
+            print(animal)
+            raise
         
     def delete(self, animal):
-        self.table.delete_item(Key={'compositeKey': self.key(animal), 'Id': animal['Id']})
-    
-    def put(self, k, v):
-        self.table.put_item(Item={ 'compositeKey': k, 'Id': 0, 'info': v })
-
-    def get(self, k):
-        return self.table.query(KeyConditionExpression=Key('compositeKey').eq(k))
+        self.table.delete_item(Key={'Id': animal['Id']})
     

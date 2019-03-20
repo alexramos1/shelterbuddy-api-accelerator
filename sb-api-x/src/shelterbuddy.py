@@ -2,16 +2,22 @@ from urllib.request import Request, urlopen
 import urllib
 import json
 from decimal import Decimal
+from os import getenv
+from urllib.parse import quote
 
 class ShelterBuddyConnection:
     "Connects to ShelterBuddy API"
     
     uriCache = {}
-    
-    def __init__(self, shelterbuddyUrl, username, password):
+
+    def __init__(self, shelterbuddyUrl=None, username=None, password=None):
+        if shelterbuddyUrl is None:
+            shelterbuddyUrl = getenv("SHELTERBUDDY_API_URL")
+            username = quote(getenv("SHELTERBUDDY_API_USER"))
+            password = quote(getenv("SHELTERBUDDY_API_PASSWORD"))
         self.shelterbuddyUrl = shelterbuddyUrl
         self.token = self.authenticate(username, password)
-        
+    
     def authenticate(self, username, password):
         query = "/api/v2/authenticate?username=" + username + "&password=" + password
         req = Request(self.shelterbuddyUrl + query);
