@@ -33,7 +33,7 @@ def query(StatusCategory, AnimalType, Location):
             ConsistentRead=False,
             KeyConditionExpression='StatusCategory = :sc',
             ExpressionAttributeValues={
-                ':sc': { 'S': StatusCategory }
+                ':sc': { 'S': StatusCategory[0] }
             }
         )
     elif AnimalType == ['ALL']:
@@ -49,19 +49,43 @@ def query(StatusCategory, AnimalType, Location):
                 ':loc': { 'S': Location[0] },
             }
         )
-        #response = dynamodb.batch_get_item(
-        #    RequestItems={
-        #        'sdhs.animals': {
-        #            'Keys': [ { 'StatusCategory':  {'S':StatusCategory[0]}, 'Location': {'S':x} } for x in Location ]
-        #        }
-        #    }
-        #)
+    elif Location == ['ALL']:
+        # query using only the StatusCategory and AnimalType
+        response = dynamodb.query(
+            TableName='sdhs_animals',
+            IndexName='StatusCategory-AnimalType-index',
+            Select='ALL_ATTRIBUTES',
+            ConsistentRead=False,
+            KeyConditionExpression='StatusCategory = :sc AND AnimalType = :animalType',
+            ExpressionAttributeValues={
+                ':sc': { 'S': StatusCategory[0] },
+                ':animalType': { 'S': AnimalType[0] },
+            }
+        )
+    else:
+        # query using the StatusCategory and Location, with a filter on AnimalType
+        response = dynamodb.query(
+            TableName='sdhs_animals',
+            IndexName='StatusCategory-LocationKey-index',
+            Select='ALL_ATTRIBUTES',
+            ConsistentRead=False,
+            KeyConditionExpression='StatusCategory = :sc AND LocationKey = :loc',
+            ExpressionAttributeValues={
+                ':sc': { 'S': StatusCategory[0] },
+                ':loc': { 'S': Location[0] },
+                ':animalType': { 'S': AnimalType[0] }
+            },
+            FilterExpression='AnimalType = :animalType'
+        )
     #
     # convert from dynamodb storage format while removing unused fields
     #
     return [{
-       "AnimalId": js['Id']['N'],
-       "Name": opt(js, lambda js: js['Name']['S']),
+       "AnimalId": int(js['Id']['N']),
+       "AnimalType": js['AnimalType']['S'],
+       "Location": js['ContactLocation']['M']['Name']['S'],
+       "Status": js['Status']['M']['Name']['S'],
+       "Name": opt(js, lambda js: js['Name']['S'].strip()),
        "Sex": js['Sex']['M']['Name']['S'],
        "Breed": {
             "Primary": js['Breed']['M']['Primary']['M']['Name']['S'],
@@ -69,13 +93,12 @@ def query(StatusCategory, AnimalType, Location):
             "IsCrossBreed": js['Breed']['M']['IsCrossBreed']['BOOL']
        },
        "Age": {
-            "Years": opt(js, lambda js: js['Age']['M']['Years']['N']),
-            "Months": opt(js, lambda js: js['Age']['M']['Months']['N']),
-            "Weeks": opt(js, lambda js: js['Age']['M']['Weeks']['N']),
+            "Years": opt(js, lambda js: int(js['Age']['M']['Years']['N'])),
+            "Months": opt(js, lambda js: int(js['Age']['M']['Months']['N'])),
+            "Weeks": opt(js, lambda js: int(js['Age']['M']['Weeks']['N'])),
             "IsApproximate": opt(js, lambda js: js['Age']['M']['IsApproximate']['BOOL']),
             "AgeGroup": opt(js, lambda js: js['Age']['M']['AgeGroup']['M']['Name']['S'])
        },
-       "Campus": js['ContactLocation']['M']['Name']['S'],
        "MainPhoto": opt(js, lambda js: {
               "Photo": js['Photos']['L'][0]['M']['Photo']['S'],
               "PhotoThumbnailFormat": js['Photos']['L'][0]['M']['PhotoThumbnailFormat']['S'],
