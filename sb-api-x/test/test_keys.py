@@ -1,3 +1,7 @@
+#
+# Run a quick report of the keys present in the JSON file. Mostly to validate breadth of dataset.
+#
+
 from sys import argv
 import json
 

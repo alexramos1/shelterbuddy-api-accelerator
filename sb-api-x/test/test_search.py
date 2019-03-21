@@ -1,3 +1,6 @@
+#
+# Test the search API
+#
 from urllib.request import urlopen
 import os
 import json

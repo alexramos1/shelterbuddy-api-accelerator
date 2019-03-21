@@ -1,3 +1,6 @@
+#
+# Test the database load, from a saved json file
+#
 import database
 from sys import argv
 import json

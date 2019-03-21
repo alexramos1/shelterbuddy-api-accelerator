@@ -1,3 +1,6 @@
+#
+# Manually test the fetchUri function. Prints result for visual inspection.
+#
 from credentials import shelterbuddyUrl, username, password
 from shelterbuddy import ShelterBuddyConnection
 import json

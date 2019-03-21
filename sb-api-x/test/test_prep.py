@@ -1,3 +1,6 @@
+#
+# Run the database prepare step. Validate by visual inspection.
+#
 import database
 from sys import argv
 import json
@@ -10,5 +13,5 @@ db = database.Database()
 
 for animal in animals:
     db.prepare(animal)
-    #print(json.dumps(animal, indent=4))
+    print(json.dumps(animal, indent=4))
 

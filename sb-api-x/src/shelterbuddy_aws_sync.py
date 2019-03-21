@@ -5,9 +5,8 @@ from shelterbuddy import ShelterBuddyConnection
 from database import Database
 from datetime import datetime, timedelta
 import localrules
-import json
 import boto3
-from boto3.dynamodb.conditions import Key, Attr
+from boto3.dynamodb.conditions import Key
 
 db = Database()
 conn = ShelterBuddyConnection()

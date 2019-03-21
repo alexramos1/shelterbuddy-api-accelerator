@@ -1,17 +1,17 @@
-from credentials import shelterbuddyUrl, username, password
+#
+# Dump data from SB API into animals.json, to be used by other tests.
+#
 from shelterbuddy import ShelterBuddyConnection
 from datetime import datetime, timedelta
 import json
-import config
 
-conn = ShelterBuddyConnection(shelterbuddyUrl, username, password)
+conn = ShelterBuddyConnection()
 target = "/api/v2/animal/list?PageSize=200"
-cutoff = (datetime.today() - timedelta(days=config.days)).replace(microsecond=0).isoformat() + "Z"
+cutoff = (datetime.today() - timedelta(days=14)).replace(microsecond=0).isoformat() + "Z"
 
 animals = []
 
 for animal in conn.loadAnimals(target, cutoff):
-    #print(animal['Name'], ' ', animal['Id'])    
     animals.append(animal)
     
 f = open("animals.json", "w")
