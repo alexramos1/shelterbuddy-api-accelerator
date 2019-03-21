@@ -118,10 +118,12 @@ def lambda_handler(event, context):
         response = query(mq['StatusCategory'], mq['AnimalType'], mq['Location'])
         return {
             'statusCode': 200,
+            'headers': { 'Access-Control-Allow-Origin': '*' },
             'body': json.dumps({'request':mq, 'response':response})
         }
     except Exception as e:
         return {
             'statusCode': 200,
+            'headers': { 'Access-Control-Allow-Origin': '*' },
             'body':json.dumps({'error': traceback.format_exc()})
         }

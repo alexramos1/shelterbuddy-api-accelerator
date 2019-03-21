@@ -1,18 +1,27 @@
 #
-# Test the search API
+# Basic automated test for the search API
 #
 from urllib.request import urlopen
 import os
 import json
 
-#r = urlopen(os.environ['API_URL'] + '/search?AnimalType=Cat&Location=Oceanside%20Campus%20-%20Dogs&StatusCategory=available')
+def test(query, validator):
+    url = os.environ['API_URL'] + query
+    print(url)
+    r = urlopen(url)
+    data = json.loads(r.read())
+    #print(json.dumps(data, indent=4))
+    if(r.info()['Access-Control-Allow-Origin'] != '*'):
+        raise Exception("failed test: missing CORS header")
+    if(not(validator(data['response']))):
+        raise Exception("failed test: validator failed")
+    
+test('/search?AnimalType=Cat&Location=ALL&StatusCategory=rescue',
+     lambda data: set(['Cat']) == set([animal['AnimalType'] for animal in data]))
 
-#r = urlopen(os.environ['API_URL'] + '/search?AnimalType=Cat&Location=Escondido%20Campus&StatusCategory=rescue')
+test('/search?AnimalType=Dog&Location=ALL&StatusCategory=rescue',
+     lambda data: set(['Dog']) == set([animal['AnimalType'] for animal in data]))
 
-#r = urlopen(os.environ['API_URL'] + '/search?AnimalType=ALL&Location=Escondido%20Campus&StatusCategory=rescue')
+test('/search?AnimalType=ALL&Location=Escondido%20Campus&StatusCategory=rescue',
+     lambda data: set(['Escondido Campus']) == set([animal['Location'] for animal in data]))
 
-r = urlopen(os.environ['API_URL'] + '/search?AnimalType=Cat&Location=ALL&StatusCategory=rescue')
-
-#r = urlopen(os.environ['API_URL'] + '/search?AnimalType=ALL&Location=ALL&StatusCategory=rescue')
-
-print(json.dumps(json.loads(r.read()), indent=4))
