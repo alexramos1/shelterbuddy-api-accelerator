@@ -2,27 +2,59 @@ import boto3
 import json
 from boto3.dynamodb.conditions import Key, Attr
 
+def opt(js, optionalValueFunction):
+    try:
+        return optionalValueFunction(js)
+    except:
+        return None
+
 class Database:
 
     dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
-    table = dynamodb.Table('sdhs_animals')
+    tableName = 'sb-animals'
+    table = dynamodb.Table(tableName)
     
-    def prepare(self, var):
+    def removeNulls(self, var):
         if isinstance(var, dict):
             for k in list(var.keys()):
                 v = var[k]
                 if isinstance(v, (dict, list)):
-                    self.prepare(var[k])
+                    self.removeNulls(var[k])
                 if v is None or v == [] or v == {} or v == '':
                     del var[k]
         elif isinstance(var, list):
             for d in var:
-                self.prepare(d)
+                self.removeNulls(d)
     
     def save(self,animal):
-        animal['LocationKey'] = animal['ContactLocation']['Name']
-        animal['AnimalType'] = animal['Type']['Name']
-        self.prepare(animal)
+        animal = {
+           "Id": animal['Id'],
+           "AnimalType": animal['Type']['Name'],
+           "LocationKey": animal['ContactLocation']['Name'],
+           "Status": animal['Status']['Name'],
+           "StatusCategory": animal['StatusCategory'],
+           "Name": opt(animal, lambda js: js['Name'].strip()),
+           "Sex": animal['Sex']['Name'],
+           "Breed": {
+                "Primary": animal['Breed']['Primary']['Name'],
+                "Secondary": opt(animal, lambda js: js['Breed']['Secondary']['Name']),
+                "IsCrossBreed": animal['Breed']['IsCrossBreed']
+           },
+           "Age": {
+                "Years": opt(animal, lambda js: int(js['Age']['Years'])),
+                "Months": opt(animal, lambda js: int(js['Age']['Months'])),
+                "Weeks": opt(animal, lambda js: int(js['Age']['Weeks'])),
+                "IsApproximate": opt(animal, lambda js: js['Age']['IsApproximate']),
+                "AgeGroup": opt(animal, lambda js: js['Age']['AgeGroup']['Name'])
+           },
+           "MainPhoto": opt(animal, lambda js: {
+                  "Photo": animal['Photos'][0]['Photo'],
+                  "PhotoThumbnailFormat": animal['Photos'][0]['PhotoThumbnailFormat'],
+                  "PhotoId": animal['Photos'][0]['Id']
+           }) 
+
+        }
+        self.removeNulls(animal)
         try:
             self.table.put_item(Item=animal)
         except:

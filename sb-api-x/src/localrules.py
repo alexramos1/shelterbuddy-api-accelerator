@@ -3,7 +3,8 @@
 # These rules are customized based on the needs of the specific local organization.
 #
 
-days = 30
+# default number of days to load, applicable to initial load only
+days = 90 #365 * 3
 
 lost = [
     "Lost",
@@ -93,7 +94,7 @@ def applyFilters(sbconn, animals, saveFunction, deleteFunction):
              
         # Check local filtering rules
         ctg = categorize(animal)
-        print(str(ctg) + ' ' + str(animal['Status']['Name']) + ' ' + animal['LastUpdatedUtc'])
+        #print(str(ctg) + ' ' + str(animal['Status']['Name']) + ' ' + animal['LastUpdatedUtc'])
          
         if(ctg):
             animal['StatusCategory'] = ctg

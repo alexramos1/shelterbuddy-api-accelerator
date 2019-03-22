@@ -1,7 +1,10 @@
 import json
 import boto3
 import traceback
+from database import Database
+from database import opt
 
+db = Database()
 dynamodb = boto3.client('dynamodb', region_name = 'us-west-1')
 
 #Example Query:
@@ -27,7 +30,7 @@ def query(StatusCategory, AnimalType, Location):
     if AnimalType == ['ALL'] and Location == ['ALL']:
         # query using only the StatusCategory
         response = dynamodb.query(
-            TableName='sdhs_animals',
+            TableName=db.tableName,
             IndexName='StatusCategory-LocationKey-index',
             Select='ALL_ATTRIBUTES',
             ConsistentRead=False,
@@ -39,7 +42,7 @@ def query(StatusCategory, AnimalType, Location):
     elif AnimalType == ['ALL']:
         # query using only the StatusCategory and Location
         response = dynamodb.query(
-            TableName='sdhs_animals',
+            TableName=db.tableName,
             IndexName='StatusCategory-LocationKey-index',
             Select='ALL_ATTRIBUTES',
             ConsistentRead=False,
@@ -52,7 +55,7 @@ def query(StatusCategory, AnimalType, Location):
     elif Location == ['ALL']:
         # query using only the StatusCategory and AnimalType
         response = dynamodb.query(
-            TableName='sdhs_animals',
+            TableName=db.tableName,
             IndexName='StatusCategory-AnimalType-index',
             Select='ALL_ATTRIBUTES',
             ConsistentRead=False,
@@ -65,7 +68,7 @@ def query(StatusCategory, AnimalType, Location):
     else:
         # query using the StatusCategory and Location, with a filter on AnimalType
         response = dynamodb.query(
-            TableName='sdhs_animals',
+            TableName=db.tableName,
             IndexName='StatusCategory-LocationKey-index',
             Select='ALL_ATTRIBUTES',
             ConsistentRead=False,
@@ -83,13 +86,13 @@ def query(StatusCategory, AnimalType, Location):
     return [{
        "AnimalId": int(js['Id']['N']),
        "AnimalType": js['AnimalType']['S'],
-       "Location": js['ContactLocation']['M']['Name']['S'],
-       "Status": js['Status']['M']['Name']['S'],
+       "Location": js['LocationKey']['S'],
+       "Status": js['Status']['S'],
        "Name": opt(js, lambda js: js['Name']['S'].strip()),
-       "Sex": js['Sex']['M']['Name']['S'],
+       "Sex": js['Sex']['S'],
        "Breed": {
-            "Primary": js['Breed']['M']['Primary']['M']['Name']['S'],
-            "Secondary": opt(js, lambda js: js['Breed']['M']['Secondary']['M']['Name']['S']),
+            "Primary": js['Breed']['M']['Primary']['S'],
+            "Secondary": opt(js, lambda js: js['Breed']['M']['Secondary']['S']),
             "IsCrossBreed": js['Breed']['M']['IsCrossBreed']['BOOL']
        },
        "Age": {
@@ -97,20 +100,14 @@ def query(StatusCategory, AnimalType, Location):
             "Months": opt(js, lambda js: int(js['Age']['M']['Months']['N'])),
             "Weeks": opt(js, lambda js: int(js['Age']['M']['Weeks']['N'])),
             "IsApproximate": opt(js, lambda js: js['Age']['M']['IsApproximate']['BOOL']),
-            "AgeGroup": opt(js, lambda js: js['Age']['M']['AgeGroup']['M']['Name']['S'])
+            "AgeGroup": opt(js, lambda js: js['Age']['M']['AgeGroup']['S'])
        },
        "MainPhoto": opt(js, lambda js: {
-              "Photo": js['Photos']['L'][0]['M']['Photo']['S'],
-              "PhotoThumbnailFormat": js['Photos']['L'][0]['M']['PhotoThumbnailFormat']['S'],
-              "PhotoId": js['Photos']['L'][0]['M']['Id']['N']
+              "Photo": js['MainPhoto']['M']['Photo']['S'],
+              "PhotoThumbnailFormat": js['MainPhoto']['M']['PhotoThumbnailFormat']['S'],
+              "PhotoId": js['MainPhoto']['M']['PhotoId']['N']
        }) 
     } for js in response['Items']]
-
-def opt(js, optionalValueFunction):
-    try:
-        return optionalValueFunction(js)
-    except:
-        return None
 
 def lambda_handler(event, context):
     try:
