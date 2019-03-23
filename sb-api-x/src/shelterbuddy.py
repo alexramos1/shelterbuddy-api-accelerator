@@ -46,9 +46,16 @@ class ShelterBuddyConnection:
             
             actionFunction(data['Data'])
             
-            target = data['Paging']['Next']   
-            last = max([animal['LastUpdatedUtc'] for animal in data['Data']])         
+            target = data['Paging']['Next']
+            try:   
+                last = max([animal['LastUpdatedUtc'] for animal in data['Data']])
+            except:
+                last = cutoff         
+
             checkpointFunction(target, last, cutoff)
+            
+            for animal in data['Data']:
+                yield animal
     
     def fetchUri(self, uri):
         if not(uri in self.uriCache):
