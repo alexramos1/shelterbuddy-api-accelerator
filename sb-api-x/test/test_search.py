@@ -37,3 +37,5 @@ test('/search?AnimalType=ALL&Location=ALL&StatusCategory=rescue',
 test('/search?AnimalType=ALL&Location=ALL&StatusCategory=available',
      lambda check: 'Available For Adoption' in [animal['Status'] for animal in check])
 
+test('/search?AnimalType=Cat&AnimalType=Dog&Location=Escondido%20Campus&Location=San%20Diego%20Campus%20-%205500&StatusCategory=rescue',
+     lambda check: set(['Escondido Campus', 'San Diego Campus - 5500']) == set([animal['Location'] for animal in check]) and set(['Cat','Dog']) == set([animal['AnimalType'] for animal in check]))

@@ -72,20 +72,24 @@ def query(StatusCategory, AnimalType, Location):
             )
             response.extend(resp['Items'])
     else:
-        # query using the StatusCategory and Location, with a filter on AnimalType
-        response = dynamodb.query(
-            TableName=db.tableName,
-            IndexName='StatusCategory-LocationKey-index',
-            Select='ALL_ATTRIBUTES',
-            ConsistentRead=False,
-            KeyConditionExpression='StatusCategory = :sc AND LocationKey = :loc',
-            ExpressionAttributeValues={
-                ':sc': { 'S': StatusCategory[0] },
-                ':loc': { 'S': Location[0] },
-                ':animalType': { 'S': AnimalType[0] }
-            },
-            FilterExpression='AnimalType = :animalType'
-        )['Items']
+        # query using the StatusCategory and AnimalType, with a filter on Location
+        response = []
+        for eachAnimalType in AnimalType:
+            eav = { ':sc': { 'S': StatusCategory[0] },
+                    ':animalType': { 'S': eachAnimalType }
+            }
+            for i in range(0, len(Location)):
+                eav[':loc' + str(i+1)] = { 'S' : Location[i] }
+            locRefs = ','.join([':loc' + str(i+1) for i in range(0,len(Location))])
+            response.extend(dynamodb.query(
+                TableName=db.tableName,
+                IndexName='StatusCategory-AnimalType-index',
+                Select='ALL_ATTRIBUTES',
+                ConsistentRead=False,
+                KeyConditionExpression='StatusCategory = :sc AND AnimalType = :animalType',
+                ExpressionAttributeValues=eav,
+                FilterExpression='LocationKey IN (%s)' % locRefs
+            )['Items'])
     #
     # convert from dynamodb storage format while removing unused fields
     #
