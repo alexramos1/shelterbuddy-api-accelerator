@@ -38,7 +38,7 @@ def query(StatusCategory, AnimalType, Location):
             ExpressionAttributeValues={
                 ':sc': { 'S': StatusCategory[0] }
             }
-        )
+        )['Items']
     elif AnimalType == ['ALL']:
         # query using only the StatusCategory and Location
         response = dynamodb.query(
@@ -51,20 +51,23 @@ def query(StatusCategory, AnimalType, Location):
                 ':sc': { 'S': StatusCategory[0] },
                 ':loc': { 'S': Location[0] },
             }
-        )
+        )['Items']
     elif Location == ['ALL']:
         # query using only the StatusCategory and AnimalType
-        response = dynamodb.query(
-            TableName=db.tableName,
-            IndexName='StatusCategory-AnimalType-index',
-            Select='ALL_ATTRIBUTES',
-            ConsistentRead=False,
-            KeyConditionExpression='StatusCategory = :sc AND AnimalType = :animalType',
-            ExpressionAttributeValues={
-                ':sc': { 'S': StatusCategory[0] },
-                ':animalType': { 'S': AnimalType[0] },
-            }
-        )
+        response = []
+        for eachAnimalType in AnimalType:
+            resp = dynamodb.query(
+                TableName=db.tableName,
+                IndexName='StatusCategory-AnimalType-index',
+                Select='ALL_ATTRIBUTES',
+                ConsistentRead=False,
+                KeyConditionExpression='StatusCategory = :sc AND AnimalType = :animalType',
+                ExpressionAttributeValues={
+                    ':sc': { 'S': StatusCategory[0] },
+                    ':animalType': { 'S': eachAnimalType },
+                }
+            )
+            response.extend(resp['Items'])
     else:
         # query using the StatusCategory and Location, with a filter on AnimalType
         response = dynamodb.query(
@@ -79,7 +82,7 @@ def query(StatusCategory, AnimalType, Location):
                 ':animalType': { 'S': AnimalType[0] }
             },
             FilterExpression='AnimalType = :animalType'
-        )
+        )['Items']
     #
     # convert from dynamodb storage format while removing unused fields
     #
@@ -107,7 +110,7 @@ def query(StatusCategory, AnimalType, Location):
               "PhotoThumbnailFormat": js['MainPhoto']['M']['PhotoThumbnailFormat']['S'],
               "PhotoId": js['MainPhoto']['M']['PhotoId']['N']
        }) 
-    } for js in response['Items']]
+    } for js in response]
 
 def lambda_handler(event, context):
     try:

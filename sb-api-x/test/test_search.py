@@ -22,6 +22,9 @@ test('/search?AnimalType=Cat&Location=ALL&StatusCategory=rescue',
 test('/search?AnimalType=Dog&Location=ALL&StatusCategory=rescue',
      lambda data: set(['Dog']) == set([animal['AnimalType'] for animal in data]))
 
+test('/search?AnimalType=Cat&AnimalType=Dog&Location=ALL&StatusCategory=rescue',
+     lambda data: set(['Cat','Dog']) == set([animal['AnimalType'] for animal in data]))
+
 test('/search?AnimalType=ALL&Location=Escondido%20Campus&StatusCategory=rescue',
      lambda data: set(['Escondido Campus']) == set([animal['Location'] for animal in data]))
 
