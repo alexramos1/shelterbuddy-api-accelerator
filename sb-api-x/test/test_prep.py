@@ -1,5 +1,5 @@
 #
-# Run the database prepare step. Validate by visual inspection.
+# Test the removeNulls() function. Tester must validate the result by visual inspection.
 #
 import database
 from sys import argv
@@ -12,6 +12,6 @@ animals = json.loads(f.read(), parse_float=Decimal)
 db = database.Database()
 
 for animal in animals:
-    db.prepare(animal)
+    db.removeNulls(animal)
     print(json.dumps(animal, indent=4))
 

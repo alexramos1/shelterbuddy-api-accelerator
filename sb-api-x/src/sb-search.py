@@ -41,17 +41,20 @@ def query(StatusCategory, AnimalType, Location):
         )['Items']
     elif AnimalType == ['ALL']:
         # query using only the StatusCategory and Location
-        response = dynamodb.query(
-            TableName=db.tableName,
-            IndexName='StatusCategory-LocationKey-index',
-            Select='ALL_ATTRIBUTES',
-            ConsistentRead=False,
-            KeyConditionExpression='StatusCategory = :sc AND LocationKey = :loc',
-            ExpressionAttributeValues={
-                ':sc': { 'S': StatusCategory[0] },
-                ':loc': { 'S': Location[0] },
-            }
-        )['Items']
+        response = []
+        for eachLocation in Location:
+            resp = dynamodb.query(
+                TableName=db.tableName,
+                IndexName='StatusCategory-LocationKey-index',
+                Select='ALL_ATTRIBUTES',
+                ConsistentRead=False,
+                KeyConditionExpression='StatusCategory = :sc AND LocationKey = :loc',
+                ExpressionAttributeValues={
+                    ':sc': { 'S': StatusCategory[0] },
+                    ':loc': { 'S': eachLocation },
+                }
+            )
+            response.extend(resp['Items'])
     elif Location == ['ALL']:
         # query using only the StatusCategory and AnimalType
         response = []
