@@ -85,15 +85,15 @@ def query(StatusCategory, AnimalType, Location):
     #
     return [{
        "AnimalId": int(js['Id']['N']),
-       "AnimalType": js['AnimalType']['S'],
-       "Location": js['LocationKey']['S'],
-       "Status": js['Status']['S'],
-       "Name": opt(js, lambda js: js['Name']['S'].strip()),
-       "Sex": js['Sex']['S'],
+       "AnimalType": opt(js, lambda js: js['AnimalType']['S']),
+       "Location": opt(js, lambda js: js['LocationKey']['S']),
+       "Status": opt(js, lambda js: js['Status']['S']),
+       "Name": opt(js, lambda js: js['Name']['S'].strip(), 'Unknown'),
+       "Sex": opt(js, lambda js: js['Sex']['S'], 'Unknown'),
        "Breed": {
-            "Primary": js['Breed']['M']['Primary']['S'],
+            "Primary": opt(js, lambda js: js['Breed']['M']['Primary']['S']),
             "Secondary": opt(js, lambda js: js['Breed']['M']['Secondary']['S']),
-            "IsCrossBreed": js['Breed']['M']['IsCrossBreed']['BOOL']
+            "IsCrossBreed": opt(js, lambda js: js['Breed']['M']['IsCrossBreed']['BOOL'])
        },
        "Age": {
             "Years": opt(js, lambda js: int(js['Age']['M']['Years']['N'])),

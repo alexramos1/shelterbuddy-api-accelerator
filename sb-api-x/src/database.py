@@ -2,11 +2,11 @@ import boto3
 import json
 from boto3.dynamodb.conditions import Key, Attr
 
-def opt(js, optionalValueFunction):
+def opt(js, optionalValueFunction, defaultValue = None):
     try:
         return optionalValueFunction(js)
     except:
-        return None
+        return defaultValue
 
 class Database:
 
@@ -27,6 +27,7 @@ class Database:
                 self.removeNulls(d)
     
     def save(self,animal):
+        print('INCOMING: ' + str(animal))
         animal = {
            "Id": animal['Id'],
            "AnimalType": animal['Type']['Name'],
