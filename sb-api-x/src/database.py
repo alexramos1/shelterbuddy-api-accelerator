@@ -34,11 +34,11 @@ class Database:
            "Status": animal['Status']['Name'],
            "StatusCategory": animal['StatusCategory'],
            "Name": opt(animal, lambda js: js['Name'].strip()),
-           "Sex": animal['Sex']['Name'],
+           "Sex": opt(animal, lambda js: js['Sex']['Name']),
            "Breed": {
-                "Primary": animal['Breed']['Primary']['Name'],
+                "Primary": opt(animal, lambda js: js['Breed']['Primary']['Name']),
                 "Secondary": opt(animal, lambda js: js['Breed']['Secondary']['Name']),
-                "IsCrossBreed": animal['Breed']['IsCrossBreed']
+                "IsCrossBreed": opt(animal, lambda js: js['Breed']['IsCrossBreed'])
            },
            "Age": {
                 "Years": opt(animal, lambda js: int(js['Age']['Years'])),
@@ -57,10 +57,12 @@ class Database:
         self.removeNulls(animal)
         try:
             self.table.put_item(Item=animal)
+            print("STORED: " + str(animal))
         except:
             print(animal)
             raise
         
     def delete(self, animal):
         self.table.delete_item(Key={'Id': animal['Id']})
+        print("DELETED: " + str(animal))
     

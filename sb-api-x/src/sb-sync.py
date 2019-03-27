@@ -39,7 +39,7 @@ def lambda_handler(event, context):
     print("cutoff = " + cutoff)
     
     for animal in conn._loadAnimals(target, cutoff, action, persist):
-        print(animal['Id'])
+        print('Processed: ' + str(animal['Id']))
 
 if __name__ == "__main__":
     lambda_handler(None,None)
