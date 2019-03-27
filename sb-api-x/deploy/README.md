@@ -14,7 +14,7 @@ AWS Solution Setup Steps
 
 6. Setup IAM roles: 
 - sb-sync with AmazonDynamoDBFullAccess, CloudWatchLogsFullAccess
-- sb-search with AmazonDynamoDBReadOnlyAccess
+- sb-search with AmazonDynamoDBReadOnlyAccess, CloudWatchLogsFullAccess
 
 7. Create DynamoDB table "sb-sync":
 - Table name: sb-sync, Primary Key: hashKey (String), everything else defaults.
