@@ -76,7 +76,7 @@ def lambda_handler(event, context):
         (target,cutoff) = info['Items'][0]['info'].split('#')
     
     if(target is None or target == ''):
-        target = "/api/v2/animal/list?PageSize=100"
+        target = "/api/v2/animal/list?PageSize=10"
     
     if(cutoff is None):
         cutoff = (datetime.today() - timedelta(days=localrules.days)).replace(microsecond=0).isoformat() + "Z"
