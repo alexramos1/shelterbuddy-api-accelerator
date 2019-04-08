@@ -113,9 +113,8 @@ def query(StatusCategory, AnimalType, Location):
             "AgeGroup": opt(js, lambda js: js['Age']['M']['AgeGroup']['S'])
        },
        "MainPhoto": opt(js, lambda js: {
-              "Photo": js['MainPhoto']['M']['Photo']['S'],
-              "PhotoThumbnailFormat": js['MainPhoto']['M']['PhotoThumbnailFormat']['S'],
-              "PhotoId": js['MainPhoto']['M']['PhotoId']['N']
+              #"Versions": [list(m['M'].keys())[0] for m in js['MainPhoto']['M']['Versions']['L']],
+              "default": js['MainPhoto']['M']['Versions']['L'][1]['M']['640']['S']
        }) 
     } for js in response]
 

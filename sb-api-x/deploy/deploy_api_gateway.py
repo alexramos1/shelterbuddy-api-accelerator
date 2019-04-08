@@ -23,7 +23,7 @@ def createResources(pathPart, function, role):
     )
     print(response)
     
-    functionArn = 'arn:aws:lambda:us-west-1:%s:function:%s' % (function, os.environ['AWS_ACCOUNT'])
+    functionArn = 'arn:aws:lambda:us-west-1:%s:function:%s' % (os.environ['AWS_ACCOUNT'], function)
     
     response = client.put_integration(
         restApiId=apiId,
@@ -35,7 +35,7 @@ def createResources(pathPart, function, role):
         uri = 'arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/%s/invocations' % functionArn,
         passthroughBehavior="WHEN_NO_MATCH",
         contentHandling='CONVERT_TO_TEXT',
-        credentials='arn:aws:iam::' + os.environ['AWS_ACCOUNT'] + ':role/' + role     
+        #credentials='arn:aws:iam::' + os.environ['AWS_ACCOUNT'] + ':role/' + role     
     )
     print(response)
     
