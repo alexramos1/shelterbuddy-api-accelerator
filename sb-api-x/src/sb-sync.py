@@ -44,10 +44,10 @@ def preparePhotos(animal):
     
 def action(animals):
     for animal in animals:
-        conn.resolve(animal, 'Uri', lambda uri: conn.fetchUri(uri))
         triageKeep = localrules.triageForWeb(animal)
 
         if(triageKeep):
+            [1 for loop in conn.resolve(animal, 'Uri', lambda uri: conn.fetchUri(uri))]
             # inline and prefetch the photo urls
             preparePhotos(animal)
             # saves the summarized animal for searching
