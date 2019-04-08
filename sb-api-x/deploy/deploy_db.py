@@ -45,11 +45,7 @@ dynamodb.create_table(
             'AttributeType': 'S'
         }
     ],
-    #BillingMode='PAY_PER_REQUEST',
-    ProvisionedThroughput={
-        'ReadCapacityUnits': 10,
-        'WriteCapacityUnits': 10
-    },
+    BillingMode='PAY_PER_REQUEST',
     GlobalSecondaryIndexes=[
         {
             'IndexName': 'StatusCategory-AnimalType-index',
@@ -65,11 +61,6 @@ dynamodb.create_table(
             ],
             'Projection': {
                 'ProjectionType': 'ALL'
-            },
-            #'BillingMode': 'PAY_PER_REQUEST',
-            'ProvisionedThroughput': {
-                'ReadCapacityUnits': 10,
-                'WriteCapacityUnits': 10
             }
         },
         {
@@ -86,11 +77,6 @@ dynamodb.create_table(
             ],
             'Projection': {
                 'ProjectionType': 'ALL'
-            },
-            #'BillingMode': 'PAY_PER_REQUEST',
-            'ProvisionedThroughput': {
-                'ReadCapacityUnits': 10,
-                'WriteCapacityUnits': 10
             }
         }
     ],
