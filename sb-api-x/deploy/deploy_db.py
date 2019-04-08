@@ -3,6 +3,23 @@ import boto3
 dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
 
 dynamodb.create_table(
+    TableName='sb-animal-details',
+    KeySchema=[
+        {
+            'AttributeName': 'Id',
+            'KeyType': 'HASH'  #Partition key
+        }
+    ],
+    AttributeDefinitions=[
+        {
+            'AttributeName': 'Id',
+            'AttributeType': 'N'
+        }
+    ],
+    BillingMode='PAY_PER_REQUEST'
+)
+
+dynamodb.create_table(
     TableName='sb-animals',
     KeySchema=[
         {

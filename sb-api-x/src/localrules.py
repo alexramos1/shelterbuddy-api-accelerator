@@ -4,7 +4,7 @@
 #
 
 # default number of days to load, applicable to initial load only
-days = 90 #365 * 3
+days = 1 #365 * 3
 
 lost = [
     "Lost",
@@ -81,28 +81,19 @@ def categorize(animal):
     else:
         return None 
 
-def applyFilters(sbconn, animals, saveFunction, deleteFunction):
-    for animal in animals:
-        # expand the status variable to allow further filtering
-        animal['Status']['UriValue'] = sbconn.fetchUri(animal['Status']['Uri'])
-
-        # cleanup redundant data        
-        if 'Name' in animal['Status']['UriValue']:
-            del animal['Status']['UriValue']['Name']
-        if 'Id' in animal['Status']['UriValue']:
-            del animal['Status']['UriValue']['Id']
-             
-        # Check local filtering rules
-        ctg = categorize(animal)
-        #print(str(ctg) + ' ' + str(animal['Status']['Name']) + ' ' + animal['LastUpdatedUtc'])
-         
-        if(ctg):
-            animal['StatusCategory'] = ctg
-            
-            # inline the photo urls
-            animal['Photos'] = sbconn.fetchPhotos(animal['Id'])
+#
+# determine whether an animal should be kept on the website
+#
+def triageForWeb(animal):
+    
+    # Check local filtering rules
+    ctg = categorize(animal)
+     
+    if(ctg):
+        animal['StatusCategory'] = ctg        
+        # keeper
+        return True
         
-            saveFunction(animal)
-            
-        else:
-            deleteFunction(animal)
+    else:
+        # not for website
+        return False

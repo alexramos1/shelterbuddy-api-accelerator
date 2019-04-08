@@ -25,10 +25,7 @@ class ShelterBuddyConnection:
         r = urlopen(req)
         return json.loads(r.read())
         
-    def loadAnimals(self, target, cutoff):
-        self._loadAnimals(target, cutoff, lambda x: [(yield a) for a in x], lambda x:x)
-        
-    def _loadAnimals(self, target, cutoff, actionFunction, checkpointFunction):
+    def loadAnimals(self, target, cutoff, actionFunction, checkpointFunction):
         
         postparm = ("{ 'UpdatedSinceUTC':'" + cutoff + "'}").encode('utf-8')
     
@@ -53,9 +50,6 @@ class ShelterBuddyConnection:
                 last = cutoff         
 
             checkpointFunction(target, last, cutoff)
-            
-            for animal in data['Data']:
-                yield animal
     
     def fetchUri(self, uri):
         if not(uri in self.uriCache):
@@ -63,9 +57,15 @@ class ShelterBuddyConnection:
             
             req.add_header("sb-auth-token", self.token)
             req.add_header("content-type", "application/json")
-            
-            r = urlopen(req)
-            self.uriCache[uri] = json.loads(r.read())
+
+            try:
+                r = urlopen(req)
+                self.uriCache[uri] = json.loads(r.read())
+            except urllib.error.HTTPError as e:
+                if(e.code == 404):
+                    self.uriCache[uri] = "404-Not-Found"
+                else:
+                    raise(e)
 
         return self.uriCache[uri]
     
@@ -73,7 +73,7 @@ class ShelterBuddyConnection:
         
         postparam = urllib.parse.urlencode({"AnimalId": animalId})
         print(postparam)
-        url = self.shelterbuddyUrl + "/api/v2/animal/photo/list?page=1&pageSize=100"
+        url = self.shelterbuddyUrl + "/api/v2/animal/photo/list?page=1&pageSize=30"
         req = Request(url, method='POST', data=postparam.encode('utf-8'))
         req.add_header("sb-auth-token", self.token)
         req.add_header("content-type", "application/x-www-form-urlencoded")
@@ -86,3 +86,22 @@ class ShelterBuddyConnection:
             del photo['Animal'] 
         
         return obj['Data']
+
+    def resolve(self, var, key, resolver):
+        if isinstance(var, dict):
+            for k, v in list(var.items()):
+                if k == key:
+                    var[k + 'Data'] = resolver(v)
+                    yield v
+                if isinstance(v, (dict, list)):
+                    yield from self.resolve(v, key, resolver)
+        elif isinstance(var, list):
+            for d in var:
+                yield from self.resolve(d, key, resolver)
+    
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, Decimal):
+            return float(o)
+        return super(DecimalEncoder, self).default(o)
+
