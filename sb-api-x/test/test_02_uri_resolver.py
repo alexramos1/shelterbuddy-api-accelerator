@@ -4,7 +4,7 @@
 #
 import json
 import sys
-from shelterbuddy import ShelterBuddyConnection, DecimalEncoder, resolve
+from shelterbuddy import ShelterBuddyConnection, DecimalEncoder
 from datetime import datetime
 import database
 
@@ -13,9 +13,7 @@ data = json.loads(f.read())[0:9]
 conn = ShelterBuddyConnection()
 db = database.Database()
 
-for i in resolve(data, 'Uri', lambda uri: conn.fetchUri(uri)):
-    #print(i)
-    None
+conn.resolve(data, 'Uri', lambda uri: conn.fetchUri(uri))
     
 f = open("animals-%s-resolved.json" % datetime.today().strftime('%Y-%m-%d'), "w")
 f.write(json.dumps(data, cls=DecimalEncoder))

@@ -4,7 +4,7 @@
 #
 
 # default number of days to load, applicable to initial load only
-days = 1 #365 * 3
+days = 90 #365 * 3
 
 lost = [
     "Lost",

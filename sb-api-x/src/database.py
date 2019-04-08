@@ -43,10 +43,9 @@ def searchableFields(animal):
             "AgeGroup": opt(animal, lambda js: js['Age']['AgeGroup']['Name'])
        },
        "MainPhoto": opt(animal, lambda js: {
-              "Photo": animal['Photos'][0]['Photo'],
-              "PhotoThumbnailFormat": animal['Photos'][0]['PhotoThumbnailFormat'],
-              "PhotoId": animal['Photos'][0]['Id']
-       }) 
+              "Photo": animal['Photos'][0].values()
+       }),
+       #"Intake": animal['Intake']['DateUtc'] 
     }
     
 class Database:
@@ -63,10 +62,13 @@ class Database:
             self.table.put_item(Item=animal)
             print("STORED: " + str(animal))
         except:
-            print(animal)
+            print("FAILED:" + str(animal))
             raise
         
     def delete(self, animal):
-        self.table.delete_item(Key={'Id': animal['Id']})
-        print("DELETED: " + str(animal))
+        try:
+            self.table.delete_item(Key={'Id': animal['Id']})
+            print("DELETED: " + str(animal))
+        except:
+            print("SKIPPED: " + str(animal))
     

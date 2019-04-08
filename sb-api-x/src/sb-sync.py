@@ -8,30 +8,58 @@ import localrules
 import boto3
 from boto3.dynamodb.conditions import Key
 import json
+import os
 
 db = Database()
 conn = ShelterBuddyConnection()
+s3client = boto3.client('s3')
+bucket = os.environ['AWS_S3_BUCKET']
 
 dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
 syncTable = dynamodb.Table('sb-sync')
 detailTable = dynamodb.Table('sb-animal-details')
 
+def preparePhotos(animal):
+    photos = conn.fetchPhotoLinks(animal['Id'])
+    print(photos)
+    for photo in photos:
+        sizes = [ 1024, 640, 480, 320, 240 ]
+        if('PhotoThumbnailFormat' in photo):
+            photoFormat = photo['PhotoThumbnailFormat'].replace("<size>", "%d")
+        else:
+            photoFormat = photo['Photo'].replace('-jpg/1024---n', '-jpg/%d---n')
+
+        del photo['Photo']
+        del photo['PhotoThumbnailFormat']
+        photo['Versions'] = []  
+
+        for thSize in sizes:
+            photoPath = photoFormat % thSize
+            s3path = photoPath[1:]
+            photoPayload = conn.fetchPhotoPayload(photoPath)
+            s3client.put_object(ContentType='image/jpeg', Bucket=bucket, Key=s3path, Body=photoPayload)
+            photo['Versions'].append({ str(thSize): photoPath })
+            
+    animal['Photos'] = photos
+    
 def action(animals):
     for animal in animals:
         conn.resolve(animal, 'Uri', lambda uri: conn.fetchUri(uri))
-
         triageKeep = localrules.triageForWeb(animal)
 
         if(triageKeep):
-            # inline the photo urls
-            animal['Photos'] = conn.fetchPhotos(animal['Id'])
+            # inline and prefetch the photo urls
+            preparePhotos(animal)
             # saves the summarized animal for searching
             db.save(animal)
             # save the full original animal details
             detailTable.put_item(Item={'Id': animal['Id'], 'rawData': json.dumps(animal, cls=DecimalEncoder) })
         else:
             db.delete(animal)
-            detailTable.delete_item(Key={'Id': animal['Id']})
+            try:
+                detailTable.delete_item(Key={'Id': animal['Id']})
+            except:
+                'ignore'
             
     print('Processed: ' + str([animal['Id'] for animal in animals]))
 

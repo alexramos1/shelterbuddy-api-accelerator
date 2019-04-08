@@ -4,6 +4,7 @@ import json
 from decimal import Decimal
 from os import getenv
 from urllib.parse import quote
+from docutils.parsers.rst.directives import uri
 
 class ShelterBuddyConnection:
     "Connects to ShelterBuddy API"
@@ -69,7 +70,7 @@ class ShelterBuddyConnection:
 
         return self.uriCache[uri]
     
-    def fetchPhotos(self, animalId):
+    def fetchPhotoLinks(self, animalId):
         
         postparam = urllib.parse.urlencode({"AnimalId": animalId})
         print(postparam)
@@ -83,9 +84,13 @@ class ShelterBuddyConnection:
         obj = json.loads(r.read(), parse_float=Decimal)
 
         for photo in obj['Data']:
-            del photo['Animal'] 
+            del photo['Animal']
         
         return obj['Data']
+    
+    def fetchPhotoPayload(self, path):
+        print('download photo: ' + path)
+        return urlopen(Request(self.shelterbuddyUrl + path)).read()
 
     def resolve(self, var, key, resolver):
         if isinstance(var, dict):
