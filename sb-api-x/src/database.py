@@ -42,10 +42,10 @@ def searchableFields(animal):
             "IsApproximate": opt(animal, lambda js: js['Age']['IsApproximate']),
             "AgeGroup": opt(animal, lambda js: js['Age']['AgeGroup']['Name'])
        },
-       "MainPhoto": opt(animal, lambda js: {
-              "Photo": animal['Photos'][0].values()
-       }),
-       #"Intake": animal['Intake']['DateUtc'] 
+       "MainPhoto": opt(animal, lambda js: 
+              animal['Photos'][0]
+       ),
+       "Intake": animal['Intake']['DateUtc'] 
     }
     
 class Database:
@@ -57,7 +57,7 @@ class Database:
     def save(self,animal):
         print('INCOMING: ' + str(animal))
         animal = searchableFields(animal)
-        removeNulls(animal)
+        animal = removeNulls(animal)
         try:
             self.table.put_item(Item=animal)
             print("STORED: " + str(animal))
