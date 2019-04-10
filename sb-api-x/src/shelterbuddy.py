@@ -53,6 +53,8 @@ class ShelterBuddyConnection:
             checkpointFunction(target, last, cutoff)
     
     def fetchUri(self, uri):
+        if(uri.startswith("/api/v2/person/")):
+            return "blocked"
         if not(uri in self.uriCache):
             req = Request(self.shelterbuddyUrl + uri)
             
