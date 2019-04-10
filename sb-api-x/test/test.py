@@ -13,6 +13,6 @@ def test(query, validator):
     #print(json.dumps(check, indent=4))
     if(r.info()['Access-Control-Allow-Origin'] != '*'):
         raise Exception("failed test: missing CORS header")
-    if(not(validator(check['response']))):
+    if(not(validator(check))):
         raise Exception("failed test: validator failed")
     return check
