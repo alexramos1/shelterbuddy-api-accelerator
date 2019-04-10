@@ -114,7 +114,7 @@ def query(StatusCategory, AnimalType, Location):
        },
        "MainPhoto": opt(js, lambda js: {
               #"Versions": [list(m['M'].keys())[0] for m in js['MainPhoto']['M']['Versions']['L']],
-              "default": js['MainPhoto']['M']['Versions']['L'][1]['M']['640']['S']
+              "default": js['MainPhoto']['M']['Versions']['L'][3]['M']['320']['S']
        }) 
     } for js in response]
 

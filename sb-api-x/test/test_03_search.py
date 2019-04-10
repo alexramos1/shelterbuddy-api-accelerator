@@ -6,7 +6,7 @@ from test import test
 def check_photo(animals):
     for animal in animals:
         try:
-            if(animal['MainPhoto']['default'].find('jpg/640') > 0):
+            if(animal['MainPhoto']['default'].find('jpg/320-') > 0):
                 return True
         except:
             "ignore"
