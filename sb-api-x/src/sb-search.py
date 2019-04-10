@@ -93,6 +93,7 @@ def query(StatusCategory, AnimalType, Location):
     #
     # convert from dynamodb storage format while removing unused fields
     #
+    response = sorted(response, key=lambda r: r['Intake']['S'])
     return [{
        "AnimalId": int(js['Id']['N']),
        "AnimalType": opt(js, lambda js: js['AnimalType']['S']),

@@ -15,7 +15,12 @@ def check_photo(animals):
 test1 = test('/search?AnimalType=ALL&Location=ALL&StatusCategory=available',
      lambda check: check_photo(check['response']))
 
-details = [test('/animal?Id=%d' % animal['AnimalId'], lambda ok:True) for animal in test1['response'][0:9] ]
+details = [test('/animal?Id=%d' % animal['AnimalId'], lambda ok:True) for animal in test1['response'][0:9]]
+intake = [a['response']['Intake']['DateUtc'] for a in details]
+
+if(intake != sorted(intake)):
+    print("the intake dates are not in order: " + str(intake))
+    raise
 
 test('/search?AnimalType=Cat&Location=ALL&StatusCategory=rescue',
      lambda check: set(['Cat']) == set([animal['AnimalType'] for animal in check['response']]))
