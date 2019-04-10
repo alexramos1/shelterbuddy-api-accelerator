@@ -14,22 +14,11 @@ from botocore.errorfactory import ClientError
 db = Database()
 conn = ShelterBuddyConnection()
 s3client = boto3.client('s3')
-s3resource = boto3.resource('s3')
 bucket = os.environ['AWS_S3_BUCKET']
 
 dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
 syncTable = dynamodb.Table('sb-sync')
 detailTable = dynamodb.Table('sb-animal-details')
-
-def s3ObjectExists(path):
-    try:
-        s3resource.ObjectSummary(bucket_name=bucket, key=path).load()
-    except ClientError as e:
-        if e.response['Error']['Code'] == "404":
-            return False
-        else:
-            raise e
-    return True
 
 def preparePhotos(animal):
     photos = conn.fetchPhotoLinks(animal['Id'])
@@ -48,11 +37,8 @@ def preparePhotos(animal):
         for thSize in sizes:
             photoPath = photoFormat % thSize
             s3path = photoPath[1:]
-            if s3ObjectExists(s3path):
-                print("Photo download skipped: " + photoPath)
-            else:
-                photoPayload = conn.fetchPhotoPayload(photoPath)
-                s3client.put_object(ContentType='image/jpeg', Bucket=bucket, Key=s3path, Body=photoPayload)
+            photoPayload = conn.fetchPhotoPayload(photoPath)
+            s3client.put_object(ContentType='image/jpeg', Bucket=bucket, Key=s3path, Body=photoPayload)
             photo['Versions'].append({ str(thSize): photoPath })
             
     animal['Photos'] = photos
