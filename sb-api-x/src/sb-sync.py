@@ -9,15 +9,27 @@ import boto3
 from boto3.dynamodb.conditions import Key
 import json
 import os
+from botocore.errorfactory import ClientError
 
 db = Database()
 conn = ShelterBuddyConnection()
 s3client = boto3.client('s3')
+s3resource = boto3.resource('s3')
 bucket = os.environ['AWS_S3_BUCKET']
 
 dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
 syncTable = dynamodb.Table('sb-sync')
 detailTable = dynamodb.Table('sb-animal-details')
+
+def s3ObjectExists(path):
+    try:
+        s3resource.ObjectSummary(bucket_name=bucket, key=path).load()
+    except ClientError as e:
+        if e.response['Error']['Code'] == "404":
+            return False
+        else:
+            raise e
+    return True
 
 def preparePhotos(animal):
     photos = conn.fetchPhotoLinks(animal['Id'])
@@ -36,8 +48,11 @@ def preparePhotos(animal):
         for thSize in sizes:
             photoPath = photoFormat % thSize
             s3path = photoPath[1:]
-            photoPayload = conn.fetchPhotoPayload(photoPath)
-            s3client.put_object(ContentType='image/jpeg', Bucket=bucket, Key=s3path, Body=photoPayload)
+            if s3ObjectExists(s3path):
+                print("Photo download skipped: " + photoPath)
+            else:
+                photoPayload = conn.fetchPhotoPayload(photoPath)
+                s3client.put_object(ContentType='image/jpeg', Bucket=bucket, Key=s3path, Body=photoPayload)
             photo['Versions'].append({ str(thSize): photoPath })
             
     animal['Photos'] = photos
@@ -79,7 +94,9 @@ def lambda_handler(event, context):
         target = "/api/v2/animal/list?PageSize=10"
     
     if(cutoff is None):
-        cutoff = (datetime.today() - timedelta(days=localrules.days)).replace(microsecond=0).isoformat() + "Z"
+        # initial load, database is empty
+        days = int(os.environ['INITIAL_LOAD_DAYS'])
+        cutoff = (datetime.today() - timedelta(days=days)).replace(microsecond=0).isoformat() + "Z"
     
     print("target = " + target)
     print("cutoff = " + cutoff)

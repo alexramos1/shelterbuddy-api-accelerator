@@ -3,9 +3,6 @@
 # These rules are customized based on the needs of the specific local organization.
 #
 
-# default number of days to load, applicable to initial load only
-days = 90 #365 * 3
-
 lost = [
     "Lost",
     "Hold For Possible Match",
