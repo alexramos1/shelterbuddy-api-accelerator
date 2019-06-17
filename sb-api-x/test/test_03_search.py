@@ -16,10 +16,10 @@ test1 = test('/search?AnimalType=ALL&Location=ALL&StatusCategory=available',
      lambda check: check_photo(check['response']))
 
 details = [test('/animal?Id=%d' % animal['AnimalId'], lambda ok:True) for animal in test1['response'][0:9]]
-intake = [a['response']['Intake']['DateUtc'] for a in details]
+sortable = [a['response']['Id'] for a in details]
 
-if(intake != sorted(intake)):
-    print("the intake dates are not in order: " + str(intake))
+if(sortable != sorted(sortable)):
+    print("the sortable items are not in order: " + str(sortable))
     raise
 
 test('/search?AnimalType=Cat&Location=ALL&StatusCategory=rescue',
