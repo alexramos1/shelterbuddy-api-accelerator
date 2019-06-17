@@ -45,11 +45,8 @@ rescue = [
     "Hospitalised",
     "Under Behavior Modification",
     "Awaiting Triage Completion",
-    "Awaiting Spay/Neuter - In Foster",
-    "Awaiting Vet Approval - In Foster",
     "Entered Care",
     "Hold Intervention",
-    "In Foster",
     "Awaiting Behavioral Assessment",
     "Awaiting Spay/Neuter",
     "Owner Relinquishment",
@@ -60,7 +57,6 @@ rescue = [
     "Awaiting Behavior Completion",
     "Awaiting Sort",
     "Awaiting Transfer",
-    "Available for Adoption - In Foster"
 ]
 
 def categorize(animal):
