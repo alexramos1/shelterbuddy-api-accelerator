@@ -99,5 +99,6 @@ for res in response['items']:
 
 createResources('animal', 'sb-get', 'sb-search')
 createResources('search', 'sb-search', 'sb-search')
+createResources('webhook', 'sb-webhook', 'sb-webhook')
 
 
