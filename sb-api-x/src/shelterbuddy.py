@@ -40,6 +40,8 @@ class ShelterBuddyConnection:
             req.add_header("content-type", "application/json")
             r = urlopen(req)
             
+            processedDT = r.info()["x-shelterbuddy-processed-datetimeutc"]
+            
             data = json.loads(r.read(), parse_float=Decimal)
             
             actionFunction(data['Data'])
@@ -49,8 +51,11 @@ class ShelterBuddyConnection:
                 last = max([animal['LastUpdatedUtc'] for animal in data['Data']])
             except:
                 last = cutoff         
+                
+            print('timestamps: starting=%s, processed=%s, max=%s' % (cutoff, processedDT, last))
 
             checkpointFunction(target, last, cutoff)
+            return last
     
     def fetchUri(self, uri):
         if(uri.startswith("/api/v2/person/")):
