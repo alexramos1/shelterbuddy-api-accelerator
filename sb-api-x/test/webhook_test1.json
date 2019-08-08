@@ -1,0 +1,85 @@
+{
+	"resource": "/webhook",
+	"path": "/webhook",
+	"httpMethod": "POST",
+	"headers": {
+		"Accept": "application/xml, text/xml, application/json, application/xml, text/json, text/x-json, text/javascript, text/xml",
+		"Accept-Encoding": "gzip, deflate",
+		"Content-Type": "application/json",
+		"Host": "tje3xq7eu2.execute-api.us-west-1.amazonaws.com",
+		"User-Agent": "RestSharp/105.0.1.0",
+		"X-Amzn-Trace-Id": "Root=1-5d42367c-491f05e67485349d00b25e68",
+		"X-Forwarded-For": "54.203.165.27",
+		"X-Forwarded-Port": "443",
+		"X-Forwarded-Proto": "https",
+		"x-shelterBuddy-source": "https://sdhumane.shelterbuddy.com"
+	},
+	"multiValueHeaders": {
+		"Accept": [
+			"application/xml, text/xml, application/json, application/xml, text/json, text/x-json, text/javascript, text/xml"
+		],
+		"Accept-Encoding": [
+			"gzip, deflate"
+		],
+		"Content-Type": [
+			"application/json"
+		],
+		"Host": [
+			"tje3xq7eu2.execute-api.us-west-1.amazonaws.com"
+		],
+		"User-Agent": [
+			"RestSharp/105.0.1.0"
+		],
+		"X-Amzn-Trace-Id": [
+			"Root=1-5d42367c-491f05e67485349d00b25e68"
+		],
+		"X-Forwarded-For": [
+			"54.203.165.27"
+		],
+		"X-Forwarded-Port": [
+			"443"
+		],
+		"X-Forwarded-Proto": [
+			"https"
+		],
+		"x-shelterBuddy-source": [
+			"https://sdhumane.shelterbuddy.com"
+		]
+	},
+	"queryStringParameters": null,
+	"multiValueQueryStringParameters": null,
+	"pathParameters": null,
+	"stageVariables": null,
+	"requestContext": {
+		"resourceId": "624p90",
+		"resourcePath": "/webhook",
+		"httpMethod": "POST",
+		"extendedRequestId": "dt1zgFPFSK4Foaw=",
+		"requestTime": "01/Aug/2019:00:46:52 +0000",
+		"path": "/production/webhook",
+		"accountId": "822014551977",
+		"protocol": "HTTP/1.1",
+		"stage": "production",
+		"domainPrefix": "tje3xq7eu2",
+		"requestTimeEpoch": 1564620412852,
+		"requestId": "daab281a-b3f5-11e9-ba6b-3f7381d995e0",
+		"identity": {
+			"cognitoIdentityPoolId": null,
+			"accountId": null,
+			"cognitoIdentityId": null,
+			"caller": null,
+			"sourceIp": "54.203.165.27",
+			"principalOrgId": null,
+			"accessKey": null,
+			"cognitoAuthenticationType": null,
+			"cognitoAuthenticationProvider": null,
+			"userArn": null,
+			"userAgent": "RestSharp/105.0.1.0",
+			"user": null
+		},
+		"domainName": "tje3xq7eu2.execute-api.us-west-1.amazonaws.com",
+		"apiId": "tje3xq7eu2"
+	},
+	"body": "{\"AnimalId\":612113,\"DeletedDateUtc\":\"2019-08-01T00:45:52.887Z\",\"Id\":108322}",
+	"isBase64Encoded": false
+}

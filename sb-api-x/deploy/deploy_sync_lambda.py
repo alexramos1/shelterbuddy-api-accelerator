@@ -8,6 +8,7 @@ with ZipFile(ZIP, 'w') as myzip:
 	myzip.write('../src/shelterbuddy.py', arcname='shelterbuddy.py')
 	myzip.write('../src/database.py', arcname='database.py')
 	myzip.write('../src/localrules.py', arcname='localrules.py')
+	myzip.write('../src/process_webhook.py', arcname='process_webhook.py')
 	
 client = boto3.client('lambda', region_name = os.environ['AWS_REGION'])
 

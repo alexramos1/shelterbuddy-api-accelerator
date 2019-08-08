@@ -10,6 +10,7 @@ from boto3.dynamodb.conditions import Key
 import json
 import os
 from botocore.errorfactory import ClientError
+from process_webhook import processWebhooks
 
 db = Database()
 conn = ShelterBuddyConnection()
@@ -87,7 +88,10 @@ def lambda_handler(event, context):
     print("target = " + target)
     print("cutoff = " + cutoff)
     
-    conn.loadAnimals(target, cutoff, action, persist)
+    lastUpdate = conn.loadAnimals(target, cutoff, action, persist)
+    
+    if lastUpdate != cutoff:
+        processWebhooks(lastUpdate)
 
 if __name__ == "__main__":
     lambda_handler(None,None)

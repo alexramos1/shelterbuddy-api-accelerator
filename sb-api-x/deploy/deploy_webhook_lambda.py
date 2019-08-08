@@ -28,7 +28,7 @@ except:
 	    Code={'ZipFile': open(ZIP.format(fn_name), 'rb').read(), },
 	    Environment={
         	'Variables': {
-            	'AWS_S3_BUCKET': os.environ['AWS_WEBHOOK_BUCKET']
+            	'SQS_WEBHOOK': os.environ['SQS_WEBHOOK']
 	        }
 	    }
 	)
