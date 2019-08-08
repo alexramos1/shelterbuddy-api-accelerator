@@ -4,7 +4,6 @@ import json
 from decimal import Decimal
 from os import getenv
 from urllib.parse import quote
-from docutils.parsers.rst.directives import uri
 
 class ShelterBuddyConnection:
     "Connects to ShelterBuddy API"
@@ -47,10 +46,12 @@ class ShelterBuddyConnection:
             actionFunction(data['Data'])
             
             target = data['Paging']['Next']
-            try:   
-                last = max([animal['LastUpdatedUtc'] for animal in data['Data']])
-            except:
-                last = cutoff         
+            
+            if target:
+                # maintain the same search timestamp while paginating
+                last = cutoff      
+            else:
+                last = processedDT
                 
             print('timestamps: starting=%s, processed=%s, max=%s' % (cutoff, processedDT, last))
 
