@@ -102,3 +102,21 @@ dynamodb.create_table(
         'WriteCapacityUnits': 1
     },
 )
+
+dynamodb.create_table(
+    TableName='sb-config',
+    KeySchema=[
+        {
+            'AttributeName': 'section',
+            'KeyType': 'HASH'
+        }
+    ],
+    AttributeDefinitions=[
+        {
+            'AttributeName': 'section',
+            'AttributeType': 'S'
+        }
+    ],
+    BillingMode='PAY_PER_REQUEST'
+)
+

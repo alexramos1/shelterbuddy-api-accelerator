@@ -2,6 +2,8 @@
 # "Local" rules for pre-processing ShelterBuddy data.
 # These rules are customized based on the needs of the specific local organization.
 #
+import boto3
+client = boto3.client('dynamodb', region_name = 'us-west-1')
 
 lost = [
     "Lost",
@@ -34,28 +36,9 @@ available = [
     "Available for Adoption - Waiting Space",
 ]
 
-rescue = [
-    "Awaiting Behavior Completion",
-    "Awaiting Behavior Retest",
-    "Awaiting Behavioral Assessment",
-    "Awaiting Foster",
-    "Awaiting Sort",
-    "Awaiting Spay Check",
-    "Awaiting Spay/Neuter",
-    "Awaiting Surgery - Not Spay/Neuter",
-    "Awaiting Transfer",
-    "Awaiting Triage Completion",
-    "Awaiting Triage",
-    "Awaiting Vet Exam / Health Check",
-    "Bite Quarantine (Home)",
-    "Disposition Under Final Review",
-    "Entered Care",
-    "Hold Intervention",
-    "Hospitalised",
-    "Owner Relinquishment",
-    "Rehabilitating",
-    "Under Vet Care",
-]
+# the rescue status list has been moved to dynamo becaused it changes too often
+response = client.get_item(TableName='sb-config', Key={ 'section': { 'S': 'rescue' }})
+rescue = [item['S'] for item in response['Item']['status']['L']]
 
 def categorize(animal):
     st = animal['Status']['Name']
