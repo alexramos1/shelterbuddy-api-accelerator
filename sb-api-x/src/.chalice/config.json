@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "app_name": "chalice-app",
+  "stages": {
+    "dev": {
+      "api_gateway_stage": "dev",
+      "environment_variables": {
+        "AWS_WEBHOOK_BUCKET": "dev-sb-webhook-ue2",
+		"SQS_WEBHOOK": "https://sqs.us-east-2.amazonaws.com/822014551977/sb-webhook",
+		"AWS_S3_BUCKET": "dev-sb-photo-cache",
+		"INITIAL_LOAD_DAYS": "7"
+      }
+    },
+    "prod": {
+      "api_gateway_stage": "production",
+      "environment_variables": {
+        "AWS_WEBHOOK_BUCKET": "sb-webhook",
+		"SQS_WEBHOOK": "https://sqs.us-west-1.amazonaws.com/822014551977/sb-webhook",
+		"AWS_S3_BUCKET": "sb-photo-cache",
+		"INITIAL_LOAD_DAYS": "90"
+      }
+    }
+  }
+}

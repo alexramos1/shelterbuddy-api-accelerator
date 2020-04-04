@@ -8,10 +8,10 @@ from datetime import datetime
 client = boto3.client('sqs')
 queue  = os.environ['SQS_WEBHOOK']
 
-s3bucket = 'sb-webhook'
+s3bucket = os.environ['AWS_WEBHOOK_BUCKET']
 s3client = boto3.client('s3')
 
-def lambda_handler(event, context):
+def handler(event):
 
     log = client.send_message(QueueUrl=queue, MessageBody=json.dumps(event))
     print (log)
@@ -20,8 +20,4 @@ def lambda_handler(event, context):
     log = s3client.put_object(Bucket=s3bucket, Key=sequentialPath, Body=json.dumps(event).encode('utf-8', 'replace'))
     print(log)
     
-    return {
-        'statusCode': 200,
-        'headers': { },
-        'body': "ok"
-    }
+    return "ok"

@@ -2,9 +2,9 @@
 import boto3
 import json
 import os
-from database import Database
+from .database import Database
 
-client = boto3.client('sqs', region_name = 'us-west-1')
+client = boto3.client('sqs')
 queue  = os.environ['SQS_WEBHOOK']
 db = Database()
 

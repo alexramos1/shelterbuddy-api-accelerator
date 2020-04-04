@@ -1,1 +1,4 @@
-/_lambda_package.zip
+/test-animals-*.json
+.chalice/deployments/
+.chalice/venv/
+/__pycache__/

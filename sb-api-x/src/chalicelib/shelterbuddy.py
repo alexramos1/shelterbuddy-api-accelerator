@@ -2,24 +2,22 @@ from urllib.request import Request, urlopen
 import urllib
 import json
 from decimal import Decimal
-from os import getenv
 from urllib.parse import quote
+import boto3
 
 class ShelterBuddyConnection:
     "Connects to ShelterBuddy API"
     
     uriCache = {}
 
-    def __init__(self, shelterbuddyUrl=None, username=None, password=None):
-        if shelterbuddyUrl is None:
-            shelterbuddyUrl = getenv("SHELTERBUDDY_API_URL")
-            username = quote(getenv("SHELTERBUDDY_API_USER"))
-            password = quote(getenv("SHELTERBUDDY_API_PASSWORD"))
-        self.shelterbuddyUrl = shelterbuddyUrl
-        self.token = self.authenticate(username, password)
-    
+    def __init__(self):
+        table = boto3.resource('dynamodb').Table('sb-config')
+        settings = table.get_item(Key = {'section': 'ShelterBuddyConnection'})['Item']['settings']
+        self.shelterbuddyUrl = settings["SHELTERBUDDY_API_URL"]
+        self.token = self.authenticate(settings["SHELTERBUDDY_API_USER"], settings["SHELTERBUDDY_API_PASSWORD"])
+
     def authenticate(self, username, password):
-        query = "/api/v2/authenticate?username=" + username + "&password=" + password
+        query = "/api/v2/authenticate?username=" + quote(username) + "&password=" + quote(password)
         req = Request(self.shelterbuddyUrl + query);
         req.add_header('Content-Type', 'application/json')
         r = urlopen(req)

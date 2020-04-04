@@ -1,7 +1,7 @@
 #
-# Basic automated test for the search API
+# Basic automated test_utils for the search API
 #
-from test import test
+from test_utils import test
 
 def check_photo(animals):
     for animal in animals:

@@ -1,6 +1,6 @@
 import boto3
 
-dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
+dynamodb = boto3.resource('dynamodb')
 
 dynamodb.create_table(
     TableName='sb-animal-details',
@@ -119,4 +119,3 @@ dynamodb.create_table(
     ],
     BillingMode='PAY_PER_REQUEST'
 )
-

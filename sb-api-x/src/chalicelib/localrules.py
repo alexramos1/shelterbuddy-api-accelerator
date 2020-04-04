@@ -3,7 +3,7 @@
 # These rules are customized based on the needs of the specific local organization.
 #
 import boto3
-client = boto3.client('dynamodb', region_name = 'us-west-1')
+client = boto3.client('dynamodb')
 
 lost = [
     "Lost",
@@ -38,7 +38,7 @@ available = [
 
 # the rescue status list has been moved to dynamo becaused it changes too often
 response = client.get_item(TableName='sb-config', Key={ 'section': { 'S': 'rescue' }})
-rescue = [item['S'] for item in response['Item']['status']['L']]
+rescue = [item['S'] for item in response['Item']['settings']['L']]
 
 def categorize(animal):
     st = animal['Status']['Name']

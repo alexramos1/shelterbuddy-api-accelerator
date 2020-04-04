@@ -1,11 +1,9 @@
-import json
 import boto3
-import traceback
-from database import Database
-from database import opt
+from .database import Database
+from .database import opt
 
 db = Database()
-dynamodb = boto3.client('dynamodb', region_name = 'us-west-1')
+dynamodb = boto3.client('dynamodb')
 
 #Example Query:
 #{
@@ -20,8 +18,6 @@ dynamodb = boto3.client('dynamodb', region_name = 'us-west-1')
 #    ]
 #}
 def query(StatusCategory, AnimalType, Location):
-    if len(StatusCategory) != 1:
-        return { 'error': 'StatusCategory parameter must be exactly 1 value.' }
     if len(AnimalType) < 1:
         return { 'error': 'AnimalType parameter must be at least 1 value or ALL.' }
     if len(Location) < 1:
@@ -36,7 +32,7 @@ def query(StatusCategory, AnimalType, Location):
             ConsistentRead=False,
             KeyConditionExpression='StatusCategory = :sc',
             ExpressionAttributeValues={
-                ':sc': { 'S': StatusCategory[0] }
+                ':sc': { 'S': StatusCategory }
             }
         )['Items']
     elif AnimalType == ['ALL']:
@@ -50,7 +46,7 @@ def query(StatusCategory, AnimalType, Location):
                 ConsistentRead=False,
                 KeyConditionExpression='StatusCategory = :sc AND LocationKey = :loc',
                 ExpressionAttributeValues={
-                    ':sc': { 'S': StatusCategory[0] },
+                    ':sc': { 'S': StatusCategory },
                     ':loc': { 'S': eachLocation },
                 }
             )
@@ -66,7 +62,7 @@ def query(StatusCategory, AnimalType, Location):
                 ConsistentRead=False,
                 KeyConditionExpression='StatusCategory = :sc AND AnimalType = :animalType',
                 ExpressionAttributeValues={
-                    ':sc': { 'S': StatusCategory[0] },
+                    ':sc': { 'S': StatusCategory },
                     ':animalType': { 'S': eachAnimalType },
                 }
             )
@@ -75,7 +71,7 @@ def query(StatusCategory, AnimalType, Location):
         # query using the StatusCategory and AnimalType, with a filter on Location
         response = []
         for eachAnimalType in AnimalType:
-            eav = { ':sc': { 'S': StatusCategory[0] },
+            eav = { ':sc': { 'S': StatusCategory },
                     ':animalType': { 'S': eachAnimalType }
             }
             for i in range(0, len(Location)):
@@ -120,18 +116,3 @@ def query(StatusCategory, AnimalType, Location):
        }) 
     } for js in response]
 
-def lambda_handler(event, context):
-    try:
-        mq = event['multiValueQueryStringParameters']
-        response = query(mq['StatusCategory'], mq['AnimalType'], mq['Location'])
-        return {
-            'statusCode': 200,
-            'headers': { 'Access-Control-Allow-Origin': '*' },
-            'body': json.dumps({'request':mq, 'response':response})
-        }
-    except Exception as e:
-        return {
-            'statusCode': 200,
-            'headers': { 'Access-Control-Allow-Origin': '*' },
-            'body':json.dumps({'error': traceback.format_exc()})
-        }

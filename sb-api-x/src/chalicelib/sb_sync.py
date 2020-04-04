@@ -1,23 +1,23 @@
 #
 # An AWS Lambda function to periodically pre-load Shelterbuddy API data into a DynamoDB syncTable.
 #
-from shelterbuddy import ShelterBuddyConnection, DecimalEncoder
-from database import Database
+from .shelterbuddy import ShelterBuddyConnection, DecimalEncoder
+from .database import Database
+from . import localrules
 from datetime import datetime, timedelta
-import localrules
 import boto3
 from boto3.dynamodb.conditions import Key
 import json
 import os
 from botocore.errorfactory import ClientError
-from process_webhook import processWebhooks
+from .process_webhook import processWebhooks
 
 db = Database()
 conn = ShelterBuddyConnection()
 s3client = boto3.client('s3')
 bucket = os.environ['AWS_S3_BUCKET']
 
-dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
+dynamodb = boto3.resource('dynamodb')
 syncTable = dynamodb.Table('sb-sync')
 detailTable = dynamodb.Table('sb-animal-details')
 
@@ -69,7 +69,7 @@ def persist(target, last, cutoff):
     info = (target + '#' + cutoff) if target else '#' + last
     syncTable.put_item(Item={ 'hashKey': 'continuation', 'info':  info})
 
-def lambda_handler(event, context):
+def sync():
     
     info = syncTable.query(KeyConditionExpression=Key('hashKey').eq('continuation'))
     (target,cutoff) = (None,None)
@@ -92,6 +92,3 @@ def lambda_handler(event, context):
     
     if lastUpdate != cutoff:
         processWebhooks(lastUpdate)
-
-if __name__ == "__main__":
-    lambda_handler(None,None)

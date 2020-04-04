@@ -1,0 +1,33 @@
+{
+  "resources": [
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::822014551977:role/chalice-app-dev",
+      "role_name": "chalice-app-dev"
+    },
+    {
+      "name": "syncScheduler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-2:822014551977:function:chalice-app-dev-syncScheduler"
+    },
+    {
+      "name": "syncScheduler-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "chalice-app-dev-syncScheduler-event"
+    },
+    {
+      "name": "api_handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-2:822014551977:function:chalice-app-dev"
+    },
+    {
+      "name": "rest_api",
+      "resource_type": "rest_api",
+      "rest_api_id": "4adcvhckg9",
+      "rest_api_url": "https://4adcvhckg9.execute-api.us-east-2.amazonaws.com/dev/"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}

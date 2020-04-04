@@ -50,7 +50,7 @@ def searchableFields(animal):
     
 class Database:
 
-    dynamodb = boto3.resource('dynamodb', region_name='us-west-1')
+    dynamodb = boto3.resource('dynamodb')
     tableName = 'sb-animals'
     table = dynamodb.Table(tableName)
     

@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: 2010-09-09
+Metadata:
+  'AWS::CloudFormation::Designer':
+    4a3b55db-7349-4278-98b8-3bed05ed4444:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 70
+        'y': 40
+      z: 0
+Resources:
+  sbWebhook:
+    Type: 'AWS::SQS::Queue'
+    Properties: { "QueueName" : "sb-webhook" }
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 4a3b55db-7349-4278-98b8-3bed05ed4444

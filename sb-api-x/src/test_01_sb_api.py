@@ -2,7 +2,7 @@
 # Dump data from SB API into animals.json, to be used by other tests.
 # "Run this first"
 #
-from shelterbuddy import ShelterBuddyConnection, DecimalEncoder
+from chalicelib.shelterbuddy import ShelterBuddyConnection, DecimalEncoder
 from datetime import datetime, timedelta
 import json
 
@@ -14,6 +14,6 @@ animals = []
 
 conn.loadAnimals(target, cutoff, animals.extend, lambda x,y,z: None)
     
-f = open("animals-%s.json" % datetime.today().strftime('%Y-%m-%d'), "w")
+f = open("test_utils-animals-%s.json" % datetime.today().strftime('%Y-%m-%d'), "w")
 f.write(json.dumps(animals, cls=DecimalEncoder))
 
