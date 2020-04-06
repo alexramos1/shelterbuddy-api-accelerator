@@ -15,6 +15,10 @@ def permissionsConfiguration():
     boto3.client('dynamodb').put_item()
     boto3.client('dynamodb').query()
     boto3.client('s3').put_object()
+    boto3.client('sqs').send_message()
+    boto3.client('sqs').receive_message()
+    boto3.client('sqs').delete_message()
+    boto3.client('sqs').get_queue_attributes()
 
 @app.route('/animal', cors = True)
 def animalApi():
@@ -26,9 +30,7 @@ def animalApi():
 def searchApi():
     from chalicelib import sb_search
     qp = app.current_request.query_params
-    response = sb_search.query(qp['StatusCategory'], 
-            qp['AnimalType'] if type(qp['AnimalType']) is list else [qp['AnimalType']], 
-            qp['Location'] if type(qp['Location']) is list else [qp['Location']])
+    response = sb_search.query(qp['StatusCategory'], qp.getlist('AnimalType'), qp.getlist('Location'))
     return json.dumps({'request': str(qp), 'response': response })
     
 @app.route('/webhook', methods=['POST', 'GET'], content_types = ['application/x-www-form-urlencoded', 'application/json'])
@@ -36,9 +38,16 @@ def webhookApi():
     from chalicelib import sb_webhook
     event = app.current_request.to_dict()
     event["body"] = json.dumps(app.current_request.json_body)
-    return sb_webhook.handler(event)
+    return sb_webhook.intake(event)
 
 @app.schedule('rate(5 minutes)')
 def syncScheduler(event):
     from chalicelib import sb_sync
     sb_sync.sync()
+
+@app.on_sqs_message(queue='incomingQueue', batch_size=10)
+def incomingAnimal(event):
+    from chalicelib import sb_incoming
+    for record in event:
+        animal = json.loads(record.body)
+        sb_incoming.process(animal)

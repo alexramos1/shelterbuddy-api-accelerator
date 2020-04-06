@@ -26,7 +26,7 @@ def query(StatusCategory, AnimalType, Location):
     if AnimalType == ['ALL'] and Location == ['ALL']:
         # query using only the StatusCategory
         response = dynamodb.query(
-            TableName=db.tableName,
+            TableName=db.SEARCH_TABLE_NAME,
             IndexName='StatusCategory-LocationKey-index',
             Select='ALL_ATTRIBUTES',
             ConsistentRead=False,
@@ -40,7 +40,7 @@ def query(StatusCategory, AnimalType, Location):
         response = []
         for eachLocation in Location:
             resp = dynamodb.query(
-                TableName=db.tableName,
+                TableName=db.SEARCH_TABLE_NAME,
                 IndexName='StatusCategory-LocationKey-index',
                 Select='ALL_ATTRIBUTES',
                 ConsistentRead=False,
@@ -56,7 +56,7 @@ def query(StatusCategory, AnimalType, Location):
         response = []
         for eachAnimalType in AnimalType:
             resp = dynamodb.query(
-                TableName=db.tableName,
+                TableName=db.SEARCH_TABLE_NAME,
                 IndexName='StatusCategory-AnimalType-index',
                 Select='ALL_ATTRIBUTES',
                 ConsistentRead=False,
@@ -78,7 +78,7 @@ def query(StatusCategory, AnimalType, Location):
                 eav[':loc' + str(i+1)] = { 'S' : Location[i] }
             locRefs = ','.join([':loc' + str(i+1) for i in range(0,len(Location))])
             response.extend(dynamodb.query(
-                TableName=db.tableName,
+                TableName=db.SEARCH_TABLE_NAME,
                 IndexName='StatusCategory-AnimalType-index',
                 Select='ALL_ATTRIBUTES',
                 ConsistentRead=False,

@@ -38,7 +38,7 @@ test('/search?AnimalType=ALL&Location=Escondido%20Campus&Location=San%20Diego%20
      lambda check: set(['Escondido Campus', 'San Diego Campus - 5500']) == set([animal['Location'] for animal in check['response']]))
 
 test('/search?AnimalType=ALL&Location=ALL&StatusCategory=rescue',
-     lambda check: 'In Foster' in [animal['Status'] for animal in check['response']])
+     lambda check: 'Awaiting Sort' in [animal['Status'] for animal in check['response']])
 
 test('/search?AnimalType=ALL&Location=ALL&StatusCategory=available',
      lambda check: 'Available For Adoption' in [animal['Status'] for animal in check['response']])

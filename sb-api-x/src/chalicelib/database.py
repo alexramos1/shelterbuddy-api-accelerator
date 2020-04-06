@@ -1,6 +1,12 @@
 import boto3
 import json
-from boto3.dynamodb.conditions import Key, Attr
+from .shelterbuddy import DecimalEncoder
+
+def byline(animal):
+    try:
+        return "[%s %s %s %s %s]" % (animal['Name'], animal['Type']['Name'], animal['Id'], animal['Status']['Name'], animal['LastUpdatedUtc'])
+    except:
+        return json.dumps(animal)
 
 def opt(js, optionalValueFunction, defaultValue = None):
     try:
@@ -50,25 +56,34 @@ def searchableFields(animal):
     
 class Database:
 
+    SEARCH_TABLE_NAME = 'sb-animals'
+
     dynamodb = boto3.resource('dynamodb')
-    tableName = 'sb-animals'
-    table = dynamodb.Table(tableName)
+    searchTable = dynamodb.Table(SEARCH_TABLE_NAME)
+    detailTable = dynamodb.Table('sb-animal-details')
     
     def save(self,animal):
-        print('INCOMING: ' + str(animal))
-        animal = searchableFields(animal)
-        animal = removeNulls(animal)
         try:
-            self.table.put_item(Item=animal)
-            print("STORED: " + str(animal))
+            searchableData = removeNulls(searchableFields(animal))
+            searchableData['LastUpdatedUtc'] = animal['LastUpdatedUtc']
+            response = self.searchTable.put_item(Item=searchableData, 
+                                                 ConditionExpression="attribute_not_exists(LastUpdatedUtc) OR LastUpdatedUtc <= :LastUpdatedUtc",
+                                                 ExpressionAttributeValues={':LastUpdatedUtc':searchableData['LastUpdatedUtc']})
+            
+            self.detailTable.put_item(Item={'Id': animal['Id'], 'rawData': json.dumps(animal, cls=DecimalEncoder) })
+            print("STORED: " + byline(animal))
+        except self.dynamodb.meta.client.exceptions.ConditionalCheckFailedException:
+            print("WARNING: update skipped - not going to overwrite newer record: " + byline(animal))
         except:
-            print("FAILED:" + str(animal))
+            print("STORE FAILED:" + byline(animal))
             raise
         
     def delete(self, animal):
         try:
-            self.table.delete_item(Key={'Id': animal['Id']})
-            print("DELETED: " + str(animal))
+            self.searchTable.delete_item(Key={'Id': animal['Id']})
+            self.detailTable.delete_item(Key={'Id': animal['Id']})
+            print("DELETED: " + byline(animal))
         except:
-            print("SKIPPED: " + str(animal))
+            #print("DELETE FAILED: " + byline(animal))
+            return
     

@@ -1,18 +1,14 @@
 AWSTemplateFormatVersion: 2010-09-09
-Metadata:
-  'AWS::CloudFormation::Designer':
-    4a3b55db-7349-4278-98b8-3bed05ed4444:
-      size:
-        width: 60
-        height: 60
-      position:
-        x: 70
-        'y': 40
-      z: 0
 Resources:
-  sbWebhook:
+  incomingDLQ:
     Type: 'AWS::SQS::Queue'
-    Properties: { "QueueName" : "sb-webhook" }
-    Metadata:
-      'AWS::CloudFormation::Designer':
-        id: 4a3b55db-7349-4278-98b8-3bed05ed4444
+    Properties: { "QueueName" : "incomingDLQ", "MessageRetentionPeriod": 1209600  }
+  webhookDLQ:
+    Type: 'AWS::SQS::Queue'
+    Properties: { "QueueName" : "webhookDLQ", "MessageRetentionPeriod": 1209600  }
+  webhookQueue:
+    Type: 'AWS::SQS::Queue'
+    Properties: { "QueueName" : "webhookQueue", "VisibilityTimeout": 300, "RedrivePolicy" : { "deadLetterTargetArn" : !GetAtt webhookDLQ.Arn, "maxReceiveCount" : 3 } }
+  incomingQueue:
+    Type: 'AWS::SQS::Queue'
+    Properties: { "QueueName" : "incomingQueue", "VisibilityTimeout": 300, "RedrivePolicy" : { "deadLetterTargetArn" : !GetAtt incomingDLQ.Arn, "maxReceiveCount" : 3 } }

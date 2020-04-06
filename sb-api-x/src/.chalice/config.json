@@ -5,19 +5,39 @@
     "dev": {
       "api_gateway_stage": "dev",
       "environment_variables": {
-        "AWS_WEBHOOK_BUCKET": "dev-sb-webhook-ue2",
-		"SQS_WEBHOOK": "https://sqs.us-east-2.amazonaws.com/822014551977/sb-webhook",
-		"AWS_S3_BUCKET": "dev-sb-photo-cache",
-		"INITIAL_LOAD_DAYS": "7"
+		"SQS_PREFIX": "https://sqs.us-east-2.amazonaws.com/822014551977/",
+        "S3_WEBHOOK_BUCKET": "dev-sb-webhook-ue2",
+		"S3_PHOTO_BUCKET": "dev-sb-photo-cache",
+		"INITIAL_LOAD_DAYS": "3"
+      },
+      "lambda_functions": {
+        "syncScheduler": {
+          "lambda_timeout": 299,
+          "reserved_concurrency": 1
+        },
+        "incomingAnimal": {
+          "lambda_timeout": 299,
+          "reserved_concurrency": 5
+        }
       }
     },
-    "prod": {
+    "production": {
       "api_gateway_stage": "production",
       "environment_variables": {
-        "AWS_WEBHOOK_BUCKET": "sb-webhook",
-		"SQS_WEBHOOK": "https://sqs.us-west-1.amazonaws.com/822014551977/sb-webhook",
-		"AWS_S3_BUCKET": "sb-photo-cache",
-		"INITIAL_LOAD_DAYS": "90"
+		"SQS_PREFIX": "https://sqs.us-west-1.amazonaws.com/822014551977/",
+        "S3_WEBHOOK_BUCKET": "sb-webhook",
+		"S3_PHOTO_BUCKET": "sb-photo-cache",
+		"INITIAL_LOAD_DAYS": "180"
+      },
+      "lambda_functions": {
+        "syncScheduler": {
+          "lambda_timeout": 900,
+          "reserved_concurrency": 1
+        },
+        "incomingAnimal": {
+          "lambda_timeout": 299,
+          "reserved_concurrency": 5
+        }
       }
     }
   }

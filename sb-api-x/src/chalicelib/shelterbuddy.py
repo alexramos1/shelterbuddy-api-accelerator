@@ -23,13 +23,11 @@ class ShelterBuddyConnection:
         r = urlopen(req)
         return json.loads(r.read())
         
-    def loadAnimals(self, target, cutoff, actionFunction, checkpointFunction):
+    def loadAnimals(self, target, cutoff, newCutoff, actionFunction, checkpointFunction):
         
         postparm = ("{ 'UpdatedSinceUTC':'" + cutoff + "'}").encode('utf-8')
     
         while target != None:
-            
-            print(target)
             
             req = Request(self.shelterbuddyUrl + target, method='POST', data=postparm)
             
@@ -37,25 +35,18 @@ class ShelterBuddyConnection:
             req.add_header("content-type", "application/json")
             r = urlopen(req)
             
-            processedDT = r.info()["x-shelterbuddy-processed-datetimeutc"]
+            if newCutoff is None:
+                newCutoff = r.info()["x-shelterbuddy-processed-datetimeutc"]
             
             data = json.loads(r.read(), parse_float=Decimal)
             
             actionFunction(data['Data'])
-            
+
             target = data['Paging']['Next']
             
-            if target:
-                # maintain the same search timestamp while paginating
-                last = cutoff      
-            else:
-                last = processedDT
-                
-            print('timestamps: starting=%s, processed=%s, max=%s' % (cutoff, processedDT, last))
-
-            checkpointFunction(target, last, cutoff)
-            return last
-    
+            print('checkpoint: starting=%s, nextCut=%s, last-target=%s' % (cutoff, newCutoff, target))
+            checkpointFunction(target, cutoff, newCutoff)
+            
     def fetchUri(self, uri):
         if(uri.startswith("/api/v2/person/")):
             return "blocked"
@@ -75,11 +66,19 @@ class ShelterBuddyConnection:
                     raise(e)
 
         return self.uriCache[uri]
+
+    def fetchAnimal(self, animalId):
+        url = self.shelterbuddyUrl + "/api/v2/animal/" + animalId
+        req = Request(url, method='GET')
+        req.add_header("sb-auth-token", self.token)
+        req.add_header("content-type", "application/x-www-form-urlencoded")
+        r = urlopen(req)
+        obj = json.loads(r.read(), parse_float=Decimal)
+        return obj
     
     def fetchPhotoLinks(self, animalId):
         
         postparam = urllib.parse.urlencode({"AnimalId": animalId})
-        print(postparam)
         url = self.shelterbuddyUrl + "/api/v2/animal/photo/list?page=1&pageSize=30"
         req = Request(url, method='POST', data=postparam.encode('utf-8'))
         req.add_header("sb-auth-token", self.token)
