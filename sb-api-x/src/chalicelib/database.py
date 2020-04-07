@@ -6,7 +6,7 @@ def byline(animal):
     try:
         return "[%s %s %s %s %s]" % (animal['Name'], animal['Type']['Name'], animal['Id'], animal['Status']['Name'], animal['LastUpdatedUtc'])
     except:
-        return json.dumps(animal)
+        return json.dumps(animal, cls=DecimalEncoder)
 
 def opt(js, optionalValueFunction, defaultValue = None):
     try:
@@ -83,7 +83,25 @@ class Database:
             self.searchTable.delete_item(Key={'Id': animal['Id']})
             self.detailTable.delete_item(Key={'Id': animal['Id']})
             print("DELETED: " + byline(animal))
+            return True
         except:
-            #print("DELETE FAILED: " + byline(animal))
-            return
+            return False
     
+    def scan(self):
+
+        LastEvaluatedKey = None
+        
+        while True:
+            
+            if LastEvaluatedKey:
+                response = self.detailTable.scan(Select='ALL_ATTRIBUTES', Limit=100, ExclusiveStartKey=LastEvaluatedKey)
+            else:
+                response = self.detailTable.scan(Select='ALL_ATTRIBUTES', Limit=100)
+
+            for item in response['Items']:
+                yield json.loads(item['rawData'])
+
+            if 'LastEvaluatedKey' not in response:
+                return
+
+            LastEvaluatedKey = response['LastEvaluatedKey']

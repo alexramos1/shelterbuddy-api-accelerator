@@ -3,6 +3,7 @@
 
 from chalice import Chalice
 import json
+from chalicelib.shelterbuddy import DecimalEncoder
 
 app = Chalice(app_name='chalice-app')
 app.debug = True
@@ -14,6 +15,8 @@ def permissionsConfiguration():
     boto3.client('dynamodb').get_item()
     boto3.client('dynamodb').put_item()
     boto3.client('dynamodb').query()
+    boto3.client('dynamodb').scan()
+    boto3.client('dynamodb').delete_item()
     boto3.client('s3').put_object()
     boto3.client('sqs').send_message()
     boto3.client('sqs').receive_message()
@@ -37,7 +40,7 @@ def searchApi():
 def webhookApi():
     from chalicelib import sb_webhook
     event = app.current_request.to_dict()
-    event["body"] = json.dumps(app.current_request.json_body)
+    event["body"] = json.dumps(app.current_request.json_body, cls=DecimalEncoder)
     return sb_webhook.intake(event)
 
 @app.schedule('rate(5 minutes)')
@@ -51,3 +54,8 @@ def incomingAnimal(event):
     for record in event:
         animal = json.loads(record.body)
         sb_incoming.process(animal)
+
+@app.schedule('rate(2 hours)')
+def audit(event):
+    from chalicelib import sb_audit
+    sb_audit.audit()

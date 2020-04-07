@@ -17,7 +17,11 @@
         },
         "incomingAnimal": {
           "lambda_timeout": 299,
-          "reserved_concurrency": 5
+          "reserved_concurrency": 1
+        },
+        "audit": {
+          "lambda_timeout": 900,
+          "reserved_concurrency": 1
         }
       }
     },
@@ -36,7 +40,11 @@
         },
         "incomingAnimal": {
           "lambda_timeout": 299,
-          "reserved_concurrency": 5
+          "reserved_concurrency": 1
+        },
+        "audit": {
+          "lambda_timeout": 900,
+          "reserved_concurrency": 1
         }
       }
     }

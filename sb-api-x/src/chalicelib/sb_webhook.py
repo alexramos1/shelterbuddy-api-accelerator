@@ -5,7 +5,8 @@ import os
 import uuid
 from datetime import datetime
 from .database import Database, byline
-from chalicelib.shelterbuddy import ShelterBuddyConnection
+from chalicelib.shelterbuddy import ShelterBuddyConnection, DecimalEncoder
+from . import localrules
 
 client = boto3.client('sqs')
 webhookQueue  = os.environ['SQS_PREFIX'] + 'webhookQueue'
@@ -18,16 +19,16 @@ conn = ShelterBuddyConnection()
 
 def intake(event):
 
-    log = client.send_message(QueueUrl=webhookQueue, MessageBody=json.dumps(event))
+    log = client.send_message(QueueUrl=webhookQueue, MessageBody=json.dumps(event, cls=DecimalEncoder))
     print (log)
     
     sequentialPath = datetime.now().strftime('%Y/%m/%d/%H.%M.%S.%f.') + uuid.uuid4().hex + '.json'
-    log = s3client.put_object(Bucket=s3bucket, Key=sequentialPath, Body=json.dumps(event).encode('utf-8', 'replace'))
+    log = s3client.put_object(Bucket=s3bucket, Key=sequentialPath, Body=json.dumps(event, cls=DecimalEncoder).encode('utf-8', 'replace'))
     print(log)
     
     return "ok"
 
-def processWebhooks(cutoffTimestamp):
+def processWebhooks():
     while True:
         msg = client.receive_message(QueueUrl=webhookQueue)
         if not('Messages' in msg):
@@ -50,11 +51,7 @@ def processWebhooks(cutoffTimestamp):
                 refreshId = keptId
 
             if deletedDateUtc is not None:
-                if deletedDateUtc < cutoffTimestamp:
-                    db.delete({'Id': deletedAnimalId })
-                else:
-                    # avoid a race condition where deletion could occur before a record is created, resulting in an orphaned record
-                    raise("SKIP due to deletedDateUtc >= cutoffTimestamp : %s >= %s (try again later when cutoffTimestamp has increased)" % (deletedDateUtc, cutoffTimestamp))
+                db.delete({'Id': deletedAnimalId })
 
             elif 'Photos' in body:
                 print("webhook PHOTOS: %s @ %s" % (body['Id'], len(body['Photos'])))
@@ -65,11 +62,14 @@ def processWebhooks(cutoffTimestamp):
                 refreshId = body['Id']
                 
             else:
-                print('webhook UNKNOWN: ' + json.dumps(body))
+                print('webhook UNKNOWN: ' + json.dumps(body, cls=DecimalEncoder))
                 
             if refreshId:
                 freshData = conn.fetchAnimal(refreshId)
-                client.send_message(QueueUrl=incomingQueue, MessageBody=json.dumps(freshData))
+                if localrules.triageForWeb(freshData):
+                    client.send_message(QueueUrl=incomingQueue, MessageBody=json.dumps(freshData, cls=DecimalEncoder))
+                else:
+                    db.delete(freshData)
 
             client.delete_message(QueueUrl=webhookQueue, ReceiptHandle=msg1['ReceiptHandle'])
                 

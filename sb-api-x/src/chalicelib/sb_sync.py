@@ -1,7 +1,7 @@
 #
 # An AWS Lambda function to periodically pre-load Shelterbuddy API data into a DynamoDB syncTable.
 #
-from .shelterbuddy import ShelterBuddyConnection
+from .shelterbuddy import ShelterBuddyConnection, DecimalEncoder
 from .database import Database, byline
 from . import localrules
 from datetime import datetime, timedelta
@@ -25,7 +25,7 @@ def action(animals):
         triageKeep = localrules.triageForWeb(animal)
 
         if(triageKeep):
-            sqs.send_message(QueueUrl=incomingQueue, MessageBody=json.dumps(animal, default=str))
+            sqs.send_message(QueueUrl=incomingQueue, MessageBody=json.dumps(animal, cls=DecimalEncoder))
             print('QUEUED: ' + byline(animal))
         else:
             db.delete(animal)
@@ -59,4 +59,6 @@ def sync():
     print("target = %s, cutoff = %s, nextCut = %s" % (target, cutoff, nextCut))
     
     conn.loadAnimals(target, cutoff, nextCut, action, persist)
-    processWebhooks(cutoff)
+
+    processWebhooks()
+

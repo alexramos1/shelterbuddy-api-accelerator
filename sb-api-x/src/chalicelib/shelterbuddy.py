@@ -68,7 +68,7 @@ class ShelterBuddyConnection:
         return self.uriCache[uri]
 
     def fetchAnimal(self, animalId):
-        url = self.shelterbuddyUrl + "/api/v2/animal/" + animalId
+        url = self.shelterbuddyUrl + "/api/v2/animal/" + str(animalId)
         req = Request(url, method='GET')
         req.add_header("sb-auth-token", self.token)
         req.add_header("content-type", "application/x-www-form-urlencoded")
