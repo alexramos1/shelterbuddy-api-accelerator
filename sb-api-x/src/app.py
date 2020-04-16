@@ -34,8 +34,10 @@ def searchApi():
     from chalicelib import sb_search
     qp = app.current_request.query_params
     response = sb_search.query(qp['StatusCategory'], qp.getlist('AnimalType'), qp.getlist('Location'))
-    return json.dumps({'request': str(qp), 'response': response })
-    
+    jsonOut = json.dumps({'request': str(qp), 'response': response })
+    print(jsonOut)
+    return jsonOut
+
 @app.route('/webhook', methods=['POST', 'GET'], content_types = ['application/x-www-form-urlencoded', 'application/json'])
 def webhookApi():
     from chalicelib import sb_webhook
