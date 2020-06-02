@@ -7,6 +7,7 @@ from datetime import datetime
 from .database import Database, byline
 from chalicelib.shelterbuddy import ShelterBuddyConnection, DecimalEncoder
 from . import localrules
+from urllib.error import HTTPError
 
 client = boto3.client('sqs')
 webhookQueue  = os.environ['SQS_PREFIX'] + 'webhookQueue'
@@ -65,13 +66,21 @@ def processWebhooks():
                 print('webhook UNKNOWN: ' + json.dumps(body, cls=DecimalEncoder))
                 
             if refreshId:
-                freshData = conn.fetchAnimal(refreshId)
-                print('fetched: %s' % byline(freshData))
-                if localrules.triageForWeb(freshData):
-                    response = client.send_message(QueueUrl=incomingQueue, MessageBody=json.dumps(freshData, cls=DecimalEncoder))
-                    print('sent: MessageId=%s, BodyMD5=%s' % (response['MessageId'], response['MD5OfMessageBody']))
-                else:
-                    db.delete(freshData)
-
+                try:
+                    freshData = conn.fetchAnimal(refreshId)
+                    print('fetched: %s' % byline(freshData))
+                    if localrules.triageForWeb(freshData):
+                        response = client.send_message(QueueUrl=incomingQueue, MessageBody=json.dumps(freshData, cls=DecimalEncoder))
+                        print('sent: MessageId=%s, BodyMD5=%s' % (response['MessageId'], response['MD5OfMessageBody']))
+                    else:
+                        db.delete(freshData)
+    
+                except HTTPError as e:
+                    if e.code == 404:
+                        print('Webhook Fetch failed for ID=%s' % refreshId)
+                        db.delete({'Id': refreshId})
+                    else:
+                        raise e
+                        
             response = client.delete_message(QueueUrl=webhookQueue, ReceiptHandle=msg1['ReceiptHandle'])
             print('delete response = ' + str(response))
