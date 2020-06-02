@@ -23,5 +23,5 @@ def audit():
                 raise e
             
         if not keep:
-            if not db.delete(item):
+            if not db.delete(animal):
                 print('DELETE FAILED FOR %s' % byline(animal))
