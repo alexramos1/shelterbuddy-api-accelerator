@@ -12,15 +12,15 @@
       },
       "lambda_functions": {
         "syncScheduler": {
-          "lambda_timeout": 299,
+          "lambda_timeout": 300,
           "reserved_concurrency": 1
         },
         "incomingAnimal": {
-          "lambda_timeout": 299,
-          "reserved_concurrency": 1
+          "lambda_timeout": 120,
+          "reserved_concurrency": 3
         },
         "audit": {
-          "lambda_timeout": 900,
+          "lambda_timeout": 300,
           "reserved_concurrency": 1
         }
       }
@@ -35,15 +35,15 @@
       },
       "lambda_functions": {
         "syncScheduler": {
-          "lambda_timeout": 900,
+          "lambda_timeout": 300,
           "reserved_concurrency": 1
         },
         "incomingAnimal": {
-          "lambda_timeout": 299,
-          "reserved_concurrency": 1
+          "lambda_timeout": 120,
+          "reserved_concurrency": 3
         },
         "audit": {
-          "lambda_timeout": 900,
+          "lambda_timeout": 300,
           "reserved_concurrency": 1
         }
       }

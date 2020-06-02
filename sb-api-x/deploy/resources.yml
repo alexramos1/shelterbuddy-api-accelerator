@@ -11,4 +11,4 @@ Resources:
     Properties: { "QueueName" : "webhookQueue", "VisibilityTimeout": 300, "RedrivePolicy" : { "deadLetterTargetArn" : !GetAtt webhookDLQ.Arn, "maxReceiveCount" : 3 } }
   incomingQueue:
     Type: 'AWS::SQS::Queue'
-    Properties: { "QueueName" : "incomingQueue", "VisibilityTimeout": 300, "RedrivePolicy" : { "deadLetterTargetArn" : !GetAtt incomingDLQ.Arn, "maxReceiveCount" : 3 } }
+    Properties: { "QueueName" : "incomingQueue", "VisibilityTimeout": 720, "RedrivePolicy" : { "deadLetterTargetArn" : !GetAtt incomingDLQ.Arn, "maxReceiveCount" : 3 } }
