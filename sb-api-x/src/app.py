@@ -4,6 +4,7 @@
 from chalice import Chalice
 import json
 from chalicelib.shelterbuddy import DecimalEncoder
+import boto3
 
 app = Chalice(app_name='chalice-app')
 app.debug = True
@@ -52,12 +53,21 @@ def syncScheduler(event):
 
 @app.on_sqs_message(queue='incomingQueue', batch_size=10)
 def incomingAnimal(event):
-    from chalicelib import sb_incoming
-    for record in event:
-        animal = json.loads(record.body)
-        sb_incoming.process(animal)
+    try:
+        sqs = boto3.client('sqs')
+        queue = sqs.get_queue_url(QueueName='incomingQueue')['QueueUrl'] 
+        from chalicelib import sb_incoming
+        print("Event: ", event.to_dict())
+        for record in event:
+            animal = json.loads(record.body)
+            sb_incoming.process(animal)
+            response = sqs.delete_message(QueueUrl=queue, ReceiptHandle=record.receipt_handle)
+            print('deleted: ', response)
+    except Exception as e:
+        print('failed')
+        raise(e)
 
-@app.schedule('rate(2 hours)')
+@app.schedule('rate(15 minutes)')
 def audit(event):
     from chalicelib import sb_audit
     sb_audit.audit()

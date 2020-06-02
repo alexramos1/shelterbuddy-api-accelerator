@@ -66,10 +66,12 @@ def processWebhooks():
                 
             if refreshId:
                 freshData = conn.fetchAnimal(refreshId)
+                print('fetched: %s' % byline(freshData))
                 if localrules.triageForWeb(freshData):
-                    client.send_message(QueueUrl=incomingQueue, MessageBody=json.dumps(freshData, cls=DecimalEncoder))
+                    response = client.send_message(QueueUrl=incomingQueue, MessageBody=json.dumps(freshData, cls=DecimalEncoder))
+                    print('sent: MessageId=%s, BodyMD5=%s' % (response['MessageId'], response['MD5OfMessageBody']))
                 else:
                     db.delete(freshData)
 
-            client.delete_message(QueueUrl=webhookQueue, ReceiptHandle=msg1['ReceiptHandle'])
-                
+            response = client.delete_message(QueueUrl=webhookQueue, ReceiptHandle=msg1['ReceiptHandle'])
+            print('delete response = ' + str(response))

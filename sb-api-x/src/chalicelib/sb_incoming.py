@@ -11,9 +11,9 @@ db = Database()
 
 def preparePhotos(animal):
     photos = conn.fetchPhotoLinks(animal['Id'])
-    print(photos)
+    print('fetched photos: ' + str(photos))
     for photo in photos:
-        sizes = [ 1024, 640, 480, 320, 240 ]
+        sizes = [ 1024, 320 ]
         if('PhotoThumbnailFormat' in photo):
             photoFormat = photo['PhotoThumbnailFormat'].replace("<size>", "%d")
         else:
@@ -33,6 +33,7 @@ def preparePhotos(animal):
     animal['Photos'] = photos
 
 def process(animal):
+    print('process: ' + str(animal))
     [1 for loop in conn.resolve(animal, 'Uri', lambda uri: conn.fetchUri(uri))]
     
     # inline and prefetch the photo urls
