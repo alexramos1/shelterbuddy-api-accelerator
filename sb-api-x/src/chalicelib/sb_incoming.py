@@ -4,6 +4,9 @@ from .database import Database
 import boto3
 import os
 
+# photo sizes to download
+sizes = [ 1024, 320 ]
+
 conn = ShelterBuddyConnection()
 s3client = boto3.client('s3')
 photoBucket = os.environ['S3_PHOTO_BUCKET']
@@ -12,8 +15,7 @@ db = Database()
 def preparePhotos(animal):
     photos = conn.fetchPhotoLinks(animal['Id'])
     print('fetched photos: ' + str(photos))
-    for photo in photos:
-        sizes = [ 1024, 320 ]
+    for photo in photos:        
         if('PhotoThumbnailFormat' in photo):
             photoFormat = photo['PhotoThumbnailFormat'].replace("<size>", "%d")
         else:
